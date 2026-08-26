@@ -45,3 +45,4 @@ Each report should contain, where applicable:
 | 2026-08-26 | Inherited Canonical Base Body Rig v0.1 import | [2026-08-26_0519_inherited-baseline-import.md](2026-08-26_0519_inherited-baseline-import.md) |
 | 2026-08-26 | Repository-native Canonical Base Body Rig v0.1 verification | [2026-08-26_0546_repository-native-rig-verification.md](2026-08-26_0546_repository-native-rig-verification.md) |
 | 2026-08-26 | First canonical Poser architecture slice | [2026-08-26_0646_first-canonical-poser-architecture.md](2026-08-26_0646_first-canonical-poser-architecture.md) |
+| 2026-08-26 | Initial body-rig agent team and canonical architecture | [2026-08-26_0727_body-rig-agent-team-architecture.md](2026-08-26_0727_body-rig-agent-team-architecture.md) |

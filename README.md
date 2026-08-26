@@ -83,6 +83,7 @@ These generalized canonical concepts are currently **DESIGNED**. The inherited v
 - [docs/PROJECT_CONTEXT.md](docs/PROJECT_CONTEXT.md): durable design intent, creative goals, and architectural constraints.
 - [docs/RIG_REQUIREMENTS.md](docs/RIG_REQUIREMENTS.md): current canonical rig requirements, primarily DESIGNED.
 - [docs/RIG_ARCHITECTURE.md](docs/RIG_ARCHITECTURE.md): source-aligned architecture for the first canonical Poser runtime slice.
+- [docs/rigging/README.md](docs/rigging/README.md): repository-native body-rig specialist team and the broader Canonical Body Rig v0.1 **DESIGNED** contracts.
 - [Inherited functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md): pre-official-repository evidence and known failures.
 - [Canonical Base Body Rig v0.1](baselines/canonical_base_body_rig_v0_1/README.md): untouched inherited pre-overhaul runtime and assets.
 - [docs/pass-reports/](docs/pass-reports/README.md): permanent chronological evidence, one report per pass.
