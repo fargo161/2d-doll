@@ -47,3 +47,4 @@ Each report should contain, where applicable:
 | 2026-08-26 | First canonical Poser architecture slice | [2026-08-26_0646_first-canonical-poser-architecture.md](2026-08-26_0646_first-canonical-poser-architecture.md) |
 | 2026-08-26 | Initial body-rig agent team and canonical architecture | [2026-08-26_0727_body-rig-agent-team-architecture.md](2026-08-26_0727_body-rig-agent-team-architecture.md) |
 | 2026-08-26 | Expression Maker and Face Intake design context | [2026-08-26_0801_expression-maker-face-intake-design.md](2026-08-26_0801_expression-maker-face-intake-design.md) |
+| 2026-08-26 | Combinatorial panel composition and interaction design philosophy | [2026-08-26_0927_combinatorial-panel-composition-design.md](2026-08-26_0927_combinatorial-panel-composition-design.md) |
