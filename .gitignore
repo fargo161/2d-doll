@@ -1,0 +1,20 @@
+# Operating-system and editor artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+
+# Python caches and local test output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Disposable browser-test output
+test-results/
+playwright-report/
+
+# Temporary files
+*.tmp

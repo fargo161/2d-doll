@@ -8,12 +8,14 @@ The project optimizes for **combinatorial expressive power**: a small vocabulary
 
 ## Current Reality
 
-This repository currently contains the **design and development foundation** for 2D Doll. It does not contain an implemented application, editor, rigging system, renderer, or creative workflow.
+This repository contains the **design and development foundation** for 2D Doll and an inherited pre-overhaul prototype: [Canonical Base Body Rig v0.1](baselines/canonical_base_body_rig_v0_1/README.md). The inherited viewer is preserved for provenance and comparison; it is not the canonical finished architecture or a completed 2D Doll application.
 
 - **DESIGNED:** The high-level creative model, conceptual responsibilities, terminology, and development principles.
-- **IMPLEMENTED:** Repository documentation and the permanent pass-reporting protocol.
-- **TESTED:** Only the documentation structure and links, to the extent recorded in pass reports.
+- **IMPLEMENTED:** Repository documentation, the permanent pass-reporting protocol, and the inherited Canonical Base Body Rig v0.1 prototype.
+- **TESTED:** Import integrity, archive equivalence, the inherited structural validator, and a basic repository-native browser smoke check. The smoke check reproduced the inherited startup exception; see the pass reports for exact evidence.
 - **VALIDATED:** Nothing in the intended 2D Doll creative workflow yet.
+
+The inherited v0.1 build has serious documented runtime and architecture problems. Its [functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md) is inherited pre-official-repository evidence, not a test performed by this repository's import pass. Current canonical design requirements live in [Rig Requirements](docs/RIG_REQUIREMENTS.md) and remain primarily **DESIGNED**.
 
 See [Project Context](docs/PROJECT_CONTEXT.md) for durable design intent and [Pass Reports](docs/pass-reports/README.md) for chronological evidence. Development agents must follow [AGENTS.md](AGENTS.md).
 
@@ -54,11 +56,14 @@ A character is intended to be a structured articulated object with joints, segme
 
 Semantic interaction points such as `hold`, `grab`, `look-at`, `carry`, `embrace`, `sit-on`, `prop-grip`, and `contact` should eventually express relationships between objects. Those relationships are intended to support reusable interactions rather than permanently baked poses.
 
-These concepts are currently **DESIGNED**, not implemented. Their complete rationale and constraints live in [docs/PROJECT_CONTEXT.md](docs/PROJECT_CONTEXT.md).
+These generalized canonical concepts are currently **DESIGNED**. The inherited v0.1 prototype implements a limited articulated hierarchy and pivot contract, but its existence does not prove the broader architecture or workflow. Their complete rationale and constraints live in [docs/PROJECT_CONTEXT.md](docs/PROJECT_CONTEXT.md).
 
 ## Documentation Map
 
 - [README.md](README.md): concise project entry point, current reality, architecture summary, and navigation.
 - [AGENTS.md](AGENTS.md): authoritative operating rules for development work.
 - [docs/PROJECT_CONTEXT.md](docs/PROJECT_CONTEXT.md): durable design intent, creative goals, and architectural constraints.
+- [docs/RIG_REQUIREMENTS.md](docs/RIG_REQUIREMENTS.md): current canonical rig requirements, primarily DESIGNED.
+- [Inherited functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md): pre-official-repository evidence and known failures.
+- [Canonical Base Body Rig v0.1](baselines/canonical_base_body_rig_v0_1/README.md): untouched inherited pre-overhaul runtime and assets.
 - [docs/pass-reports/](docs/pass-reports/README.md): permanent chronological evidence, one report per pass.

@@ -1,0 +1,6 @@
+# Preserve the inherited baseline byte-for-byte for provenance comparisons.
+baselines/canonical_base_body_rig_v0_1/** -text
+
+# The two inherited CRLF inventories are immutable provenance data; avoid
+# treating their carriage returns as trailing-whitespace defects.
+baselines/canonical_base_body_rig_v0_1/docs/*.csv -diff
