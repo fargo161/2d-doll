@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2D Doll — Canonical Poser Runtime</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.__DOLL_RUNTIME_ERRORS__ = [];
+    window.addEventListener("error", (event) => {
+      window.__DOLL_RUNTIME_ERRORS__.push(String(event.error?.stack || event.message));
+    });
+    window.addEventListener("unhandledrejection", (event) => {
+      window.__DOLL_RUNTIME_ERRORS__.push(String(event.reason?.stack || event.reason));
+    });
+  </script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">First canonical architectural slice</p>
+        <h1>2D Doll <span>Poser Runtime</span></h1>
+        <p class="subtitle">Semantic pose, character placement, camera navigation, and editor state are independent.</p>
+      </div>
+      <div class="header-actions">
+        <button id="reset-pose">Reset Pose</button>
+        <button id="reset-character">Reset Character</button>
+        <button id="reset-all" class="primary">Reset All</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="stage-panel" aria-label="Poser stage">
+        <div class="toolbar toolbar-primary">
+          <div class="tool-group" aria-label="Interaction tool">
+            <button data-tool="pose" aria-pressed="true">Pose</button>
+            <button data-tool="move" aria-pressed="false">Move Doll</button>
+            <button data-tool="pan" aria-pressed="false">Pan</button>
+          </div>
+          <label>Anchor view
+            <select id="view-select" aria-label="Anchor view"></select>
+          </label>
+          <label class="check"><input id="handles-toggle" type="checkbox" checked /> Editor handles</label>
+        </div>
+        <div class="toolbar toolbar-camera">
+          <button id="fit-body">Fit Body</button>
+          <button id="zoom-100">100%</button>
+          <button id="reset-view">Reset View</button>
+          <span class="zoom-label">Camera <strong id="zoom-readout">100%</strong></span>
+          <span class="shortcut">Wheel zoom · Space/center-drag pan</span>
+        </div>
+        <div class="canvas-shell">
+          <canvas id="rig-canvas" width="1100" height="760" aria-label="Articulated 2D doll canvas"></canvas>
+        </div>
+        <div class="stage-footer">
+          <div class="legend">
+            <span><i class="mark root"></i> root / move</span>
+            <span><i class="mark joint"></i> articulated joint</span>
+            <span><i class="mark attachment"></i> neck attachment only</span>
+          </div>
+          <p id="status" role="status">Preparing runtime…</p>
+        </div>
+      </section>
+
+      <aside class="control-column">
+        <section class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Editor state</p>
+              <h2>Selection</h2>
+            </div>
+            <strong id="selection-readout">none</strong>
+          </div>
+          <p class="note">Click or drag a colored handle, or focus its control. The white diamond is an attachment marker, not a head joint.</p>
+        </section>
+
+        <section class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Character / world state</p>
+              <h2>Whole Character</h2>
+            </div>
+          </div>
+          <div class="character-grid">
+            <label>X <input id="character-x" type="number" min="-3000" max="3000" step="1" /></label>
+            <label>Y <input id="character-y" type="number" min="-3000" max="3000" step="1" /></label>
+            <label>Scale <input id="character-scale" type="number" min="0.25" max="3" step="0.05" /></label>
+            <label>Rotation <input id="character-rotation" type="number" min="-180" max="180" step="1" /></label>
+          </div>
+          <label class="check"><input id="character-flip" type="checkbox" /> Flip horizontally</label>
+        </section>
+
+        <section class="panel joint-panel">
+          <div class="panel-heading sticky-heading">
+            <div>
+              <p class="eyebrow">Pose state</p>
+              <h2>Semantic Joints</h2>
+            </div>
+            <button id="save-pose">Save Pose</button>
+          </div>
+          <p class="note">Elbows use view-independent 0–100% flexion. Other joints retain transitional degree controls in this slice.</p>
+          <div id="joint-controls"></div>
+        </section>
+      </aside>
+    </main>
+  </div>
+  <script type="module" src="runtime.js"></script>
+</body>
+</html>

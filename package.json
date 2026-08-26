@@ -1,0 +1,8 @@
+{
+  "name": "2d-doll",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/model.test.mjs && python tests/verify_inherited_rig.py && python tests/verify_canonical_runtime.py"
+  }
+}

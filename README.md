@@ -8,16 +8,34 @@ The project optimizes for **combinatorial expressive power**: a small vocabulary
 
 ## Current Reality
 
-This repository contains the **design and development foundation** for 2D Doll and an inherited pre-overhaul prototype: [Canonical Base Body Rig v0.1](baselines/canonical_base_body_rig_v0_1/README.md). The inherited viewer is preserved for provenance and comparison; it is not the canonical finished architecture or a completed 2D Doll application.
+This repository contains the **design and development foundation** for 2D Doll, a first canonical Poser runtime slice, and an inherited pre-overhaul prototype preserved for provenance.
 
 - **DESIGNED:** The high-level creative model, conceptual responsibilities, terminology, and development principles.
-- **IMPLEMENTED:** Repository documentation, the permanent pass-reporting protocol, and the inherited Canonical Base Body Rig v0.1 prototype.
-- **TESTED:** Import integrity, archive equivalence, the inherited structural validator, and a repository-native failure-baseline matrix covering startup, all 135 joint-limit states, view/state preservation, representative articulation, presets/reset, load/export paths, depth, clipping, and validator boundaries. Mobile/touch and clipped lower-body behavior remain uncertain; see the pass reports for exact evidence.
+- **IMPLEMENTED:** A new canonical runtime under [`app/`](app/) with explicit rig-definition, pose, character/world, camera, and editor-state boundaries; complete-body fitting; independent character and camera navigation; visible root/joint/attachment handles; direct manipulation; scoped resets; semantic elbow flexion mapped across Front, 3/4, and Back; and a minimal semantic-pose save boundary. The inherited Canonical Base Body Rig v0.1 remains unchanged under [`baselines/`](baselines/).
+- **TESTED:** The new runtime's startup, complete-body fitting in all views, character/camera separation, wheel zoom, handles, representative direct manipulation, slider/numeric synchronization, arm/leg hierarchy and branch isolation, cross-view elbow mapping, reset scopes, pose persistence boundary, compatibility data, and extensible depth contract. Import integrity, inherited structural validation, and the inherited failure baseline also remain tested. See the pass reports for exact evidence.
 - **VALIDATED:** Nothing in the intended 2D Doll creative workflow yet.
 
-The inherited v0.1 build has serious documented runtime and architecture problems. Its [functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md) is inherited pre-official-repository evidence, not a test performed by this repository's import pass. Current canonical design requirements live in [Rig Requirements](docs/RIG_REQUIREMENTS.md) and remain primarily **DESIGNED**.
+The new runtime is a bounded mechanical vertical slice, not a complete Poser. Only elbows use the new cross-view semantic mapping; other joints retain transitional degree controls. Pose-dependent depth overrides have an implemented state boundary but no editor UI. Pose load, PNG export, touch/mobile validation, undo, final artwork, heads, expressions, clothing, interaction authoring, IK, animation, multiple characters, and Placer behavior are not implemented.
+
+The inherited v0.1 viewer has serious documented runtime and architecture problems and is not the canonical runtime. Its [functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md) is inherited pre-official-repository evidence; the later repository-native verification report records current reproducible evidence. Current canonical design requirements live in [Rig Requirements](docs/RIG_REQUIREMENTS.md).
 
 See [Project Context](docs/PROJECT_CONTEXT.md) for durable design intent and [Pass Reports](docs/pass-reports/README.md) for chronological evidence. Development agents must follow [AGENTS.md](AGENTS.md).
+
+## Run the Canonical Runtime
+
+From the repository root:
+
+```text
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8000/app/` for the runtime or `http://127.0.0.1:8000/tests/runtime.html` for the self-running browser test matrix.
+
+Run the dependency-free repository checks with:
+
+```text
+npm test
+```
 
 ## Conceptual Model
 
@@ -64,6 +82,7 @@ These generalized canonical concepts are currently **DESIGNED**. The inherited v
 - [AGENTS.md](AGENTS.md): authoritative operating rules for development work.
 - [docs/PROJECT_CONTEXT.md](docs/PROJECT_CONTEXT.md): durable design intent, creative goals, and architectural constraints.
 - [docs/RIG_REQUIREMENTS.md](docs/RIG_REQUIREMENTS.md): current canonical rig requirements, primarily DESIGNED.
+- [docs/RIG_ARCHITECTURE.md](docs/RIG_ARCHITECTURE.md): source-aligned architecture for the first canonical Poser runtime slice.
 - [Inherited functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md): pre-official-repository evidence and known failures.
 - [Canonical Base Body Rig v0.1](baselines/canonical_base_body_rig_v0_1/README.md): untouched inherited pre-overhaul runtime and assets.
 - [docs/pass-reports/](docs/pass-reports/README.md): permanent chronological evidence, one report per pass.
