@@ -2,6 +2,17 @@
 
 This file is the authoritative standing instruction set for agents working in this repository. Follow it for every pass, together with the current user request. Do not treat design intent as proof of implementation.
 
+## Repository Synchronization Gate
+
+Before beginning any new independent pass, run `git status --short --branch` and record local `HEAD` and `origin/main`.
+
+- **Clean and synchronized (`HEAD == origin/main`):** Safe to begin a new independent pass.
+- **Local commits ahead of `origin/main`:** Publish and verify completed bounded commits before unrelated work begins when authorized; otherwise stop and report the unpublished commits. Continue only when the current task explicitly authorizes an unpublished dependency chain.
+- **Dirty worktree:** Reconcile or explicitly protect the current work before beginning unrelated work.
+- **Dirty worktree plus unpublished commits:** Treat this as high risk and do not begin unrelated work without explicit authorization.
+
+Never silently accumulate completed local-only commits across independent passes. If local `HEAD` differs from `origin/main` for any reason, do not silently continue with unrelated work.
+
 ## Scope and North Star
 
 2D Doll aims to become a modular illustrated performance and scene-construction system. Optimize for **combinatorial expressive power**, not feature count or one-off outcomes.
