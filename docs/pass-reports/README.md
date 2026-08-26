@@ -58,3 +58,4 @@ Each report should contain, where applicable:
 | 2026-08-26 | Semantic mapping agentic run preparation | [2026-08-26_1135_semantic-mapping-agentic-run-preparation.md](2026-08-26_1135_semantic-mapping-agentic-run-preparation.md) |
 | 2026-08-26 | Bilateral knee semantic mapping contract freeze | [2026-08-26_1145_bilateral-knee-contract-freeze.md](2026-08-26_1145_bilateral-knee-contract-freeze.md) |
 | 2026-08-26 | Bilateral knee owner approval and documentation closure | [2026-08-26_1153_bilateral-knee-owner-approval-closure.md](2026-08-26_1153_bilateral-knee-owner-approval-closure.md) |
+| 2026-08-26 | One active local Codex thread safeguard | [2026-08-26_1334_one-active-local-thread-safeguard.md](2026-08-26_1334_one-active-local-thread-safeguard.md) |

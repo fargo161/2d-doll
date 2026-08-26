@@ -13,6 +13,49 @@ Before beginning any new independent pass, run `git status --short --branch` and
 
 Never silently accumulate completed local-only commits across independent passes. If local `HEAD` differs from `origin/main` for any reason, do not silently continue with unrelated work.
 
+## One Active Local Execution Thread
+
+At any given time, only **one local Codex thread** may hold the repository's local execution slot. A thread holds that slot whenever it actively:
+
+- edits repository files;
+- runs Git-mutating commands;
+- launches or maintains a dev server;
+- runs tests, builds, watchers, or long-running scripts;
+- launches browser automation or a local test browser;
+- creates or actively uses a worktree for implementation; or
+- executes any other persistent local development workload.
+
+Before taking the slot, check for evidence of an existing local execution pass where practical, including repository and worktree state, active development servers, test/build/watch processes, Codex implementation worktrees, browser automation sessions, and other persistent task-specific processes.
+
+If another local execution pass appears active:
+
+1. Do not start a second local pass.
+2. Do not terminate unrelated work automatically.
+3. Report the conflict.
+4. Wait for the existing pass to close, reuse that pass when appropriate, or use cloud execution only when explicitly authorized.
+
+Agent teams remain valid, but local roles must normally execute sequentially:
+
+```text
+Design / Director
+      ↓
+Implementation
+      ↓
+Focused Tests
+      ↓
+Critic / Review
+      ↓
+Repair if needed
+      ↓
+Closure
+```
+
+Multiple agent roles do not authorize multiple simultaneous local workers. Prefer cloud execution for parallel independent work when it is available, appropriate, and authorized.
+
+At the end of every local execution pass, stop task-specific dev servers and watchers that are no longer required, close task-specific browser automation when practical, report any persistent process intentionally left running, and clearly state that the local execution slot is released.
+
+This safeguard governs execution concurrency only. It does not change product architecture or behavior, disable Codex features, prohibit cloud tasks or multiple saved chats, prohibit read-only discussion that executes no local workload, authorize termination of unrelated user processes, or permit unrelated repository changes.
+
 ## Scope and North Star
 
 2D Doll aims to become a modular illustrated performance and scene-construction system. Optimize for **combinatorial expressive power**, not feature count or one-off outcomes.
