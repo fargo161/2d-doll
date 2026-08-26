@@ -54,3 +54,7 @@ Each report should contain, where applicable:
 | 2026-08-26 | Combinatorial panel composition and interaction design philosophy | [2026-08-26_0927_combinatorial-panel-composition-design.md](2026-08-26_0927_combinatorial-panel-composition-design.md) |
 | 2026-08-26 | Task 000 reconciliation review and commit | [2026-08-26_1010_task-000-reconciliation-review-commit.md](2026-08-26_1010_task-000-reconciliation-review-commit.md) |
 | 2026-08-26 | Repository synchronization safeguard | [2026-08-26_1027_repository-synchronization-safeguard.md](2026-08-26_1027_repository-synchronization-safeguard.md) |
+| 2026-08-26 | Non-elbow semantic mapping verification | [2026-08-26_1058_non-elbow-semantic-mapping-verification.md](2026-08-26_1058_non-elbow-semantic-mapping-verification.md) |
+| 2026-08-26 | Semantic mapping agentic run preparation | [2026-08-26_1135_semantic-mapping-agentic-run-preparation.md](2026-08-26_1135_semantic-mapping-agentic-run-preparation.md) |
+| 2026-08-26 | Bilateral knee semantic mapping contract freeze | [2026-08-26_1145_bilateral-knee-contract-freeze.md](2026-08-26_1145_bilateral-knee-contract-freeze.md) |
+| 2026-08-26 | Bilateral knee owner approval and documentation closure | [2026-08-26_1153_bilateral-knee-owner-approval-closure.md](2026-08-26_1153_bilateral-knee-owner-approval-closure.md) |

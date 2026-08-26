@@ -366,3 +366,64 @@ These decisions were added after the external Task 000 PXZ evidence arrived. The
 - **Evidence:** The PXZ proves masks/fragments matter but does not prove deformation. Current runtime has no deformation engine.
 - **Smallest experiment:** Compare rigid and localized corrective/mask modes first; run one bounded deformation trial only if the same sweep exposes a specific unresolved contour problem.
 - **Status:** UNRESOLVED; general deformation remains deferred.
+
+## Semantic mapping preparation decisions
+
+### RIG-017 — Bilateral and view projection sign convention
+
+- **Question:** How should one semantic shoulder, hip, or knee value project across anatomical sides and whole-body views?
+- **Roles:** Schema, Anatomy, Kinematics, Orientation, Serialization, Integrator, QA, Director.
+- **Affected systems:** Joint definitions, direct manipulation, view switching, serialization, pose symmetry, future profiles and artwork sets.
+- **Evidence:** The 2026-08-26 non-elbow verification shows identity mapping reverses anatomical direction between Front and Back. Stable `_L/_R` identifiers are anatomical, not screen-side. Mirrored bilateral motion requires opposite rendered handedness by side, while Back projection reverses Front handedness.
+- **Option A:** Same rendered sign for both sides and all views.
+- **Option B:** View-only sign reversal, identical across sides.
+- **Option C:** `direction = sideSign × viewSign`, where L=`+1`, R=`-1`, Front/3/4=`+1`, and Back=`-1`; preserve IDs and canonical semantic values.
+- **Combinatorial implications:** C lets equal bilateral semantic values form mirrored poses and lets the same pose combine with Front/3/4/Back without anatomical-side swaps. A and B make equal values asymmetric or conflate semantic and screen handedness.
+- **Technical implications:** C requires data-driven per-view mappings, inverse conversion, bilateral tests, and a provisional 3/4 qualification. It does not authorize regional Front/Back transitions.
+- **Short-term cost:** A low; B low; C medium.
+- **Long-term cost:** A/B preserve semantic ambiguity; C creates a reusable projection rule for profiles and replacement artwork.
+- **Director decision:** Option C as the **DESIGNED** mechanical projection convention. For cyclic shoulder/hip state, map the signed delta; for normalized knee flexion, map `180° × flexion`. Three-quarter sign is provisional pending anatomy/illustrative review.
+- **Status:** DECIDED / DESIGNED; not implemented, tested, visually approved, or owner-validated.
+
+### RIG-018 — Knee-proof persistence boundary
+
+- **Question:** How can normalized knee semantics be saved without silently reinterpreting part-keyed raw degrees under pose 0.1 or falsely claiming the complete pose 0.2 contract?
+- **Roles:** Schema, Kinematics, Orientation, Serialization, Integrator, QA, Director.
+- **Affected systems:** Runtime pose state, Save Pose, future loading/migration, fixtures, JointId aliases, semantic provenance.
+- **Evidence:** Current pose 0.1 stores `calf_L/R` as transitional raw degrees; the designed pose 0.2 contract includes broader regional and migration behavior that the knee proof will not implement.
+- **Option A:** Reuse pose 0.1 and reinterpret `calf_*` as normalized values.
+- **Option B:** Claim pose 0.2 for the partial proof.
+- **Option C:** Emit a separately typed experimental document with stable elbow/knee JointIds and an explicitly named transitional raw-degree map for remaining parts.
+- **Combinatorial implications:** C lets semantic hinges combine and round-trip into a future migrator without contaminating old meaning or forcing unrelated pose-0.2 scope.
+- **Technical implications:** Save output changes type; aliases are explicit; loading/migration stays out of scope; future migration must discriminate exact document types.
+- **Director decision:** Option C with schema `2d-doll-semantic-knee-proof-0.1` and mapping contract `bilateral-knee-semantic-0.1`.
+- **Owner decision:** Approved exactly as proposed. Do not reuse pose 0.1 or claim the complete pose 0.2 contract.
+- **Status:** OWNER APPROVED / DESIGNED; not implemented, tested, or workflow-validated.
+
+### RIG-019 — Unsupported knee-presentation behavior
+
+- **Question:** What should the authoring runtime do when a mechanically legal knee value exceeds inherited provisional artwork support or uses the unverified 3/4 projection?
+- **Roles:** Anatomy, Kinematics, Orientation, Illustrative Resolution, Serialization, Integrator, QA, Director.
+- **Affected systems:** Rendering, diagnostics, controls, evidence sweeps, future correctives, owner tuning.
+- **Evidence:** Knee mechanics are designed for normalized `0…1` → `0°…180°`; inherited art supplies only an unapproved bend envelope near `98°`; silent clamping would collapse distinct semantic states and hide presentation failures.
+- **Option A:** Clamp rendering to inherited limits.
+- **Option B:** Replace unsupported states with a ghost only.
+- **Option C:** Render the full mechanically mapped provisional rotation with a persistent structured warning; preserve requested semantics and separate support/projection status.
+- **Combinatorial implications:** C exposes where new artwork/correctives are needed while keeping mechanics reusable across future profiles and presentation sets.
+- **Technical implications:** Mapping returns separate mechanical and presentation results; values above `98/180` emit `PRESENTATION_RANGE_UNSUPPORTED`; 3/4 emits `PRESENTATION_MAPPING_UNVERIFIED`; neither warning mutates pose truth.
+- **Director decision:** Option C for the experimental authoring proof. It is not export/presentation approval.
+- **Owner decision:** Approved full-angle provisional rendering with persistent structured warnings. Unsupported presentation must remain observable in diagnostics/public state and the authoring interface.
+- **Status:** OWNER APPROVED / DESIGNED; Anatomy, Illustrative, QA, and workflow VALIDATION remain open.
+
+### RIG-020 — Bilateral-knee proof authorization boundary
+
+- **Question:** What implementation scope does owner approval authorize after the freeze?
+- **Roles:** Owner, Director, Kinematics, Orientation, Serialization, Integrator, QA.
+- **Affected systems:** Next-pass scope, sequencing, evidence, persistence, 3/4 status, future shoulder/hip work.
+- **Evidence:** Owner review approved the frozen knee abstraction, RIG-018, and RIG-019, while explicitly preserving pose 0.1, provisional 3/4 status, and the shoulder/hip deferral.
+- **Authorized:** Bilateral knees only; tests first; generic mapping/model; direct manipulation/inversion; experimental serialization; Front/3/4/Back evidence; unsupported-range evidence; independent QA.
+- **Not authorized:** Shoulder/hip expansion; pose 0.1 reinterpretation; full pose 0.2; promotion of 3/4 beyond provisional without evidence; anatomy/artwork/workflow validation claims.
+- **Persistence condition:** Requested semantic state is authoritative. Mapping/artwork/support/view/issue provenance may explain the saved display context, but transient rendered degrees and effective pose copies are not authoritative pose fields.
+- **Repository condition:** Close and publish the documentation dependency chain, or explicitly authorize an unpublished dependency chain, before implementation.
+- **Owner decision:** Approve the bilateral-knee implementation proof within this boundary.
+- **Status:** OWNER APPROVED / DESIGNED IMPLEMENTATION SCOPE; implementation and all test gates remain pending.
