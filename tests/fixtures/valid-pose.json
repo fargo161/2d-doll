@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "canonical-body-rig-0.1",
+  "viewId": "three_quarter",
+  "angles": {
+    "pelvis": 4,
+    "mid_torso": -5,
+    "chest": 6,
+    "upper_arm_L": -28,
+    "forearm_L": 75,
+    "hand_L": -8,
+    "upper_arm_R": 24,
+    "forearm_R": -38,
+    "hand_R": 12,
+    "thigh_L": 18,
+    "calf_L": 34,
+    "foot_L": -8,
+    "thigh_R": -16,
+    "calf_R": -24,
+    "foot_R": 8
+  },
+  "scale": 0.3,
+  "rootRotation": 15,
+  "flip": true
+}

@@ -12,7 +12,7 @@ This repository contains the **design and development foundation** for 2D Doll a
 
 - **DESIGNED:** The high-level creative model, conceptual responsibilities, terminology, and development principles.
 - **IMPLEMENTED:** Repository documentation, the permanent pass-reporting protocol, and the inherited Canonical Base Body Rig v0.1 prototype.
-- **TESTED:** Import integrity, archive equivalence, the inherited structural validator, and a basic repository-native browser smoke check. The smoke check reproduced the inherited startup exception; see the pass reports for exact evidence.
+- **TESTED:** Import integrity, archive equivalence, the inherited structural validator, and a repository-native failure-baseline matrix covering startup, all 135 joint-limit states, view/state preservation, representative articulation, presets/reset, load/export paths, depth, clipping, and validator boundaries. Mobile/touch and clipped lower-body behavior remain uncertain; see the pass reports for exact evidence.
 - **VALIDATED:** Nothing in the intended 2D Doll creative workflow yet.
 
 The inherited v0.1 build has serious documented runtime and architecture problems. Its [functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md) is inherited pre-official-repository evidence, not a test performed by this repository's import pass. Current canonical design requirements live in [Rig Requirements](docs/RIG_REQUIREMENTS.md) and remain primarily **DESIGNED**.

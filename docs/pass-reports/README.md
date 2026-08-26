@@ -43,3 +43,4 @@ Each report should contain, where applicable:
 | --- | --- | --- |
 | 2026-08-26 | Repository and documentation foundation | [2026-08-26_0432_repository-foundation.md](2026-08-26_0432_repository-foundation.md) |
 | 2026-08-26 | Inherited Canonical Base Body Rig v0.1 import | [2026-08-26_0519_inherited-baseline-import.md](2026-08-26_0519_inherited-baseline-import.md) |
+| 2026-08-26 | Repository-native Canonical Base Body Rig v0.1 verification | [2026-08-26_0546_repository-native-rig-verification.md](2026-08-26_0546_repository-native-rig-verification.md) |
