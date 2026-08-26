@@ -47,3 +47,17 @@ Pivot coordinates and proportions are usable as engineering measurements only. T
 ## Important gaps
 
 No repository evidence establishes approved male anatomy, approved female anatomy, layered garment segmentation, head artwork, profile fitting data, cross-joint garment corrections, interaction relationships, regional orientation artwork, or end-to-end Poser-to-Placer transfer. These gaps constrain the next implementation pass but do not prevent a shared designed grammar.
+
+## Later evidence — Task 000 external package
+
+This section is a chronological addition. It does not rewrite the earlier repository-only observation that no PXZ/Pixlr source was then available locally.
+
+The later owner-supplied `body_rig_maker_task_000_foundation_ingestion_package.zip` contains `bodyref.pxz`, its complete extracted contents, and derived diagnostics.
+
+- **OBSERVED:** The PXZ is a 1799 × 2448 layered dynamic-pose/artistic-nuance reference with 17 image layers, 7 mask references, and zero recorded layer rotations.
+- **OBSERVED:** Its visible result is assembled from pre-posed fragments through placement, crop, alpha, masks, overlap, and stack order.
+- **OBSERVED:** It demonstrates strong silhouette, body-mass opposition, asymmetry, localized masking, overlap, endpoint direction, and the quality gap between articulation and illustration.
+- **NOT CANONICAL:** It is not approved body artwork, clean body segmentation, pivot/range evidence, a working rig, or proof of any future deformation method.
+- **ARCHITECTURAL IMPLICATION:** The team must evaluate reusable waist/socket connection zones, correctives, masks, semantic depth, foreshortening, and optional bounded deformation while preserving semantic mechanics and manual tuning.
+
+Trapstar body art remains **REJECTED / NON-CANONICAL** as a production visual base.

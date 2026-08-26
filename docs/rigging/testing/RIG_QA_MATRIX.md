@@ -4,6 +4,18 @@
 
 These are **DESIGNED future tests** unless the evidence column names a current executed boundary. Current tests do not establish the complete contract or workflow validation. Each implementation pass must record the exact cases it actually ran.
 
+## Permanent gate vocabulary
+
+| Gate | Question | Evidence boundary |
+| --- | --- | --- |
+| Mechanical | Are hierarchy, transforms, semantic joints, connectivity, constraints, reset, and serialization correct? | Primarily automated model/runtime evidence |
+| Combinatorial | Are legal region/profile/art combinations accepted, illegal combinations rejected, and requested semantics preserved? | Generated matrices, replacement/missing-data fixtures, atomic validation |
+| Expressive | Can the body achieve useful lean, reach, crouch, arch, crunch, twist, weight shift, asymmetry, compression, and self-overlap without structural failure? | Pose sweeps plus anatomy/continuity review |
+| Illustrative | Do seams, silhouette, body masses, overlap, depth, masks, correctives, foreshortening, and endpoints resolve convincingly? | Visual diagnostics and explicit unresolved-state checks |
+| Owner Validation | Is the rig useful, understandable, tuneable, and visually acceptable in the intended creative workflow? | Owner exercise and approval only |
+
+Automated checks may support the first four gates but can never create Owner Validation. `MECHANICALLY VALID`, `PRESENTATION RESOLVED`, and `OWNER VALIDATION REQUIRED` remain separate verdicts.
+
 | ID | Category and setup | Action | Required oracle | Evidence needed |
 | --- | --- | --- | --- | --- |
 | SEL-01 | Every required segment in each profile/orientation | Select artwork and segment control | Correct typed SegmentId; no joint/anchor ambiguity | Automated enumeration plus UI observation |
@@ -13,6 +25,7 @@ These are **DESIGNED future tests** unless the evidence column names a current e
 | JNT-01 | Every joint, both profiles, all supported orientations | Traverse declared min/max and over-range | Clamp/wrap exact; semantic and presentation statuses correct | Parameterized model plus visual checks |
 | HIE-01 | Each hierarchy branch | Move parent then child | Descendants follow; ancestors/unrelated branches stable | Matrix assertions; current representative branches TESTED |
 | EDT-01 | Repeated edits and reset | Alternate direct/numeric changes 100 times | No drift; one semantic truth; reset exact | Stress/property test |
+| TUN-01 | Generated/derived value plus author override | Override pivot/offset/range/mask/depth/corrective value, save/reload, disable override | Requested/generated/authored/approved values remain distinguishable; disable recomputes; no destructive bake | Model round trip plus authoring observation |
 | ORI-01 | Same semantic pose in each whole-body view | Switch Front/3/4/Back repeatedly | Pose/profile/root/garments/relationships preserved | Model/render round trip; current elbows TESTED |
 | ORI-02 | Every LEGAL region edge | Apply region tuple | Commits atomically with matching mappings/art | Exhaustive matrix enumeration |
 | ORI-03 | Every CONDITIONAL region edge with/without contract | Apply tuple | Contracted case commits; missing contract rejects/warns | Exhaustive matrix plus issue assertion |
@@ -23,6 +36,10 @@ These are **DESIGNED future tests** unless the evidence column names a current e
 | SCL-01 | Min/nominal/max positive scale | Scale character | Uniform, relationships preserved, no profile mutation | Bounds and state checks |
 | PROF-01 | Same pose on male/female and third synthetic profile | Switch profile | IDs/pose preserved; binds/art/fits resolve; warnings explicit | Parameterized profile test |
 | ART-01 | Replacement artwork with same contract | Swap artwork set | Mechanics, pose, anchors, garments remain stable | Golden pivots/bounds and interaction |
+| EXP-01 | Bounded lean/reach/crouch/arch/crunch/twist/weight-shift/asymmetry sweep | Traverse semantic body-mass and limb states | No hierarchy failure; connection-zone escapes and unsupported presentation are diagnosed; anatomy review recorded | Parameterized sweep plus continuity review |
+| ILL-01 | Same semantic sweep under rigid, corrective/mask, and optional bounded-deformation presentation | Compare seams, silhouette, overlap, body-mass relation, and corrective continuity | Requested pose identical; presentation mode explicit; improvement/failure localized; no complete-pose substitution | Visual sheet, state comparison, owner review |
+| ILL-02 | Shoulder, hip, elbow, knee, waist connection zones at neutral and extremes | Sweep through supported and unsupported bands | Safe overlap/masks/correctives preserve continuity or emit explicit unresolved state | Bounds/mask diagnostics plus visual review |
+| FSH-01 | One limb aimed side/near/far with endpoint variants | Apply bounded projection states | Length/width compensation and endpoint direction remain coherent; unsupported states warn | State tests plus visual/owner review |
 | GAR-01 | Shirt/trousers/coat examples on both profiles | Equip, pose, change orientation/state | Semantic pieces follow; no fixed-canvas drift | Model and render cases |
 | GAR-02 | Cross-joint sleeves/trousers/coat | Flex joint across bands | One primary owner; secondary seam/mask/corrective resolves | Transform/render assertions |
 | MSK-01 | Skirt/coat coverage | Hide/reveal legs and remove garment | Body state unchanged and restored; masks in correct space | Pixel/render plus state comparison |
@@ -36,7 +53,7 @@ These are **DESIGNED future tests** unless the evidence column names a current e
 | VER-01 | Compatible minor, unknown optional, unknown required major | Load | Migrate/preserve optional; required major atomic reject/read-only | Version matrix |
 | BAD-01 | Missing field, unknown ID, invalid number, partial JSON | Load | No partial mutation; path/code/severity/repair issue | Fuzz/fixture suite |
 | FALL-02 | Draft reevaluate and published frozen fallback | Asset availability changes across load | Mode-specific deterministic behavior; requested state retained | Versioned asset fixture |
-| EXP-01 | Valid and unresolved character | Export | No diagnostics; valid export correct; required unresolved blocks | Pixel/output inspection |
+| OUT-01 | Valid and unresolved character | Export | No diagnostics; valid export correct; required unresolved blocks | Pixel/output inspection |
 
 ## Combinatorial gate questions
 

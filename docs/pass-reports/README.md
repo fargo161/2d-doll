@@ -46,5 +46,10 @@ Each report should contain, where applicable:
 | 2026-08-26 | Repository-native Canonical Base Body Rig v0.1 verification | [2026-08-26_0546_repository-native-rig-verification.md](2026-08-26_0546_repository-native-rig-verification.md) |
 | 2026-08-26 | First canonical Poser architecture slice | [2026-08-26_0646_first-canonical-poser-architecture.md](2026-08-26_0646_first-canonical-poser-architecture.md) |
 | 2026-08-26 | Initial body-rig agent team and canonical architecture | [2026-08-26_0727_body-rig-agent-team-architecture.md](2026-08-26_0727_body-rig-agent-team-architecture.md) |
+| 2026-08-26 | Task 000 ZIP ingestion | [2026-08-26_0733_task-000-zip-ingestion.md](2026-08-26_0733_task-000-zip-ingestion.md) |
+| 2026-08-26 | Body-rig architecture commit closure and verification | [2026-08-26_0750_body-rig-architecture-commit-closure.md](2026-08-26_0750_body-rig-architecture-commit-closure.md) |
 | 2026-08-26 | Expression Maker and Face Intake design context | [2026-08-26_0801_expression-maker-face-intake-design.md](2026-08-26_0801_expression-maker-face-intake-design.md) |
+| 2026-08-26 | Body Rig Maker reconciliation and Task 000 readiness | [2026-08-26_0807_body-rig-task-000-readiness.md](2026-08-26_0807_body-rig-task-000-readiness.md) |
+| 2026-08-26 | Body Rig Maker reconciliation and Task 000 architecture analysis | [2026-08-26_0919_body-rig-task-000-reconciliation.md](2026-08-26_0919_body-rig-task-000-reconciliation.md) |
 | 2026-08-26 | Combinatorial panel composition and interaction design philosophy | [2026-08-26_0927_combinatorial-panel-composition-design.md](2026-08-26_0927_combinatorial-panel-composition-design.md) |
+| 2026-08-26 | Task 000 reconciliation review and commit | [2026-08-26_1010_task-000-reconciliation-review-commit.md](2026-08-26_1010_task-000-reconciliation-review-commit.md) |

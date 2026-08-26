@@ -10,7 +10,8 @@ Establish and maintain one modular body-rig grammar that can express the initial
 - The Rig Program Director owns scope, sequencing, conflict arbitration, and canonical synthesis, but may not erase or silently override specialist findings.
 - The Integrator determines source-fit and migration consequences but does not approve unresolved architecture.
 - QA remains independent and may fail the designed gate.
-- Final anatomy/artwork approval, scope expansion, destructive migration, dependency introduction, and workflow validation require Director plus project-owner approval.
+- The Director may resolve engineering contracts such as schema naming, transform order, validation, serialization, evidence, and test boundaries. Artistic uncertainty cannot be resolved by vote or consensus.
+- Final anatomy/artwork/presentation approval, scope expansion, destructive migration, dependency introduction, and workflow validation require project-owner approval. The Director may recommend but cannot supply Owner Validation.
 
 ## Shared inputs and outputs
 
@@ -24,10 +25,22 @@ The team does not treat placeholder art as final, build a complete production ri
 
 Every material claim uses SPECULATIVE, DESIGNED, IMPLEMENTED, TESTED, or VALIDATED. Evidence identifies a file, command, test, or observed workflow. Absence, assumption, and unresolved disagreement are recorded explicitly.
 
+## Shared owner-tuning requirement
+
+Every relevant proposal identifies what the owner can override, where the override is stored, whether it is reversible, and how generated, derived, authored, and approved values remain distinguishable. Candidate override classes include pivots, ranges, local art offsets, region orientation, connection/overlap zones, masks, seams, depth relations, corrective selection/strength, bounded deformation, foreshortening, and anchors.
+
+The required conceptual flow is:
+
+```text
+generated proposal → derived result → author override → owner-approved canonical value
+```
+
+Manual tuning is an architecture acceptance requirement, not deferred interface polish.
+
 ## Required handoff envelope
 
 Every handoff states: role, evidence inspected, findings, proposed decisions, rejected alternatives, conflicts, reality states, dependencies, acceptance result, and open questions. Canonical identifiers or schemas must be supplied as exact tables rather than prose synonyms.
 
 ## Acceptance
 
-The team succeeds only when the roster boundaries are explicit, independent findings precede synthesis, material conflicts are logged, one coherent contract exists, QA challenges it, and the result works in role-separated mode even without a native multi-agent runtime.
+The team succeeds only when the roster boundaries are explicit, independent findings precede synthesis, material conflicts are logged, one coherent contract exists, QA challenges it, mechanical validity is separated from presentation resolution, owner overrides remain non-destructive, and the result works in role-separated mode even without a native multi-agent runtime.

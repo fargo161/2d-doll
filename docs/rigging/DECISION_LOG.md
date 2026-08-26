@@ -300,3 +300,69 @@ The earlier tables are a readable index. The records below are authoritative and
 - **Long-term cost:** A semantic debt; B lost unattended migration coverage.
 - **Director decision:** No lossless claim; always emit LEGACY_SEMANTIC_AMBIGUITY pending migration prototype.
 - **Status:** UNRESOLVED; blocks automated lossless-migration claim.
+
+## Task 000 reconciliation decisions — later evidence
+
+These decisions were added after the external Task 000 PXZ evidence arrived. They preserve rather than rewrite the earlier conflict chronology.
+
+### RIG-013 — Architecture family after illustrative-reference review
+
+- **Question:** Retain the current designed architecture unchanged, shift to asset-heavy pose variants, adopt general deformation, or amend it with a hybrid illustrative-resolution layer?
+- **Roles:** Director, Schema, Anatomy, Kinematics, Orientation, Layering/Illustrative Resolution, Integrator, QA.
+- **Affected systems:** Rig/profile/art boundaries, torso/pelvis, sockets, masks, depth, correctives, endpoints, garments, serialization, QA.
+- **Evidence:** Current source/tests establish a sound mechanical slice; the PXZ establishes a dynamic-pose quality target assembled from pre-posed fragments/masks/overlap and zero manifest rotations, not a rig.
+- **Options:** A current design unchanged; B semantic mechanics plus localized correctives/masks/depth/optional bounded deformation; C primarily pre-authored regional/pose states; D general deformation-heavy system.
+- **Combinatorial implications:** B preserves reusable semantic poses while allowing localized presentation combinations; C risks asset multiplication; D risks opaque complexity; A lacks an explicit anatomy-to-illustration boundary.
+- **Director decision:** Choose B as the DESIGNED direction and retain A's semantic/state/versioning foundation. C remains a supporting mechanism; D remains optional and evidence-gated.
+- **Status:** DECIDED / DESIGNED, not implemented or validated.
+
+### RIG-014 — Torso/pelvis responsibility
+
+- **Question:** Treat torso expressiveness as raw segment rotation, add many free spine controls, or use a small semantic body-mass vocabulary with derived mechanics/presentation?
+- **Roles:** Anatomy, Kinematics, Schema, Illustrative Resolution, QA, Director.
+- **Affected systems:** Pose semantics, existing pelvis/mid_torso/chest nodes, waist connection, orientation, correctives, garments.
+- **Evidence:** The PXZ target depends strongly on ribcage/pelvis opposition, waist curve, arch/compression, and pelvis shift; exact reusable controls are unproven.
+- **Options:** Raw rotations; dense free controls; compact semantic bend/twist/arch-crunch/tilt-shift-tuck candidates.
+- **Combinatorial implications:** Compact semantics can drive many profiles/presentations; raw rotations underdescribe intent; dense controls increase tuning burden.
+- **Director decision:** Retain existing node identities and prototype a compact semantic layer. Exact fields/limits remain experimental until Task 001 evidence.
+- **Status:** DIRECTION DECIDED; exact vocabulary OPEN.
+
+### RIG-015 — Manual tuning and provenance
+
+- **Question:** May generated/derived rig and presentation values overwrite canonical values, or must owner corrections remain typed and reversible?
+- **Roles:** Schema, Serialization, Integrator, QA, Director, owner requirement.
+- **Affected systems:** Pivots, ranges, offsets, orientations, connection zones, masks, depth, correctives, deformation, anchors, versioning.
+- **Evidence:** The owner explicitly requires fine-tuning; current designed contracts lack one shared proposed/derived/authored/approved boundary.
+- **Options:** Destructive baking; opaque final effective value; typed override/provenance chain.
+- **Combinatorial implications:** Typed overrides allow regeneration, comparison, art replacement, and profile reuse without discarding owner decisions.
+- **Director decision:** Require generated proposal → derived result → author override → owner-approved canonical value, with disable/recompute and compatibility metadata.
+- **Status:** DECIDED / DESIGNED.
+
+### RIG-016 — Acceptance and artistic authority
+
+- **Question:** Can mechanically valid or automated visual results be accepted as artistically resolved by the team?
+- **Roles:** Kinematics, Anatomy, Illustrative Resolution, QA, Director, owner.
+- **Affected systems:** Orchestration, QA, reporting, prototype exit criteria.
+- **Evidence:** Current automated tests establish mechanical boundaries only; repository rules reserve VALIDATED for intended workflow evidence.
+- **Options:** One PASS; team consensus; separated Mechanical/Combinatorial/Expressive/Illustrative gates plus Owner Validation.
+- **Combinatorial implications:** Separate gates expose where a primitive fails without falsely narrowing mechanics or hiding presentation debt.
+- **Director decision:** Use separate gates and the Kinematics → Anatomy → Illustrative Resolution → QA chain. Owner Validation cannot be delegated or voted into existence.
+- **Status:** DECIDED / DESIGNED.
+
+### RIG-U05 — Minimum torso/pelvis illustrative vocabulary
+
+- **Question:** Which body-mass semantics, connection-zone fields, and localized corrective bands are necessary and non-redundant?
+- **Roles:** Anatomy, Kinematics, Illustrative Resolution, Schema, Integrator, QA, owner.
+- **Affected systems:** Pose state, waist/pelvis mechanics, artwork metadata, overrides, garments.
+- **Evidence:** The need is strong; the minimum vocabulary and interaction quality are unknown.
+- **Smallest experiment:** Task 001 Torso–Pelvis Illustrative-Resolution Spike in one 3/4 presentation.
+- **Status:** UNRESOLVED; highest-priority architecture uncertainty.
+
+### RIG-U06 — Threshold for bounded deformation
+
+- **Question:** When do localized correctives/masks stop being sufficient and bounded deformation earn its complexity?
+- **Roles:** Illustrative Resolution, Anatomy, Integrator, QA, owner.
+- **Affected systems:** Artwork authoring, renderer, replacement art, serialization, garment signals.
+- **Evidence:** The PXZ proves masks/fragments matter but does not prove deformation. Current runtime has no deformation engine.
+- **Smallest experiment:** Compare rigid and localized corrective/mask modes first; run one bounded deformation trial only if the same sweep exposes a specific unresolved contour problem.
+- **Status:** UNRESOLVED; general deformation remains deferred.

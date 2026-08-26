@@ -1,12 +1,13 @@
 # Canonical Body Rig v0.1
 
-This is the entry point for the repository-native body-rig program. It establishes a specialist team and one shared **DESIGNED** grammar for the initial male and female body profiles. It does not claim that those two profiles, garments, heads, interaction relationships, or the complete contract are implemented.
+This is the entry point for the repository-native body-rig program. It establishes a specialist team and one shared **DESIGNED** grammar for the initial male and female body profiles. Task 000 retained that grammar as a strong foundation but amended it with an explicit illustrative-resolution, anatomy-under-pose, author-override, and provenance boundary. It does not claim that those profiles, presentation mechanisms, garments, heads, interactions, or the complete contract are implemented.
 
 ## Current reality
 
 - **IMPLEMENTED / TESTED:** The canonical Poser slice in [`app/`](../../app/) implements a 15-part articulated engineering rig, three whole-body anchor views, separated pose/character/camera/editor state, visible controls, cross-view semantic elbow mapping, and a minimal pose-save boundary. See [`docs/RIG_ARCHITECTURE.md`](../RIG_ARCHITECTURE.md).
 - **IMPLEMENTED / TESTED as inherited evidence:** The byte-preserved baseline contains 45 aligned parts, 45 cropped parts, 45 masks, diagnostic outlines, 17 pivots, and three views. Its viewer has documented failures and is not canonical runtime architecture.
 - **DESIGNED:** The shared multi-profile hierarchy, regional orientation rules, garment contract, dynamic render relationships, semantic anchors, full transfer contract, and QA matrix in this directory.
+- **DESIGNED after Task 000:** A hybrid semantic mechanical rig plus localized corrective art, masks, semantic depth, endpoint variants, and optional bounded deformation; all automatic values remain inspectable and non-destructively overrideable.
 - **NOT IMPLEMENTED:** Initial male profile, approved female profile, heads, garments, regional orientation mixing, the full constraint model, interaction authoring, complete pose loading/migration, and Placer transfer.
 - **VALIDATED:** Nothing in the intended creative workflow.
 
@@ -27,7 +28,8 @@ The inherited artwork is provisional engineering material. The baseline manifest
 - [Rig QA Matrix](testing/RIG_QA_MATRIX.md)
 - [Decision Log](DECISION_LOG.md)
 - [Next Implementation Pass](NEXT_IMPLEMENTATION_PASS.md)
+- [Task 000 Foundation Ingestion and Architecture Report](../body-rig-maker/task-000-foundation-ingestion-report.md)
 
 ## Program boundary
 
-These documents define contracts and acceptance behavior. They do not finalize artwork, anatomy, proportions, garments, cloth physics, face systems, Placer, or a production rig. Worked data examples are non-production architecture illustrations.
+These documents define contracts and acceptance behavior. The `2d-doll-rig-0.2` design is the retained current candidate foundation, not proof that every field or mechanism should be implemented before bounded experiments. These documents do not finalize artwork, anatomy, proportions, correctives, deformation, garments, cloth physics, face systems, Placer, or a production rig. Worked data examples are non-production architecture illustrations.

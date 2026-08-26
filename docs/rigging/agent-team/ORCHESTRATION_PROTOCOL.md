@@ -8,12 +8,30 @@ The Repository Analyst, Schema Architect, Anatomy Specialist, Kinematics Enginee
 
 Required reviews are directional and recorded:
 
-1. Anatomy reviews Kinematics joint locations; Kinematics reviews anatomical pivot assumptions.
+1. Anatomy reviews Kinematics joint locations and pose continuity; Kinematics reviews anatomical pivot and body-mass assumptions.
 2. Garment reviews body-region boundaries; Layering reviews the garment-piece contract.
 3. Orientation reviews every orientation-sensitive layer and artwork rule.
 4. Serialization verifies that every designed pose, garment, render, anchor, and relationship state has a durable representation.
 5. Integrator maps the combined proposal to current source without destructive rewriting.
 6. QA tests every primitive against multiple profiles, artwork replacement, missing data, reload, and interaction combinations.
+
+### Mandatory pose-resolution chain
+
+A mechanically legal pose cannot proceed directly to artistic acceptance:
+
+```text
+KINEMATICS — MECHANICALLY VALID
+    ↓
+ANATOMICAL CONTINUITY REVIEW
+    ↓
+ILLUSTRATIVE RESOLUTION REVIEW — PRESENTATION RESOLVED or UNRESOLVED
+    ↓
+QA
+    ↓
+OWNER VALIDATION REQUIRED
+```
+
+Kinematics establishes legal semantic/mechanical state. Anatomy reviews body-mass relationships, joint continuity, compression/stretch, weight, and silhouette risk. Illustrative Resolution reviews seams, masks, overlap, depth, correctives, foreshortening, endpoints, and bounded deformation. QA audits evidence and state preservation. Only the owner can establish visual/workflow validation.
 
 ## Round 3 — conflict register
 
@@ -21,11 +39,11 @@ Every material disagreement is added to [`../DECISION_LOG.md`](../DECISION_LOG.m
 
 ## Round 4 — Director synthesis
 
-The Director produces one canonical definition of part IDs, joint IDs, orientation states, garment slots, anchors, render groups, and serialization fields. Approved contracts cross-reference one another. Proposals that cannot coexist are resolved or explicitly deferred.
+The Director produces one canonical definition of part IDs, joint IDs, orientation states, garment slots, anchors, render groups, serialization fields, author-override boundaries, and provenance. Approved contracts cross-reference one another. Proposals that cannot coexist are resolved or explicitly deferred. The Director may resolve engineering contracts but must leave artistic uncertainty as OWNER VALIDATION REQUIRED.
 
 ## Round 5 — QA gate
 
-The Auditor evaluates the synthesized documents against [`../testing/RIG_QA_MATRIX.md`](../testing/RIG_QA_MATRIX.md). Documentation existence is insufficient. A gate result is `PASS`, `PASS WITH DOCUMENTED LIMITATIONS`, or `FAIL`, with evidence and unresolved blockers.
+The Auditor evaluates the synthesized documents against [`../testing/RIG_QA_MATRIX.md`](../testing/RIG_QA_MATRIX.md). Documentation existence is insufficient. Mechanical, Combinatorial, Expressive, and Illustrative gates receive separate evidence. A designed gate result is `PASS`, `PASS WITH DOCUMENTED LIMITATIONS`, or `FAIL`; Owner Validation remains separate and cannot be manufactured by the team.
 
 ## Operating without subagents
 

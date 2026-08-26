@@ -2,11 +2,11 @@
 
 ## Status and boundary
 
-This is the canonical **DESIGNED** architecture for the initial male and female body profiles. It does not claim that the complete schema, either approved profile, regional orientation, garments, heads, interactions, or transfer behavior exists in source.
+This is the retained canonical **DESIGNED candidate foundation** for the initial male and female body profiles. Task 000 found that its identity, state, compatibility, render, anchor, and transfer boundaries remain sound, but the architecture is incomplete without explicit anatomy-under-pose, connection-zone, illustrative-resolution, author-override, and provenance contracts. It does not claim that the complete schema, either approved profile, regional orientation, illustrative-resolution mechanisms, garments, heads, interactions, or transfer behavior exists in source.
 
 The current app runtime remains **IMPLEMENTED / TESTED** within its narrower source-aligned boundary. The inherited baseline is immutable structural/provisional input, not approved production artwork.
 
-The designed RigDefinition version is 2d-doll-rig-0.2. Its required top-level fields are schemaVersion, rigId, segments, joints, hierarchy, bodyRegions, orientationContractRef, anchorDefinitions, profileCompatibility, artworkCompatibility, extensionDeclarations, and legacyAliases. The current implemented 2d-doll-rig-0.1 remains a narrower source contract and requires migration rather than silent reinterpretation.
+The designed RigDefinition version is 2d-doll-rig-0.2. Its required top-level fields remain schemaVersion, rigId, segments, joints, hierarchy, bodyRegions, orientationContractRef, anchorDefinitions, profileCompatibility, artworkCompatibility, extensionDeclarations, and legacyAliases. Task 000 additions remain logical contracts/extensions until a bounded prototype earns exact schema fields; do not silently expand the required schema from documentation alone. The current implemented 2d-doll-rig-0.1 remains a narrower source contract and requires migration rather than silent reinterpretation.
 
 ## Canonical separations
 
@@ -21,6 +21,7 @@ The designed RigDefinition version is 2d-doll-rig-0.2. Its required top-level fi
 | Interaction state | Anchor relationships among character/prop instances | Baked screen coordinates |
 | Character root | Poser/world transform for a character or interaction group | Camera and panel framing |
 | Placer panel state | Panel transform/depth, framing, environment, effects, dialogue | Reconstructed internal rig |
+| Author override set | Typed reversible corrections, approval state, compatibility, provenance | Destructive artwork baking or hidden semantic-pose mutation |
 
 ## Stable identity and hierarchy
 
@@ -80,6 +81,18 @@ screen = camera × characterRoot × artworkWorld
 Current common-canvas assets may use an assetToNode adapter; future assets should use node-local bounds. Character scale is positive/uniform. Presentation reflection does not swap anatomical IDs; semantic mirroring is separate.
 
 Evaluation order: schema/version → orientation graph → profile/bind → joint clamp/wrap → view mapping → hierarchy → anchors/garment alignment → render graph/masks/correctives → character root → camera/panel.
+
+## Task 000 body-mass and connection amendment
+
+The required hierarchy remains small, but torso expressiveness is not reduced to unrestricted raw rotations. The retained `pelvis`, `mid_torso`, and `chest` identities may resolve a compact semantic body-mass vocabulary such as bend, twist, arch/crunch, pelvis tilt, bounded pelvis shift, and tuck. Exact fields, combinations, and limits remain **SPECULATIVE** until the Torso–Pelvis Illustrative-Resolution Spike.
+
+Profiles/artwork may declare typed connection metadata: parent socket/contact zone, child insertion zone, safe overlap envelope, mask owner/target, default/suggested render relation, supported semantic/orientation range, and optional corrective/deformation hooks. These do not replace the mechanical pivot or become skeleton parents.
+
+## Task 000 illustrative-resolution and tuning amendment
+
+The canonical direction is a hybrid: semantic mechanics remain authoritative; localized corrective art, masks, semantic depth relations, endpoint variants, and evidence-justified bounded deformation resolve presentation. General deformation and complete-pose assets are not approved foundations.
+
+Automatic presentation records requested semantics separately from derived/effective values and typed owner overrides. Generated proposal → derived result → author override → owner-approved canonical value remains reversible and version/provenance aware. The exact schema is deferred to bounded implementation evidence.
 
 ## Artwork interface
 
