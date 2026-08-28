@@ -54,6 +54,11 @@ Automated checks may support the first four gates but can never create Owner Val
 | BAD-01 | Missing field, unknown ID, invalid number, partial JSON | Load | No partial mutation; path/code/severity/repair issue | Fuzz/fixture suite |
 | FALL-02 | Draft reevaluate and published frozen fallback | Asset availability changes across load | Mode-specific deterministic behavior; requested state retained | Versioned asset fixture |
 | OUT-01 | Valid and unresolved character | Export | No diagnostics; valid export correct; required unresolved blocks | Pixel/output inspection |
+| CORP-01 | Declarative source package with pose, optional mask, embedded metadata, and QA files | Inventory without package-specific code | Poses registered once; QA excluded; optional fields preserved; count/hash mismatch rejects atomically | Synthetic fourth-package automated test; current descriptor boundary TESTED |
+| CORP-02 | All registered pose-corpus entries | Generate fixed-canvas candidates | RGBA/canvas/hash deterministic; alpha border zero; transparent RGB cleared; threshold-1 foreground remains inside safety margin | 123-file automated verification; current candidate transform TESTED |
+| CORP-03 | Proposal, override, and resolved-entry layers | Inspect or author correction | Generated evidence remains inspectable; override is data; unresolved cannot masquerade as resolved | JSON Schema plus record enumeration; empty override boundary TESTED, author workflow not validated |
+| CORP-04 | Front, 3/4, profile, rear-three-quarter, and rear observations | Map observed projection | Profile/rear-three-quarter remain reference-only; canonical orientation and anatomical L/R are not guessed | Metadata enumeration TESTED; human orientation correctness not validated |
+| CORP-05 | Cross-set neutral and stress references | Review scale, ground, root and source defects | Capture-scale discontinuities and defects are visible; no raster candidate is promoted by visual similarity alone | Eight generated QA sheets; visual inspection performed, owner validation open |
 
 ## Combinatorial gate questions
 

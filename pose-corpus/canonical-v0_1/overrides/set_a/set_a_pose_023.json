@@ -1,0 +1,15 @@
+{
+  "approval": {
+    "reason": null,
+    "reviewer": null,
+    "status": "not_reviewed"
+  },
+  "baseProposalSha256": "6b8992aaba998af6ceef2886e63e49f3b9e973ff3daa0634c4541f959e73ee1d",
+  "contacts": null,
+  "entryId": "set_a_pose_023",
+  "extensions": {},
+  "landmarks": {},
+  "orientation": null,
+  "schemaVersion": "2d-doll-pose-corpus-override-0.1",
+  "sourceCleanup": []
+}

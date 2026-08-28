@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/source-manifest-0.1.json",
+  "title": "2D Doll pose-corpus source manifest",
+  "type": "object",
+  "required": ["schemaVersion", "corpusId", "sourceSets", "entries", "counts", "extensions"],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-source-manifest-0.1"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "sourceSets": {"type": "array", "minItems": 1},
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "entryId", "sourceSetId", "pathKey", "ordinal", "originalLabel",
+          "archive", "artifacts", "mechanicsArtifactId", "normalizationArtifactId",
+          "calibrationGroupId", "sourceSequence", "issues", "unresolvedClaims",
+          "cleanupHistory", "extensions"
+        ],
+        "properties": {
+          "entryId": {"type": "string", "pattern": "^[a-z][a-z0-9_]*_[0-9]{3}$"},
+          "sourceSetId": {"type": "string"},
+          "pathKey": {"type": "string"},
+          "ordinal": {"type": "integer", "minimum": 1},
+          "originalLabel": {"type": "string", "minLength": 1},
+          "archive": {
+            "type": "object",
+            "required": ["filename", "sha256"],
+            "properties": {
+              "filename": {"type": "string", "pattern": "\\.zip$"},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          },
+          "artifacts": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["artifactId", "archiveMemberPath", "basename", "role", "sha256", "image"],
+              "properties": {
+                "artifactId": {"type": "string"},
+                "archiveMemberPath": {"type": "string", "minLength": 1},
+                "basename": {"type": "string", "minLength": 1},
+                "role": {"type": "string"},
+                "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                "image": {
+                  "type": "object",
+                  "required": ["widthPx", "heightPx", "mode"],
+                  "properties": {
+                    "widthPx": {"type": "integer", "minimum": 1},
+                    "heightPx": {"type": "integer", "minimum": 1},
+                    "mode": {"type": "string"}
+                  }
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "issues": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+          "extensions": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": ["registered", "bySourceSet"],
+      "properties": {
+        "registered": {"type": "integer", "minimum": 1},
+        "bySourceSet": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}}
+      }
+    },
+    "extensions": {"type": "object"}
+  },
+  "$defs": {
+    "issue": {
+      "type": "object",
+      "required": ["code", "severity", "disposition", "detail"],
+      "properties": {
+        "code": {"type": "string", "minLength": 1},
+        "severity": {"enum": ["info", "warning", "error"]},
+        "disposition": {"type": "string", "minLength": 1},
+        "detail": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

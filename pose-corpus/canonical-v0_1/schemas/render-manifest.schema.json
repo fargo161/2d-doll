@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/render-manifest-0.1.json",
+  "title": "2D Doll pose-corpus render manifest",
+  "type": "object",
+  "required": ["schemaVersion", "corpusId", "exportContractRef", "artifactStorage", "canvas", "renders", "counts", "renderManifestSha256", "extensions"],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-render-manifest-0.1"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "artifactStorage": {
+      "type": "object",
+      "required": ["class", "absolutePathCommitted", "logicalPathsRelativeToArtifactRoot"],
+      "properties": {
+        "class": {"const": "external_generated"},
+        "absolutePathCommitted": {"const": false},
+        "logicalPathsRelativeToArtifactRoot": {"const": true}
+      }
+    },
+    "canvas": {
+      "type": "object",
+      "required": ["widthPx", "heightPx", "bodyPixels", "originXPx", "groundYPx", "safeMarginPx", "resampleSupportPx"],
+      "properties": {
+        "widthPx": {"type": "integer", "minimum": 1},
+        "heightPx": {"type": "integer", "minimum": 1},
+        "bodyPixels": {"type": "integer", "minimum": 1},
+        "originXPx": {"type": "integer"},
+        "groundYPx": {"type": "integer"},
+        "safeMarginPx": {"type": "integer", "minimum": 1},
+        "resampleSupportPx": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "renders": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["renderId", "entryId", "mechanicsRef", "inputHashes", "toolVersion", "operations", "output", "renderStatus", "qaStatus", "qaEvidence", "issues", "renderRecordSha256"],
+        "properties": {
+          "renderId": {"type": "string"},
+          "entryId": {"type": "string"},
+          "mechanicsRef": {"type": "string", "pattern": "^metadata/poses/.+\\.json$"},
+          "inputHashes": {
+            "type": "object",
+            "required": ["sourceArtifactSha256", "resolvedMetadataSha256", "overrideSha256"],
+            "properties": {
+              "sourceArtifactSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "resolvedMetadataSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "overrideSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            },
+            "additionalProperties": false
+          },
+          "output": {
+            "type": "object",
+            "required": ["storageClass", "logicalPath", "sha256", "decodedPixelSha256", "widthPx", "heightPx", "mode"],
+            "properties": {
+              "storageClass": {"const": "external_generated"},
+              "logicalPath": {"type": "string", "not": {"pattern": "^[A-Za-z]:|^/"}},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "decodedPixelSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "mode": {"const": "RGBA"}
+            }
+          },
+          "renderStatus": {"enum": ["review_required", "blocked_source_defect", "accepted"]},
+          "qaStatus": {"enum": ["passed_transform_checks", "failed"]},
+          "renderRecordSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": ["producedCandidates", "accepted", "reviewRequired", "blockedSourceDefect", "transformQaPassed"]
+    },
+    "renderManifestSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "extensions": {"type": "object"}
+  },
+  "additionalProperties": true
+}

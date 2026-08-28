@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/profile-evidence-0.1.json",
+  "title": "2D Doll pose-corpus body-profile evidence",
+  "type": "object",
+  "required": [
+    "schemaVersion", "profileEvidenceId", "targetProfileId", "evidenceStatus",
+    "approvalStatus", "ownerApproved", "workflowValidated", "corpusId",
+    "bodyHeightUnit", "bodyPixels", "calibration", "measurements", "constraints", "extensions"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-profile-evidence-0.1"},
+    "profileEvidenceId": {"const": "base_female_v0_1.corpus_v0_1"},
+    "targetProfileId": {"const": "base_female_v0_1"},
+    "approvalStatus": {"enum": ["provisional_unapproved", "owner_approved"]},
+    "ownerApproved": {"type": "boolean"},
+    "workflowValidated": {"type": "boolean"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "bodyHeightUnit": {"const": 1.0},
+    "bodyPixels": {"type": "integer", "minimum": 1},
+    "calibration": {"type": "object", "required": ["method", "groups", "rasterSelection"]},
+    "measurements": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["unit", "value", "resolutionStage", "confidence", "evidenceEntryIds", "unresolvedReason"],
+        "properties": {
+          "unit": {"const": "body_height"},
+          "value": {"type": ["number", "null"]},
+          "resolutionStage": {"enum": ["unresolved", "generated_proposal", "authored_override", "resolved"]},
+          "evidenceEntryIds": {"type": "array", "items": {"type": "string"}},
+          "unresolvedReason": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "required": ["mayRenameRequiredNodes", "mayRedefineJointSemantics", "mayChangeOrientationGraph", "mayClaimCanonicalProportionContinuity"],
+      "additionalProperties": {"type": "boolean"}
+    },
+    "extensions": {"type": "object"}
+  },
+  "additionalProperties": true
+}

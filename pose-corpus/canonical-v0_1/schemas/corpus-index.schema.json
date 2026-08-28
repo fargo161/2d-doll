@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/corpus-index-0.1.json",
+  "title": "2D Doll pose-corpus index",
+  "type": "object",
+  "required": ["schemaVersion", "corpusId", "counts", "entries", "indexSha256", "extensions"],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-index-0.1"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "counts": {
+      "type": "object",
+      "required": ["registered", "mechanicsResolved", "candidatesProduced", "acceptedRenders", "reviewRequiredRenders", "blockedSourceDefectRenders"],
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "entryId", "sourceSetId", "pathKey", "ordinal", "originalLabel",
+          "sourceEntrySha256", "entrySha256", "proposalSha256", "overrideSha256",
+          "renderRecordSha256", "renderOutput", "acceptance"
+        ],
+        "properties": {
+          "entryId": {"type": "string"},
+          "sourceEntrySha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "entrySha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "proposalSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "overrideSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "renderRecordSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "indexSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "extensions": {"type": "object"}
+  },
+  "additionalProperties": true
+}

@@ -427,3 +427,53 @@ These decisions were added after the external Task 000 PXZ evidence arrived. The
 - **Repository condition:** Close and publish the documentation dependency chain, or explicitly authorize an unpublished dependency chain, before implementation.
 - **Owner decision:** Approve the bilateral-knee implementation proof within this boundary.
 - **Status:** OWNER APPROVED / DESIGNED IMPLEMENTATION SCOPE; implementation and all test gates remain pending.
+
+## Canonical pose-corpus decisions
+
+### RIG-021 — Corpus entry versus reusable runtime pose
+
+- **Question:** May a flattened source-image observation be serialized as an existing or designed reusable pose document?
+- **Evidence:** The 123 source states contain unresolved anatomy, observed projections outside the three-state runtime graph, source-art defects, and no reviewed joint topology.
+- **Decision:** Use the distinct `2d-doll-pose-corpus-entry-0.1` evidence type. It declares no compatible runtime pose versions and requires a future reviewed adapter.
+- **Combinatorial impact:** Source packages can expand pose evidence without contaminating stable runtime semantics; future adapters can select only mechanically resolved fields.
+- **Status:** DECIDED / DESIGNED / IMPLEMENTED / TESTED; adapter not implemented and workflow not validated.
+
+### RIG-022 — Female profile evidence is provisional and non-authoritative
+
+- **Question:** Do the three image packages approve or redefine `base_female_v0_1` proportions?
+- **Evidence:** Clothing, hair, footwear, occlusion, projection, and unknown anatomical sides prevent reliable segment measurement from the flattened silhouettes.
+- **Decision:** Retain `base_female_v0_1` as the target profile ID and add `base_female_v0_1.corpus_v0_1` as provisional evidence. Keep all unreviewed measurement values null and prohibit claims of canonical proportion continuity.
+- **Combinatorial impact:** Later reviewed measurements can strengthen one shared profile without creating source-performer profile forks.
+- **Status:** DECIDED / DESIGNED / IMPLEMENTED / TESTED as an unresolved-state contract; anatomy and owner approval open.
+
+### RIG-023 — Pelvis, rig root, character root, and ground remain distinct
+
+- **Question:** Which origin should normalized image evidence use without conflating posing, hierarchy, and placement?
+- **Evidence:** Existing architecture separates runtime `rig_root` and character placement; gait/balance poses require pose-dependent pelvis height and selective foot contact.
+- **Decision:** Use anatomical `pelvis_center` as the corpus mechanical origin, explicitly not equivalent to `rig_root` or `character_root`. Store ground as a separate per-pose plane relation; the raster projection fixes horizontal origin and ground line only.
+- **Combinatorial impact:** Poses can preserve crouch, flight, balance, and gait while remaining adaptable to future character placement and garment systems.
+- **Status:** DECIDED / DESIGNED / IMPLEMENTED / TESTED for candidate placement; anatomical pelvis/contact review open.
+
+### RIG-024 — Observed projection does not expand the runtime orientation graph
+
+- **Question:** How should profile and rear-three-quarter source images relate to Front, 3/4, and Back?
+- **Evidence:** The corpus contains useful profile/rear-three-quarter observations, while the runtime contracts define three canonical whole-body anchors and unverified regional behavior.
+- **Decision:** Store observed projection independently. Profile and rear-three-quarter remain reference-only with null canonical orientation; never infer anatomical side from screen side.
+- **Combinatorial impact:** Additional image viewpoints remain available as evidence without silently authorizing new runtime orientation edges or invalid substitutions.
+- **Status:** DECIDED / DESIGNED / IMPLEMENTED / TESTED for metadata classification; orientation correctness and visual approval open.
+
+### RIG-025 — Large source and generated rasters remain external
+
+- **Question:** Which corpus material belongs in Git?
+- **Evidence:** The supplied ZIPs are immutable user inputs and one candidate run produces roughly 100 MB of replaceable rasters/QA imagery.
+- **Decision:** Track relative filenames/member paths, contracts, metadata, logical output paths, operations, and SHA-256 hashes. Keep source ZIPs and generated rasters external; commit no absolute source/artifact path.
+- **Combinatorial impact:** Many later packages can reuse the repository contract without repository bloat or duplicating immutable sources.
+- **Status:** DECIDED / DESIGNED / IMPLEMENTED / TESTED.
+
+### RIG-026 — Similarity candidates precede local proportion retargeting
+
+- **Question:** Should the pass deform source bodies to a common proportion profile before landmarks and controls are reviewed?
+- **Evidence:** Automatic silhouette proposals cannot reliably resolve shoulders, elbows, hips, knees, extremities, anatomical sides, or hidden contact constraints. An unreviewed warp could destroy pose mechanics while appearing superficially uniform.
+- **Decision:** Apply premultiplied-alpha-safe isotropic capture-group scale plus root/ground placement only. Mark every candidate review-required and record `localWarpApplied: false`; implement bounded local retargeting only after reviewed control topology exists.
+- **Combinatorial impact:** The pipeline and QA foundation are reusable now, while source motion/contact evidence remains reversible for a later controlled retarget experiment.
+- **Status:** DECIDED / DESIGNED / IMPLEMENTED / TESTED for similarity candidates; local retarget DESIGNED only, no render accepted or workflow validated.

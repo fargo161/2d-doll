@@ -4,11 +4,14 @@
 
 This contract is **DESIGNED**. The current save-only 2d-doll-pose-0.1 fragment is **IMPLEMENTED / TESTED** but insufficient and has no load/migration path.
 
-Three documents remain distinct:
+Four document families remain distinct:
 
 1. ReusablePose, version 2d-doll-pose-0.2: semantic articulation/orientation and optional overlays; no camera or panel placement.
 2. CharacterSnapshot inside TransferEnvelope 2d-doll-transfer-0.1: complete internal character/interaction state plus character root transform.
 3. PlacerPanel: references transferred snapshots and adds panel presentation.
+4. Pose-corpus entry, version `2d-doll-pose-corpus-entry-0.1`: source evidence, unresolved observations, normalization-candidate provenance, and acceptance state; not a ReusablePose.
+
+Corpus entries declare no compatible reusable-pose schema versions. Profile/rear-three-quarter image observations, silhouette-derived proposals, source defects, and null anatomical landmarks must pass through a future reviewed adapter rather than being inferred into runtime semantics by shape.
 
 ## ReusablePose
 

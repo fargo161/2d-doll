@@ -59,3 +59,6 @@ Each report should contain, where applicable:
 | 2026-08-26 | Bilateral knee semantic mapping contract freeze | [2026-08-26_1145_bilateral-knee-contract-freeze.md](2026-08-26_1145_bilateral-knee-contract-freeze.md) |
 | 2026-08-26 | Bilateral knee owner approval and documentation closure | [2026-08-26_1153_bilateral-knee-owner-approval-closure.md](2026-08-26_1153_bilateral-knee-owner-approval-closure.md) |
 | 2026-08-26 | One active local Codex thread safeguard | [2026-08-26_1334_one-active-local-thread-safeguard.md](2026-08-26_1334_one-active-local-thread-safeguard.md) |
+| 2026-08-28 | Canonical pose corpus normalization run preparation | [2026-08-28_1448_canonical-pose-corpus-run-preparation.md](2026-08-28_1448_canonical-pose-corpus-run-preparation.md) |
+| 2026-08-28 | Canonical pose corpus implementation and evidence run | [2026-08-28_1629_canonical-pose-corpus-implementation.md](2026-08-28_1629_canonical-pose-corpus-implementation.md) |
+| 2026-08-28 | Canonical pose corpus foundation commit closure | [2026-08-28_1907_canonical-pose-corpus-foundation-commit-closure.md](2026-08-28_1907_canonical-pose-corpus-foundation-commit-closure.md) |

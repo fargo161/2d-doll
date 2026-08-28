@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/override-0.1.json",
+  "title": "2D Doll pose-corpus authored override",
+  "type": "object",
+  "required": ["schemaVersion", "entryId", "baseProposalSha256", "landmarks", "orientation", "contacts", "sourceCleanup", "approval", "extensions"],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-override-0.1"},
+    "entryId": {"type": "string"},
+    "baseProposalSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "landmarks": {
+      "type": "object",
+      "propertyNames": {"enum": [
+        "head_top", "head_center", "chin", "neck_base", "neck_socket",
+        "shoulder_L", "shoulder_R", "chest_center", "waist_center", "pelvis_center",
+        "hip_L", "hip_R", "elbow_L", "elbow_R", "wrist_L", "wrist_R",
+        "hand_center_L", "hand_center_R", "knee_L", "knee_R", "ankle_L", "ankle_R",
+        "heel_L", "heel_R", "toe_L", "toe_R"
+      ]},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["availability", "resolved", "reviewer", "reason"],
+        "properties": {
+          "availability": {"enum": ["visible", "occluded"]},
+          "resolved": {
+            "type": "object",
+            "required": ["x", "y", "z"],
+            "properties": {
+              "x": {"type": "number"},
+              "y": {"type": "number"},
+              "z": {"type": "number"}
+            },
+            "additionalProperties": false
+          },
+          "reviewer": {"type": "string", "minLength": 1},
+          "reason": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "orientation": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "required": ["canonicalBodyOrientationId", "reviewer", "reason"],
+          "properties": {
+            "canonicalBodyOrientationId": {"enum": ["front", "three_quarter", "back", null]},
+            "reviewer": {"type": "string", "minLength": 1},
+            "reason": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "contacts": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "required": ["reviewer", "reason"],
+          "properties": {
+            "anatomicalSupportFoot": {"enum": ["L", "R", "both", "none", "unknown"]},
+            "feet": {"type": "object"},
+            "reviewer": {"type": "string", "minLength": 1},
+            "reason": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "sourceCleanup": {"type": "array", "maxItems": 0},
+    "approval": {
+      "type": "object",
+      "required": ["status", "reviewer", "reason"],
+      "properties": {
+        "status": {"enum": ["not_reviewed", "reviewed", "approved", "rejected"]},
+        "reviewer": {"type": ["string", "null"]},
+        "reason": {"type": ["string", "null"]}
+      }
+    },
+    "extensions": {"type": "object"}
+  },
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          {"properties": {"landmarks": {"minProperties": 1}}},
+          {"properties": {"orientation": {"type": "object"}}},
+          {"properties": {"contacts": {"type": "object"}}}
+        ]
+      },
+      "then": {
+        "properties": {
+          "approval": {
+            "properties": {"status": {"enum": ["reviewed", "approved"]}}
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

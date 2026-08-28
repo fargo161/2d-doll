@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/model.test.mjs && python tests/verify_inherited_rig.py && python tests/verify_canonical_runtime.py"
+    "test": "node --test tests/model.test.mjs && python tests/verify_inherited_rig.py && python tests/verify_canonical_runtime.py && python tests/verify_pose_corpus.py",
+    "test:pose-corpus": "python tests/verify_pose_corpus.py"
   }
 }

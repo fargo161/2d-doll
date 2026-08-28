@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "2d-doll-pose-corpus-coordinate-space-0.1",
+  "coordinateSpaceId": "canonical_body_space_v0_1",
+  "status": "designed_mechanics_contract_provisional_evidence_run",
+  "units": {
+    "canonical": "body_height",
+    "neutralAnatomicalStature": 1.0,
+    "rasterPixelsPerBodyHeight": 1728
+  },
+  "mechanicalSpace": {
+    "origin": "pelvis_center",
+    "axes": {
+      "x": "screen_right_positive",
+      "y": "up_positive",
+      "z": "toward_viewer_positive"
+    },
+    "anatomicalSideConvention": "character_anatomical_side_not_screen_side",
+    "ground": {
+      "type": "per_pose_plane_relation",
+      "normal": [0, 1, 0],
+      "rule": "Ground offset is resolved relative to pelvis_center; it is not inferred from canvas center and does not force both feet into contact."
+    }
+  },
+  "renderProjection": {
+    "canvasRef": "canvas.json",
+    "xAxis": "right_positive",
+    "yAxis": "down_positive",
+    "fixedHorizontalOriginPx": 768,
+    "fixedGroundYPx": 1984,
+    "pelvisVerticalPosition": "pose_dependent",
+    "mappingStatus": "similarity_candidate_only"
+  },
+  "identityBoundaries": {
+    "pelvis_center": "pose mechanical origin",
+    "rig_root": "runtime hierarchy root; not interchangeable with pelvis_center",
+    "character_root": "whole-character placement transform; not interchangeable with pelvis_center",
+    "canvas_origin": "render convention only"
+  },
+  "extensions": {}
+}

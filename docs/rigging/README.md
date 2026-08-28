@@ -5,6 +5,7 @@ This is the entry point for the repository-native body-rig program. It establish
 ## Current reality
 
 - **IMPLEMENTED / TESTED:** The canonical Poser slice in [`app/`](../../app/) implements a 15-part articulated engineering rig, three whole-body anchor views, separated pose/character/camera/editor state, visible controls, cross-view semantic elbow mapping, and a minimal pose-save boundary. See [`docs/RIG_ARCHITECTURE.md`](../RIG_ARCHITECTURE.md).
+- **IMPLEMENTED / TESTED as a separate corpus boundary:** [`pose-corpus/canonical-v0_1/`](../../pose-corpus/canonical-v0_1/) registers 123 source-image pose observations, produces 123 fixed-canvas external candidates, and preserves proposal/override/unresolved mechanics plus provenance. It is not reusable runtime pose state and does not approve `base_female_v0_1` proportions.
 - **IMPLEMENTED / TESTED as inherited evidence:** The byte-preserved baseline contains 45 aligned parts, 45 cropped parts, 45 masks, diagnostic outlines, 17 pivots, and three views. Its viewer has documented failures and is not canonical runtime architecture.
 - **DESIGNED:** The shared multi-profile hierarchy, regional orientation rules, garment contract, dynamic render relationships, semantic anchors, full transfer contract, and QA matrix in this directory.
 - **DESIGNED after Task 000:** A hybrid semantic mechanical rig plus localized corrective art, masks, semantic depth, endpoint variants, and optional bounded deformation; all automatic values remain inspectable and non-destructively overrideable.
@@ -29,6 +30,7 @@ The inherited artwork is provisional engineering material. The baseline manifest
 - [Decision Log](DECISION_LOG.md)
 - [Next Implementation Pass](NEXT_IMPLEMENTATION_PASS.md)
 - [Task 000 Foundation Ingestion and Architecture Report](../body-rig-maker/task-000-foundation-ingestion-report.md)
+- [Canonical Female Pose Corpus v0.1](../pose-corpus/CANONICAL_POSE_CORPUS_V0_1.md)
 
 ## Program boundary
 

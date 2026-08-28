@@ -1,0 +1,411 @@
+{
+  "calibration": {
+    "groupId": "set_c_video_b",
+    "groupNeutralStaturePx": 2366.0,
+    "mechanicsToNormalization": {
+      "anisotropy": 0.0009608355,
+      "mechanicsAlphaBbox": [
+        12,
+        12,
+        778,
+        2396
+      ],
+      "normalizationAlphaBbox": [
+        21,
+        20,
+        984,
+        3020
+      ],
+      "offsetX": 5.9138381201,
+      "offsetY": 4.8993288591,
+      "scaleX": 1.2571801567,
+      "scaleY": 1.2583892617
+    },
+    "normalizationScale": 0.580661039332,
+    "status": "provisional_unreviewed",
+    "targetBodyPixels": 1728
+  },
+  "classification": {
+    "gait": null,
+    "poseFamilyIds": [
+      "pose_reference"
+    ],
+    "primaryPoseFamilyId": "pose_reference",
+    "variantId": "chin_tilt"
+  },
+  "contactCandidates": {
+    "anatomicalSupportFoot": "unknown",
+    "feet": {
+      "L": {
+        "resolutionStage": "unresolved",
+        "state": "unknown"
+      },
+      "R": {
+        "resolutionStage": "unresolved",
+        "state": "unknown"
+      }
+    },
+    "reviewStatus": "review_required",
+    "screenClusters": [
+      {
+        "confidence": 0.62,
+        "screenSide": "left",
+        "state": "ground_envelope_candidate",
+        "xCenterPx": 320.0,
+        "xEndPx": 349,
+        "xStartPx": 291
+      }
+    ]
+  },
+  "corpusId": "canonical_female_pose_corpus_v0_1",
+  "entryId": "set_c_pose_035",
+  "extensions": {},
+  "issues": [
+    {
+      "code": "MECHANICS_REVIEW_REQUIRED",
+      "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+      "disposition": "review_required",
+      "severity": "warning"
+    },
+    {
+      "code": "PROPORTION_RETARGET_NOT_APPLIED",
+      "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+      "disposition": "review_required",
+      "severity": "warning"
+    }
+  ],
+  "landmarks": {
+    "ankle_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "ankle_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "chest_center": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "neutral_stature_prior"
+        ],
+        "confidence": 0.28,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 622.0
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "chin": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "head_height_prior"
+        ],
+        "confidence": 0.35,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 338.08
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "elbow_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "elbow_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "hand_center_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "hand_center_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "head_center": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "head_height_prior",
+          "body_medial_x_proxy"
+        ],
+        "confidence": 0.42,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 184.29
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "head_top": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "silhouette_contiguous_width_profile",
+          "body_medial_x_proxy"
+        ],
+        "confidence": 0.56,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 30.5
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "heel_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "heel_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "hip_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "hip_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "knee_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "knee_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "neck_base": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "neutral_stature_prior"
+        ],
+        "confidence": 0.32,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 385.4
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "neck_socket": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "neutral_stature_prior"
+        ],
+        "confidence": 0.3,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 409.06
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "pelvis_center": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "silhouette_head_candidate",
+          "pelvis_height_prior",
+          "alpha_weighted_medial_band",
+          "lowest_alpha_envelope"
+        ],
+        "confidence": 0.56,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 1331.2391
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "shoulder_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "shoulder_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "toe_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "toe_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "waist_center": {
+      "availability": "ambiguous",
+      "override": null,
+      "proposal": {
+        "basis": [
+          "neutral_stature_prior"
+        ],
+        "confidence": 0.3,
+        "resolutionStage": "generated_proposal",
+        "sourceImagePx": {
+          "x": 374.0209,
+          "y": 1024.2199999999998
+        }
+      },
+      "resolved": null,
+      "unresolvedReason": "semantic_landmark_requires_human_review"
+    },
+    "wrist_L": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    },
+    "wrist_R": {
+      "availability": "unavailable",
+      "override": null,
+      "proposal": null,
+      "resolved": null,
+      "unresolvedReason": "not_reliably_inferable_from_flattened_silhouette"
+    }
+  },
+  "orientation": {
+    "canonicalBodyOrientationId": "front",
+    "canonicalMappingStatus": "direct_reference",
+    "headObservation": {
+      "confidence": {
+        "basis": [],
+        "level": "unresolved",
+        "score": 0.0
+      },
+      "pitchClass": "unknown",
+      "projectionClass": "unknown",
+      "resolutionStage": "unresolved",
+      "rollDeg": null
+    },
+    "observedProjection": {
+      "confidence": {
+        "basis": [
+          "source_filename_label",
+          "bounded_contact_sheet_observation"
+        ],
+        "level": "low",
+        "score": 0.58
+      },
+      "estimatedYawDeg": null,
+      "projectionClass": "front",
+      "resolutionStage": "generated_proposal",
+      "screenDirection": "unspecified"
+    }
+  },
+  "placement": {
+    "canvasTransform": {
+      "groundRoundTripErrorPx": 0.23099,
+      "isotropicScale": 0.580661039332,
+      "rootRoundTripErrorPx": 0.467523,
+      "translateXPx": 492,
+      "translateYPx": 231
+    },
+    "confidence": 0.56,
+    "groundMechanicsYPx": 2395.5,
+    "groundNormalizationYPx": 3019.370805,
+    "pelvisCenterMechanicsPx": {
+      "x": 374.0209,
+      "y": 1331.2391
+    },
+    "pelvisCenterNormalizationPx": {
+      "x": 476.125492,
+      "y": 1680.116317
+    },
+    "relativeOutputExtentPx": {
+      "xMax": 294.90294,
+      "xMin": -264.854302,
+      "yMax": 0.365349,
+      "yMin": -1741.617769
+    },
+    "status": "generated_proposal_review_required"
+  },
+  "proposalSha256": "acb7b14aeee68b8549460da35cd84e866713f5cae9ae71f821e0c46caba47391",
+  "retarget": {
+    "capabilityStatus": "bounded_local_warp_designed_not_applied",
+    "localWarpApplied": false,
+    "method": "similarity_transform_only",
+    "reason": "reviewed semantic control topology unavailable"
+  },
+  "schemaVersion": "2d-doll-pose-corpus-proposal-0.1",
+  "sourceArtifactSha256": "45c724aa0c3892a285c48a4d2d6fb4d4f5fbfc3f71eef2913ad4a9c855d8a416"
+}

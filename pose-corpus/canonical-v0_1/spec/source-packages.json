@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "2d-doll-pose-corpus-source-config-0.1",
+  "corpusId": "canonical_female_pose_corpus_v0_1",
+  "sourceSets": [
+    {
+      "sourceSetId": "set_a_edge_extremity_refined_v1",
+      "pathKey": "set_a",
+      "entryPrefix": "set_a_pose_",
+      "archiveFilename": "pose_19_walk_05_front_threequarter_extension_EDGE_EXTREMITY_REFINED.zip",
+      "archiveSha256": "98aced237ca341323f8951e47c29481eb9d4f2477d835a10bf0b3d5ee12e230c",
+      "expectedPoseCount": 28,
+      "sourceManifestPath": "_QA/manifest.json",
+      "filenamePattern": "^pose_(?P<ordinal>\\d{2})_(?P<sequence>dance|walk)_(?P<sequenceOrdinal>\\d{2})_(?P<label>.+)\\.png$",
+      "layers": [
+        {
+          "layerId": "source_rgba",
+          "role": "source_native_rgba",
+          "prefix": "",
+          "suffix": ".png",
+          "depth": 1,
+          "mechanicsInput": true,
+          "normalizationInput": true
+        }
+      ],
+      "calibrationGroups": [
+        {
+          "groupId": "set_a_capture",
+          "matchPattern": ".*",
+          "referenceBasenames": [
+            "pose_15_walk_01_step_initiation.png"
+          ],
+          "confidence": "medium",
+          "rasterSelectionEvidence": true
+        }
+      ],
+      "manualProjectionDirection": "right",
+      "knownIssues": [],
+      "unresolvedClaims": []
+    },
+    {
+      "sourceSetId": "set_b_full_isolation_v1",
+      "pathKey": "set_b",
+      "entryPrefix": "set_b_pose_",
+      "archiveFilename": "comic_pose_assets_55_full_isolation.zip",
+      "archiveSha256": "6537c8b8cde03057f49e35958cdc85b8fb4a266fe258733972b55a618e6686b0",
+      "expectedPoseCount": 55,
+      "sourceManifestPath": "manifest.json",
+      "filenamePattern": "^(?P<ordinal>\\d{2})_video(?P<sequence>[AB])_f(?P<frame>\\d{3})_(?P<label>.+)\\.png$",
+      "layers": [
+        {
+          "layerId": "transparent_rgba",
+          "role": "source_native_rgba",
+          "prefix": "poses_transparent/",
+          "suffix": ".png",
+          "depth": 2,
+          "mechanicsInput": true,
+          "normalizationInput": true
+        },
+        {
+          "layerId": "alpha_mask",
+          "role": "source_alpha_mask",
+          "prefix": "alpha_masks/",
+          "suffix": ".png",
+          "depth": 2,
+          "mechanicsInput": false,
+          "normalizationInput": false
+        }
+      ],
+      "calibrationGroups": [
+        {
+          "groupId": "set_b_video_a",
+          "matchPattern": "^\\d{2}_videoA_.*",
+          "referenceBasenames": [
+            "01_videoA_f001_neutral_upright.png",
+            "11_videoA_f121_upright_lock.png",
+            "17_videoA_f193_calm_upright_2.png"
+          ],
+          "confidence": "medium",
+          "rasterSelectionEvidence": false
+        },
+        {
+          "groupId": "set_b_video_b",
+          "matchPattern": "^\\d{2}_videoB_.*",
+          "referenceBasenames": [
+            "31_videoB_f001_neutral_hold.png",
+            "32_videoB_f010_upright_pose.png"
+          ],
+          "confidence": "medium",
+          "rasterSelectionEvidence": false
+        }
+      ],
+      "manualProjectionDirection": "right",
+      "knownIssues": [
+        {
+          "memberPath": "poses_transparent/45_videoB_f127_profile_walk_2.png",
+          "sourceSha256": "42a8a20687098f125bfbc4d0542400e7cb9a28c21587f6202f21e2ccbbadb7f2",
+          "code": "SOURCE_BACKDROP_RETAINED",
+          "severity": "error",
+          "disposition": "blocked_source_defect",
+          "detail": "Large opaque pale-gray backdrop polygon is encoded in the production alpha and paired mask."
+        },
+        {
+          "memberPath": "poses_transparent/46_videoB_f136_profile_walk_3.png",
+          "sourceSha256": "bbc6cf9ab74a3e43b3140b8d014666d25f11c3d036e3c5cc2f2e43646b011440",
+          "code": "SOURCE_BACKDROP_SUSPECT",
+          "severity": "warning",
+          "disposition": "review_required",
+          "detail": "Bounded visual QA found a smaller retained pale-gray region and contamination."
+        },
+        {
+          "memberPath": "poses_transparent/51_videoB_f181_studio_edge_walk.png",
+          "sourceSha256": "d0a319a8ec2c75546970f4041a9d3b9f6169b9fed187231927edfe495a19f8de",
+          "code": "SOURCE_ALPHA_CORRUPT",
+          "severity": "error",
+          "disposition": "blocked_source_defect",
+          "detail": "Severe jagged black/white contamination and lower-leg silhouette damage."
+        },
+        {
+          "memberPath": "poses_transparent/52_videoB_f190_side_glance.png",
+          "sourceSha256": "010d5e7ae707297f2570094ac403f0a7a86661b9d86362ffab1ea823cd3b012d",
+          "code": "SOURCE_ALPHA_CORRUPT",
+          "severity": "error",
+          "disposition": "blocked_source_defect",
+          "detail": "Severe jagged black/white contamination and lower-leg silhouette damage."
+        },
+        {
+          "memberPath": "poses_transparent/53_videoB_f199_turn_glance.png",
+          "sourceSha256": "33f62cbf734e9b4c2309b96d1968bc4ee2dc1d6e0b9b0bad3f1d46f5efc7eb99",
+          "code": "SOURCE_ALPHA_CORRUPT",
+          "severity": "error",
+          "disposition": "blocked_source_defect",
+          "detail": "Severe jagged black/white contamination and lower-leg silhouette damage."
+        },
+        {
+          "memberPath": "poses_transparent/54_videoB_f208_slow_step.png",
+          "sourceSha256": "72bedd8bee00984a58ebb9faa0324638527f6ffa34de058098742505eec84f8a",
+          "code": "SOURCE_ALPHA_CORRUPT",
+          "severity": "error",
+          "disposition": "blocked_source_defect",
+          "detail": "Severe jagged black/white contamination and lower-leg silhouette damage."
+        }
+      ],
+      "unresolvedClaims": []
+    },
+    {
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1",
+      "pathKey": "set_c",
+      "entryPrefix": "set_c_pose_",
+      "archiveFilename": "comic_pose_assets_40_edge_refined_green_cleaned.zip",
+      "archiveSha256": "d0ba6843d38311002e18fea6d72455722d331fd6960c92b857d0179b6c1a8397",
+      "expectedPoseCount": 40,
+      "sourceManifestPath": "manifest.json",
+      "filenamePattern": "^(?P<ordinal>\\d{2})_video(?P<sequence>[AB])_f(?P<frame>\\d{3})_(?P<label>.+)\\.png$",
+      "layers": [
+        {
+          "layerId": "native_rgba",
+          "role": "source_native_rgba",
+          "prefix": "01_edge_refined_native/",
+          "suffix": ".png",
+          "depth": 2,
+          "mechanicsInput": true,
+          "normalizationInput": false
+        },
+        {
+          "layerId": "upscaled_rgba",
+          "role": "normalization_input_rgba",
+          "prefix": "02_edge_refined_upscaled_3000px/",
+          "suffix": ".png",
+          "depth": 2,
+          "mechanicsInput": false,
+          "normalizationInput": true
+        },
+        {
+          "layerId": "alpha_mask",
+          "role": "source_alpha_mask",
+          "prefix": "03_alpha_masks/",
+          "suffix": ".png",
+          "depth": 2,
+          "mechanicsInput": false,
+          "normalizationInput": false
+        }
+      ],
+      "calibrationGroups": [
+        {
+          "groupId": "set_c_video_a",
+          "matchPattern": "^\\d{2}_videoA_.*",
+          "referenceBasenames": [
+            "01_videoA_f001_upright_stance.png",
+            "18_videoA_f194_torso_turn.png",
+            "19_videoA_f205_steady_hold.png"
+          ],
+          "confidence": "high",
+          "rasterSelectionEvidence": true
+        },
+        {
+          "groupId": "set_c_video_b",
+          "matchPattern": "^(?!39_|40_)\\d{2}_videoB_.*",
+          "referenceBasenames": [
+            "23_videoB_f023_upright_stance.png",
+            "33_videoB_f137_front_lock.png"
+          ],
+          "confidence": "high",
+          "rasterSelectionEvidence": true
+        },
+        {
+          "groupId": "set_c_video_b_replacement_scale",
+          "matchPattern": "^(39|40)_videoB_.*",
+          "referenceBasenames": [
+            "39_videoB_f205_glance_pose.png",
+            "40_videoB_f217_torso_turn.png"
+          ],
+          "confidence": "medium",
+          "rasterSelectionEvidence": false
+        }
+      ],
+      "manualProjectionDirection": "right",
+      "knownIssues": [],
+      "unresolvedClaims": [
+        {
+          "ordinals": [39, 40],
+          "code": "PROMPT_REPLACEMENT_PROVENANCE_UNSUPPORTED",
+          "detail": "The supplied prompt asserts source replacement history, but the supplied archive manifest does not encode supporting provenance."
+        }
+      ]
+    }
+  ]
+}

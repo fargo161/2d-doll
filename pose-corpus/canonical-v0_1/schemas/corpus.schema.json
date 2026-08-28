@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/corpus-0.1.json",
+  "title": "2D Doll pose-corpus descriptor",
+  "type": "object",
+  "required": [
+    "schemaVersion", "corpusId", "releaseStatus", "profileEvidenceRef",
+    "coordinateContractRef", "landmarkVocabularyRef", "orientationVocabularyRef",
+    "sourceManifestRef", "entryIndexRef", "renderManifestRef", "qaSummaryRef",
+    "storagePolicyRef", "counts", "runtimeBoundary", "acceptance", "extensions"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-0.1"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "releaseStatus": {"enum": ["provisional_review_required", "accepted"]},
+    "runtimeBoundary": {
+      "type": "object",
+      "required": ["integrationStatus", "isReusablePose", "compatiblePoseSchemaVersions", "adapterRequired"],
+      "properties": {
+        "integrationStatus": {"enum": ["none", "adapter_available", "integrated"]},
+        "isReusablePose": {"const": false},
+        "compatiblePoseSchemaVersions": {"type": "array", "maxItems": 0},
+        "adapterRequired": {"const": true}
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "required": ["inventoryStatus", "mechanicsStatus", "renderStatus", "workflowValidationStatus"]
+    },
+    "extensions": {"type": "object"}
+  },
+  "additionalProperties": true
+}

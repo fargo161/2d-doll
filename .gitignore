@@ -18,3 +18,8 @@ playwright-report/
 
 # Temporary files
 *.tmp
+
+# Canonical pose-corpus generated binaries and scratch state
+pose-corpus/canonical-v0_1/.work/
+pose-corpus/canonical-v0_1/normalized/**/*.png
+pose-corpus/canonical-v0_1/qa/generated/

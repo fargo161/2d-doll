@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/source-package-config-0.1.json",
+  "title": "2D Doll pose-corpus source package configuration",
+  "type": "object",
+  "required": ["schemaVersion", "corpusId", "sourceSets"],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-source-config-0.1"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "sourceSets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceSetId", "pathKey", "entryPrefix", "archiveFilename",
+          "archiveSha256", "expectedPoseCount", "filenamePattern", "layers",
+          "calibrationGroups", "manualProjectionDirection", "knownIssues",
+          "unresolvedClaims"
+        ],
+        "properties": {
+          "sourceSetId": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "Globally unique within sourceSets; enforced by the loader."},
+          "pathKey": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "Globally unique within sourceSets; enforced by the loader."},
+          "entryPrefix": {"type": "string", "pattern": "^[a-z][a-z0-9_]*_$", "description": "Globally unique within sourceSets and combined with a three-digit ordinal; enforced by the loader."},
+          "archiveFilename": {"type": "string", "pattern": "^[^/\\\\:]+\\.zip$", "description": "A basename resolved only within the supplied source directory."},
+          "archiveSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "expectedPoseCount": {"type": "integer", "minimum": 1},
+          "sourceManifestPath": {"type": ["string", "null"]},
+          "filenamePattern": {"type": "string", "minLength": 1},
+          "layers": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["layerId", "role", "prefix", "suffix", "depth", "mechanicsInput", "normalizationInput"],
+              "properties": {
+                "layerId": {"type": "string", "minLength": 1},
+                "role": {"type": "string", "minLength": 1},
+                "prefix": {"type": "string"},
+                "suffix": {"type": "string"},
+                "depth": {"type": "integer", "minimum": 1},
+                "mechanicsInput": {"type": "boolean"},
+                "normalizationInput": {"type": "boolean"},
+                "optional": {"type": "boolean"}
+              },
+              "additionalProperties": true
+            }
+          },
+          "calibrationGroups": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["groupId", "matchPattern", "referenceBasenames", "confidence", "rasterSelectionEvidence"],
+              "properties": {
+                "groupId": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "Globally unique across all source sets; enforced by the loader."},
+                "matchPattern": {"type": "string", "minLength": 1},
+                "referenceBasenames": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+                "confidence": {"enum": ["high", "medium", "low"]},
+                "rasterSelectionEvidence": {"type": "boolean"}
+              },
+              "additionalProperties": true
+            }
+          },
+          "manualProjectionDirection": {"enum": ["left", "right", "unspecified"]},
+          "knownIssues": {"type": "array", "items": {"type": "object"}},
+          "unresolvedClaims": {"type": "array", "items": {"type": "object"}}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

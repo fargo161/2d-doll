@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "2d-doll-pose-corpus-export-contract-0.1",
+  "exportContractId": "canonical_pose_candidate_png_v0_1",
+  "status": "tested_candidate_contract_not_accepted_for_runtime",
+  "format": "PNG",
+  "mode": "RGBA",
+  "canvas": {
+    "widthPx": 1536,
+    "heightPx": 2112,
+    "bodyPixels": 1728,
+    "horizontalOriginPx": 768,
+    "groundYPx": 1984,
+    "safeMarginPx": 87,
+    "resampleSupportPx": 8,
+    "roundingMultiplePx": 64,
+    "source": "measured_full_corpus_extent"
+  },
+  "alpha": {
+    "background": "transparent",
+    "fullyTransparentRgb": [0, 0, 0],
+    "resize": "premultiplied_alpha_linear_light_lanczos",
+    "borderAlphaMax": 0,
+    "contentThreshold": 1
+  },
+  "geometry": {
+    "globalScale": "isotropic_per_calibration_group",
+    "horizontalPlacement": "pelvis_center_to_horizontal_origin",
+    "verticalPlacement": "estimated_ground_to_fixed_ground_line",
+    "localProportionRetarget": "not_applied_without_reviewed_control_topology"
+  },
+  "naming": {
+    "pattern": "{entryId}.png",
+    "deterministic": true,
+    "sourceMapping": "normalized/render-manifest.json"
+  },
+  "acceptanceBoundary": "Passing raster checks creates a candidate render only. Mechanics review, proportion retarget review, and workflow validation remain separate gates.",
+  "extensions": {}
+}

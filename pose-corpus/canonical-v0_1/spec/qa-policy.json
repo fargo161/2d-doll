@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "2d-doll-pose-corpus-qa-policy-0.1",
+  "qaPolicyId": "canonical_pose_corpus_qa_v0_1",
+  "automatedGates": {
+    "expectedCounts": {
+      "set_a_edge_extremity_refined_v1": 28,
+      "set_b_full_isolation_v1": 55,
+      "set_c_edge_refined_green_cleaned_v1": 40,
+      "registered": 123
+    },
+    "image": {
+      "mode": "RGBA",
+      "canvasRef": "export-contract.json#/canvas",
+      "borderAlphaMax": 0,
+      "transparentRgbNonzeroChannelCount": 0,
+      "foregroundInsideSafeRectangle": true,
+      "decodedPixelSha256MustMatch": true
+    },
+    "transform": {
+      "rootRoundTripErrorMaxPx": 0.5,
+      "groundRoundTripErrorMaxPx": 0.5,
+      "layerMappingAnisotropyReviewThreshold": 0.01,
+      "lowSourceResolutionHeightThresholdPx": 1000
+    },
+    "provenance": {
+      "sourceHashRequired": true,
+      "outputHashRequired": true,
+      "absoluteRepositoryPathsForbidden": true,
+      "crossRecordHashesAndJsonPointersMustResolve": true
+    }
+  },
+  "manualGates": [
+    "anatomical landmark and anatomical-side review",
+    "support/free foot and contact-state review",
+    "body-profile measurement approval",
+    "local retarget controls and pose/contact drift review",
+    "source-defect repair review",
+    "intended modular-character workflow validation"
+  ],
+  "visualEvidenceKinds": [
+    "canonical_contact_checkerboard",
+    "canonical_contact_black",
+    "canonical_contact_light",
+    "landmark_root_ground_overlay",
+    "representative_before_after",
+    "cross-set-scale_comparison",
+    "stress-pose-comparison",
+    "source-defect-review"
+  ],
+  "acceptanceRule": "Automated raster success cannot promote unresolved mechanics, unreviewed retargeting, source defects, or creative usefulness.",
+  "extensions": {}
+}

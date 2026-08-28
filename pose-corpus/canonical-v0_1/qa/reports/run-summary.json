@@ -1,0 +1,102 @@
+{
+  "corpusId": "canonical_female_pose_corpus_v0_1",
+  "corpusIndexSha256": "7234cca5856568baf457e3b06e91d4ed658a78cadbb61ec60a02fc0b5015901f",
+  "counts": {
+    "accepted": 0,
+    "blockedSourceDefect": 5,
+    "producedCandidates": 123,
+    "qaArtifactCount": 8,
+    "registered": 123,
+    "reviewRequired": 118,
+    "transformQaPassed": 123
+  },
+  "issueCounts": {
+    "LOW_SOURCE_RESOLUTION": 55,
+    "MECHANICS_REVIEW_REQUIRED": 123,
+    "PROPORTION_RETARGET_NOT_APPLIED": 123,
+    "SOURCE_ALPHA_CORRUPT": 4,
+    "SOURCE_BACKDROP_RETAINED": 1,
+    "SOURCE_BACKDROP_SUSPECT": 1
+  },
+  "limitations": [
+    "Silhouette proposals do not resolve anatomical landmarks or left/right semantics.",
+    "No local proportion retarget was applied without reviewed control topology.",
+    "5 candidate(s) remain quarantined by source-declared defect dispositions.",
+    "Automated evidence establishes no owner or creative-workflow validation."
+  ],
+  "qaArtifacts": [
+    {
+      "cellCount": 123,
+      "kind": "canonical_contact_checkerboard",
+      "logicalPath": "qa/canonical-contact-checkerboard.jpg",
+      "sha256": "25d93df3a25829d9c750fca11112181a6bb6f02d7e75176d89a4b7a71361287c",
+      "sidecarLogicalPath": "qa/canonical-contact-checkerboard.json",
+      "sidecarSha256": "819b9751e5749476f219c1af54cdf72c81a230c370395f6af1990b7ec9a9f29b"
+    },
+    {
+      "cellCount": 123,
+      "kind": "canonical_contact_black",
+      "logicalPath": "qa/canonical-contact-black.jpg",
+      "sha256": "d88dea2609d6054a16f36f7378db881f985af3767fa4a194287ab5880edbbdc1",
+      "sidecarLogicalPath": "qa/canonical-contact-black.json",
+      "sidecarSha256": "fd1154cbd0c517c3b4620e956d3c64f2d2bff3a278bdffa02eb47319e09d20a8"
+    },
+    {
+      "cellCount": 123,
+      "kind": "canonical_contact_light",
+      "logicalPath": "qa/canonical-contact-light.jpg",
+      "sha256": "c37c1b83c21d3b5129b7bfe0e29f42f31185ed10cda87eb107f57b4522a62edc",
+      "sidecarLogicalPath": "qa/canonical-contact-light.json",
+      "sidecarSha256": "2e0318e7f20f9d939e5cdd446659517dbcd86112c8926419ae090b412b3301ca"
+    },
+    {
+      "cellCount": 123,
+      "kind": "landmark_root_ground_overlay",
+      "logicalPath": "qa/landmark-root-ground-overlay.jpg",
+      "sha256": "d8251b871734e9ba0101b733a1e6e39ec1a7bb1e3fb77db4fe351aeb03abe6b9",
+      "sidecarLogicalPath": "qa/landmark-root-ground-overlay.json",
+      "sidecarSha256": "ad815173fcb10d51f4e36b96ea72e18c12f42562e383007b728f1f4e16df8e0c"
+    },
+    {
+      "cellCount": 6,
+      "kind": "representative_before_after",
+      "logicalPath": "qa/representative-before-after.jpg",
+      "sha256": "52c4aaffb832568d5289fb0427aad7b423724d1d922c359e94e2ea00d4d7541d",
+      "sidecarLogicalPath": "qa/representative-before-after.json",
+      "sidecarSha256": "72dab6d21bf28c606b8b6dd5c6043afc53e2dde42a057b3f35d186cebf6e6763"
+    },
+    {
+      "cellCount": 6,
+      "kind": "cross-set-scale-comparison",
+      "logicalPath": "qa/cross-set-scale-comparison.jpg",
+      "sha256": "ac5620028df834f1e73ed4e5404d80d784873c4d93371bd9068b3b4b871a119c",
+      "sidecarLogicalPath": "qa/cross-set-scale-comparison.json",
+      "sidecarSha256": "bf7b060cbc10daae8c3f976d80b6cc92e1833de72998b461a46e355dafe3d93a"
+    },
+    {
+      "cellCount": 8,
+      "kind": "stress-pose-comparison",
+      "logicalPath": "qa/stress-pose-comparison.jpg",
+      "sha256": "e90077bad18d5f96b335b1a21660c63653f56c6eb198dcc7446d39a0ff4e51c0",
+      "sidecarLogicalPath": "qa/stress-pose-comparison.json",
+      "sidecarSha256": "16ae634f4ff3270d88fb4ec85658a2dea169511514b5642d45b7e953415fe866"
+    },
+    {
+      "cellCount": 8,
+      "kind": "source-defect-review",
+      "logicalPath": "qa/source-defect-review.jpg",
+      "sha256": "94f57ed2e10165fa490bdc9aa29ebe63d0ff6ffcbb0124e781fbafb5233600f4",
+      "sidecarLogicalPath": "qa/source-defect-review.json",
+      "sidecarSha256": "b7a9ad95171c8f3d230591f456cc338247969c201bc05b01d8cc51143b15c9a5"
+    }
+  ],
+  "qaSummarySha256": "10fff2a612a28060bed475c48157fdc69249ca42d6c79bf9b9828715fd33aba6",
+  "renderManifestSha256": "92f9ffee89260b8b175471931e9993ffbee9463fa4da98bd04d069370563aaa6",
+  "schemaVersion": "2d-doll-pose-corpus-qa-summary-0.1",
+  "verdict": {
+    "inventoryStatus": "passed",
+    "mechanicsStatus": "review_required",
+    "renderStatus": "candidates_generated_not_accepted",
+    "workflowValidationStatus": "not_validated"
+  }
+}

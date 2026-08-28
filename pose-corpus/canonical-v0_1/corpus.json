@@ -1,0 +1,35 @@
+{
+  "acceptance": {
+    "inventoryStatus": "passed",
+    "mechanicsStatus": "review_required",
+    "renderStatus": "candidates_generated_not_accepted",
+    "workflowValidationStatus": "not_validated"
+  },
+  "coordinateContractRef": "spec/coordinate-space.json",
+  "corpusId": "canonical_female_pose_corpus_v0_1",
+  "counts": {
+    "acceptedRenders": 0,
+    "blockedSourceDefectRenders": 5,
+    "candidatesProduced": 123,
+    "mechanicsResolved": 0,
+    "registered": 123,
+    "reviewRequiredRenders": 118
+  },
+  "entryIndexRef": "metadata/corpus-index.json",
+  "extensions": {},
+  "landmarkVocabularyRef": "spec/landmark-vocabulary.json",
+  "orientationVocabularyRef": "spec/orientation-vocabulary.json",
+  "profileEvidenceRef": "spec/base_female_v0_1.corpus-evidence.json",
+  "qaSummaryRef": "qa/reports/run-summary.json",
+  "releaseStatus": "provisional_review_required",
+  "renderManifestRef": "normalized/render-manifest.json",
+  "runtimeBoundary": {
+    "adapterRequired": true,
+    "compatiblePoseSchemaVersions": [],
+    "integrationStatus": "none",
+    "isReusablePose": false
+  },
+  "schemaVersion": "2d-doll-pose-corpus-0.1",
+  "sourceManifestRef": "sources/source-manifest.json",
+  "storagePolicyRef": "spec/storage-policy.json"
+}

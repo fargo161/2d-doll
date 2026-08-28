@@ -1,0 +1,5 @@
+# Versions used for the canonical pose-corpus v0.1 evidence run.
+# These packages were already available locally; this pass installed nothing.
+jsonschema==4.26.0
+numpy==2.5.1
+Pillow==12.3.0

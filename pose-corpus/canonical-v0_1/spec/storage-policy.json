@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2d-doll-pose-corpus-storage-policy-0.1",
+  "storagePolicyId": "canonical_pose_corpus_storage_v0_1",
+  "sourceArchives": {
+    "class": "external_immutable_user_supplied",
+    "copiedIntoRepository": false,
+    "trackedRepresentation": "relative filename, archive-member path, dimensions, provenance, and SHA-256",
+    "absolutePathsCommitted": false
+  },
+  "generatedRasters": {
+    "class": "external_generated_replaceable",
+    "copiedIntoRepository": false,
+    "trackedRepresentation": "logical artifact-root-relative path, dimensions, operation record, and SHA-256",
+    "absolutePathsCommitted": false,
+    "repositoryIgnorePatterns": [
+      "pose-corpus/canonical-v0_1/.work/",
+      "pose-corpus/canonical-v0_1/normalized/**/*.png",
+      "pose-corpus/canonical-v0_1/qa/generated/"
+    ]
+  },
+  "trackedRecords": [
+    "spec",
+    "source manifest",
+    "proposal layer",
+    "override layer",
+    "resolved-entry layer",
+    "render manifest",
+    "corpus index",
+    "QA summary and hashes"
+  ],
+  "localRunManifest": {
+    "location": "external artifact root",
+    "mayContainAbsoluteArtifactRoot": true,
+    "committed": false
+  },
+  "extensions": {}
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/pose-entry-0.1.json",
+  "title": "2D Doll canonical pose-corpus entry",
+  "type": "object",
+  "required": [
+    "schemaVersion", "entryId", "corpusId", "sourceRecordRef",
+    "profileEvidenceRef", "annotationLayers", "mechanics",
+    "normalizationCandidate", "acceptance", "issues", "renderRef", "extensions"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-entry-0.1"},
+    "entryId": {"type": "string", "pattern": "^[a-z][a-z0-9_]*_[0-9]{3}$"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "sourceRecordRef": {"type": "string", "pattern": "^sources/source-manifest\\.json#/entries/[0-9]+$"},
+    "profileEvidenceRef": {"type": "string"},
+    "annotationLayers": {
+      "type": "object",
+      "required": ["proposalRef", "overrideRef", "proposalSha256", "overrideSha256"],
+      "properties": {
+        "proposalRef": {"type": "string"},
+        "overrideRef": {"type": "string"},
+        "proposalSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "overrideSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "mechanics": {
+      "type": "object",
+      "required": ["authority", "coordinateSpaceId", "poseOrigin", "orientation", "landmarks", "contacts", "classification", "projectedJointObservations"],
+      "properties": {
+        "coordinateSpaceId": {"const": "canonical_body_space_v0_1"},
+        "poseOrigin": {
+          "type": "object",
+          "required": ["landmarkId", "mappingStatus", "notEquivalentTo"],
+          "properties": {
+            "landmarkId": {"const": "pelvis_center"},
+            "notEquivalentTo": {"type": "array", "contains": {"const": "rig_root"}}
+          }
+        },
+        "orientation": {
+          "type": "object",
+          "required": ["canonicalBodyOrientationId", "canonicalMappingStatus", "observedProjection", "headObservation"],
+          "properties": {
+            "canonicalBodyOrientationId": {"type": ["string", "null"], "enum": ["front", "three_quarter", "back", null]},
+            "canonicalMappingStatus": {"enum": ["direct_reference", "provisional_reference", "reference_only", "unresolved", "reviewed_override"]}
+          },
+          "additionalProperties": true
+        },
+        "landmarks": {
+          "type": "object",
+          "required": [
+            "head_top", "head_center", "chin", "neck_base", "neck_socket",
+            "shoulder_L", "shoulder_R", "chest_center", "waist_center", "pelvis_center",
+            "hip_L", "hip_R", "elbow_L", "elbow_R", "wrist_L", "wrist_R",
+            "hand_center_L", "hand_center_R", "knee_L", "knee_R", "ankle_L", "ankle_R",
+            "heel_L", "heel_R", "toe_L", "toe_R"
+          ],
+          "additionalProperties": {"$ref": "#/$defs/landmarkState"}
+        }
+      },
+      "additionalProperties": true
+    },
+    "acceptance": {
+      "type": "object",
+      "required": ["registrationStatus", "mechanicsStatus", "renderStatus", "qaStatus", "workflowValidationStatus"],
+      "properties": {
+        "registrationStatus": {"const": "registered"},
+        "mechanicsStatus": {"enum": ["review_required", "resolved"]},
+        "renderStatus": {"enum": ["review_required", "blocked_source_defect", "accepted"]},
+        "qaStatus": {"enum": ["not_run", "passed_transform_checks", "failed"]},
+        "workflowValidationStatus": {"enum": ["not_validated", "validated"]}
+      }
+    },
+    "renderRef": {"type": "string", "pattern": "^normalized/render-manifest\\.json#/renders/[0-9]+$"},
+    "issues": {"type": "array", "items": {"type": "object"}, "minItems": 1},
+    "extensions": {"type": "object"}
+  },
+  "$defs": {
+    "landmarkState": {
+      "type": "object",
+      "required": ["availability", "proposal", "override", "resolved", "unresolvedReason"],
+      "properties": {
+        "availability": {"enum": ["visible", "occluded", "ambiguous", "unavailable"]},
+        "proposal": {"type": ["object", "null"]},
+        "override": {"type": ["object", "null"]},
+        "resolved": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "required": ["x", "y", "z"],
+              "properties": {
+                "x": {"type": "number"},
+                "y": {"type": "number"},
+                "z": {"type": "number"}
+              },
+              "additionalProperties": false
+            }
+          ]
+        },
+        "unresolvedReason": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

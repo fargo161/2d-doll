@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://2d-doll.local/schemas/pose-corpus/proposal-0.1.json",
+  "title": "2D Doll pose-corpus generated proposal",
+  "type": "object",
+  "required": [
+    "schemaVersion", "entryId", "corpusId", "sourceArtifactSha256", "calibration",
+    "placement", "orientation", "landmarks", "contactCandidates", "classification",
+    "retarget", "issues", "proposalSha256", "extensions"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "2d-doll-pose-corpus-proposal-0.1"},
+    "entryId": {"type": "string"},
+    "corpusId": {"const": "canonical_female_pose_corpus_v0_1"},
+    "sourceArtifactSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "calibration": {
+      "type": "object",
+      "required": ["groupId", "groupNeutralStaturePx", "targetBodyPixels", "mechanicsToNormalization", "normalizationScale", "status"]
+    },
+    "placement": {
+      "type": "object",
+      "required": [
+        "pelvisCenterMechanicsPx", "pelvisCenterNormalizationPx", "groundMechanicsYPx",
+        "groundNormalizationYPx", "relativeOutputExtentPx", "confidence", "status", "canvasTransform"
+      ]
+    },
+    "landmarks": {"type": "object", "minProperties": 26},
+    "retarget": {
+      "type": "object",
+      "required": ["method", "localWarpApplied", "reason", "capabilityStatus"],
+      "properties": {
+        "method": {"const": "similarity_transform_only"},
+        "localWarpApplied": {"type": "boolean"}
+      }
+    },
+    "issues": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "proposalSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "extensions": {"type": "object"}
+  },
+  "additionalProperties": true
+}

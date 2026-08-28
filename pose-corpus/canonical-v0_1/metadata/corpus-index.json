@@ -1,0 +1,3460 @@
+{
+  "corpusId": "canonical_female_pose_corpus_v0_1",
+  "counts": {
+    "acceptedRenders": 0,
+    "blockedSourceDefectRenders": 5,
+    "candidatesProduced": 123,
+    "mechanicsResolved": 0,
+    "registered": 123,
+    "reviewRequiredRenders": 118
+  },
+  "entries": [
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_001",
+      "entrySha256": "3fd3b2a4bd9018d618c367c5230ad04802e03d26c55c4fa91a8dc9885456db2b",
+      "ordinal": 1,
+      "originalLabel": "overhead_side_lean_a",
+      "overrideSha256": "0e605da538ebfb42b5d74e77be22d0a0b37fd9baba5b86358c644e5f994071ea",
+      "pathKey": "set_a",
+      "proposalSha256": "521ea7513899e532103490545893aba4b8cbae0ffc3de2e0db49392bb0eabcf9",
+      "renderOutput": {
+        "decodedPixelSha256": "4ede6ce70b2e24853b3dea26b9414cf284ffc83643ae08c0c389074123b88391",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_001.png",
+        "mode": "RGBA",
+        "sha256": "d97e1fc8ffe01c667ca4b2f7dc6870b26c34b99c7e53353b7c79642a1f485e5c",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "64b3396dd5075b4f4619ce8d394c0cfd85a4fa10db458e3ffff27badf16e6fac",
+      "sourceEntrySha256": "4684d837d287d63f3ed62bcf386a3cf860db08d19b82e553446a235bdc8144f6",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_002",
+      "entrySha256": "721e265a040a9c80897f44e0fcbb556b43204907d0f65db64691ea6b96b75255",
+      "ordinal": 2,
+      "originalLabel": "overhead_center",
+      "overrideSha256": "56af0fd3080c1ba7d896d06b96feea6f0c2a60a21602aaad1fcf62dd1c87d086",
+      "pathKey": "set_a",
+      "proposalSha256": "b5f994cd1cd13755fefcf2cdfa94ff4a18a4bb01b33fa34ed60b20913d04a9b6",
+      "renderOutput": {
+        "decodedPixelSha256": "cc325a113d5e0cd0242e9a073d9e7f863dda0b984c630bad05136f2046e0a729",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_002.png",
+        "mode": "RGBA",
+        "sha256": "6645e1884163636441ed1135058499f8ddd607e5adcfe7bf817d01551c5df507",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "59fee7e997ab820ff9665b525739d32d8598d910bbd19ec75372bc91bb02b108",
+      "sourceEntrySha256": "3224851ad0ccf777160f4a003834adcaeed9a7537b77158f772d6c1d10485ef0",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_003",
+      "entrySha256": "a6474bf6ae629c123d55bc3c38fe654debf85d5ee970f727c22f2f111558d7fb",
+      "ordinal": 3,
+      "originalLabel": "raised_knee_arms_high",
+      "overrideSha256": "557e4939f6d058b22ffdc870d976c96d352e7a23e6743e540b87376b87296618",
+      "pathKey": "set_a",
+      "proposalSha256": "e54afeb3d3eea5425c7a7f7730bfdebe2e5334b1558f5df47af51c2b90c14acc",
+      "renderOutput": {
+        "decodedPixelSha256": "bda4d35275b7bf4077720e41b2983a25ad3180cee50d06d8d8acbdc6adc6ea66",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_003.png",
+        "mode": "RGBA",
+        "sha256": "02bc81022f5629913f9405af91f87505b7513888d210d25ce075ca728d74448e",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "7f1751cb69187185ccf8255152eeba35391353d503d7167423c60d2246d56380",
+      "sourceEntrySha256": "8a2baf31b10aec506ce5952997e2249a23b3671cb1aeaf1baa3efdf3eda75aca",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_004",
+      "entrySha256": "07484198a611389751ab143db693eed8f4f2cad36ca1fe6f692ade36fe067e1b",
+      "ordinal": 4,
+      "originalLabel": "hands_up_cross_step",
+      "overrideSha256": "eca6d70b0a201e172ab1888056dc55279a1e4ae2110478b7dde0a06c3a195d61",
+      "pathKey": "set_a",
+      "proposalSha256": "0674d4b7719f08ad44993dfdb920dc4c4eb384ccc211ffcdc22c720fff6f69fe",
+      "renderOutput": {
+        "decodedPixelSha256": "28b0011e18737d587762f63feb4166ab4a482803432719906f790cc2e0308780",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_004.png",
+        "mode": "RGBA",
+        "sha256": "cd9f3c3583e3c0055fb2fa18961d89e3fbc1417f42fd6ec7cbf987d9bc12d066",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "d80fa9e7f8a86a5e2a6e7cb8ee981f507aef14e6af0fbe3e5f68803927b146e9",
+      "sourceEntrySha256": "323b699bafa78326c18473c72b5b27b7bc68b76f20e8b8a52c1a5c637442542d",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_005",
+      "entrySha256": "66b93cd6315fb87aa626e905aa69f3051ede216e262eb5da90f2b8ec55620428",
+      "ordinal": 5,
+      "originalLabel": "open_palms_hip_shift",
+      "overrideSha256": "6b6ddc89d4632f71970bbaff06e867a3d255bdefc38cfeee47ce5c5344958e1a",
+      "pathKey": "set_a",
+      "proposalSha256": "4de6d35d3e8acb4a71cc304259470dc11ac32a9350b86c3cfac51c908b1bb9f5",
+      "renderOutput": {
+        "decodedPixelSha256": "26a833722a90fae485751c511a8a079025f04ef90d91bf74b610b6710a3594c3",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_005.png",
+        "mode": "RGBA",
+        "sha256": "8a94bf1c2ed95af29d7b20830edde67322667cd1bcb52883d79fc783b9152872",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0a2c1f01d3a043c7f8251907c5b3761596541d4fbf30d4086439a0748cd73207",
+      "sourceEntrySha256": "3a92be7eb5b4717fde79f0ce7ac9d657490cea6ab80ec0d14099f0b6754b4115",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_006",
+      "entrySha256": "9963bae895a7bafe2b568ee3338990e4c142af44ba29c5bc72d374bde2e7acf9",
+      "ordinal": 6,
+      "originalLabel": "bent_wrists_front",
+      "overrideSha256": "0f352f12b2c21bc246723bbe40540f28960c833fbd8522686d18e36cd6b6a26c",
+      "pathKey": "set_a",
+      "proposalSha256": "65ab19e578f2efeae9a34a3ac4e924748eb325a6abb16f456a1f3e61c771f9cb",
+      "renderOutput": {
+        "decodedPixelSha256": "592dc08e461b7f5a261c0f6770b10b80d68daae839fd55f6a2096d0a493ab0fb",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_006.png",
+        "mode": "RGBA",
+        "sha256": "0e239a4f06ac8daef51564bcb9766e80d3679b4a7896d78803048de3bc3e003b",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "a38d01a64d68675aa8a9454648eaf644ff0a2570f68d28c6a904aacdb167776d",
+      "sourceEntrySha256": "8d8b55bdab859743d60676e14d1940a43859eabdf70ca53c3b4f2a43f2ab4e5a",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_007",
+      "entrySha256": "097a9496413faf2e610e19ae9d16188e8e2d8b290bff1b003350a46ca49290eb",
+      "ordinal": 7,
+      "originalLabel": "palms_out_crouch",
+      "overrideSha256": "4a4c2716be64cdaea483b3f108c063af05555febc8b080b0dbb80d64c7df9b67",
+      "pathKey": "set_a",
+      "proposalSha256": "0867a3198f1d38412ef1e985979f55332a25d28222e77648b0e7d75fc9f9c708",
+      "renderOutput": {
+        "decodedPixelSha256": "c8216d2240adadf4c14e458aaa6e5474b949f46b6fa039c48f204d00a53a8b6c",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_007.png",
+        "mode": "RGBA",
+        "sha256": "aeb0d1b36a8697d51c6b54b7ee0404ebc2b0bcc55467a15faaceb74d47a085c7",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "394bfe59b9d022a802531123e8c501fee182de251d295bcd1fbae1b87e142913",
+      "sourceEntrySha256": "59917db239c9e211a689a1a14ff7bd725ec9f9217ce7160f3d48a818246a16ad",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_008",
+      "entrySha256": "779ecbde60444780180be066082278c2dfadfedc59a3b50b16310a1205b20d6f",
+      "ordinal": 8,
+      "originalLabel": "angled_hands_side",
+      "overrideSha256": "eef835cfb23fec47c371cdca83fe27909da95c2c991ad993e80e0f248849a653",
+      "pathKey": "set_a",
+      "proposalSha256": "504eae3eaff015f57c60b405761d07138b5d92a9e6363f187492fc0cfff2e167",
+      "renderOutput": {
+        "decodedPixelSha256": "88086ddc18f6aa258251bf9d9d77dadd46a569b8ad08ce6133684f8d8f737463",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_008.png",
+        "mode": "RGBA",
+        "sha256": "38322575275a488b7840c5980b5dc7ac2f245f8c7cb241fad2e497c518ed9877",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "01fa876fbf9ae7243121d05e391683bcc6cc3f29e9b6052537aa28c1662e7f38",
+      "sourceEntrySha256": "c4eceb7af34f0d458871ffb1aadb9e65d396d2be1b83ce1d2cd61d359a203b7a",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_009",
+      "entrySha256": "2ddb832f28ea7249149bcc56a90878eb3de76a6a886ec43c7451339bb2255c0e",
+      "ordinal": 9,
+      "originalLabel": "hands_high_knee_bend",
+      "overrideSha256": "8c033a56fa355206c7b5ff16640c0b28e473e0c42954e46a070ff143066b1a28",
+      "pathKey": "set_a",
+      "proposalSha256": "eccbf88e7b2477d767b2a15495526b1ed742dd5899b8693dad508b9e247d76b2",
+      "renderOutput": {
+        "decodedPixelSha256": "651820f056b9fd83f417fceef1359acfd46ab6edb20ecb795262418973daeb8b",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_009.png",
+        "mode": "RGBA",
+        "sha256": "22914f63fb635f16a4885b58b42ae4061e0c1e825a1479e4360c58592501635a",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "18d3fb9d1af008b9d5647feb53287a76a339e65b1fc884c7cdca516baf23cc7f",
+      "sourceEntrySha256": "b98115e0f05781130eb4899d053ba1a5bf32aa105996283a2dd6281ea853fbb4",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_010",
+      "entrySha256": "bd88caa233d91fdd319d1901e37bb6828cddad0e7a3104b4c60059b59ac87776",
+      "ordinal": 10,
+      "originalLabel": "wrist_pose_center",
+      "overrideSha256": "5e3da61e462ada1269fd3a59a2f9a6335d501f407d041591dee6bba14f2d8340",
+      "pathKey": "set_a",
+      "proposalSha256": "a4c0e7ec8047d5f51dc6c6d5cf71e04b52eaa699b279b8d3c319074a10fae243",
+      "renderOutput": {
+        "decodedPixelSha256": "d54b7471265f8accea5c8b20ef0690c84e08e9c27417dd56ff83e9d9f0da73a1",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_010.png",
+        "mode": "RGBA",
+        "sha256": "1cb2bc14ce84e4385fe13e3a8c48c07ec63c2e58e6496ff713956849fe9b0314",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "f0ae422240f4cfdf655960d3c37e49ea57334078f50b1c59d7b1b3050b34a575",
+      "sourceEntrySha256": "6b6d797eca4553e22a0aea39d8f64613b38c5ad4284798e5cf3c34bb2ca4ee17",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_011",
+      "entrySha256": "33c7de8bb7f58de41bbb9e4b64eada77926cd9f31be68cd609d4796a76434906",
+      "ordinal": 11,
+      "originalLabel": "palms_up_one_leg",
+      "overrideSha256": "49a8245505e2b80862f6ec1eb8da91dafbc1aff2875d4f53e24d78c3c280aab1",
+      "pathKey": "set_a",
+      "proposalSha256": "3c8944de37c2bf767bbf56a13abf3f6df0996725ee680b17eec525c3ce90ebd9",
+      "renderOutput": {
+        "decodedPixelSha256": "9c05d5a9ebe13757b0f94852dba89147a633c16d4dfb3996770ddf5d46442576",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_011.png",
+        "mode": "RGBA",
+        "sha256": "dbb0705c1d4b0b5e5f0b086e39ffcb09d060408ac12874ae4348004c47864191",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "037edac4c6a484cdbe393899e14556a26929eb64f1645a214ec7dea83467e115",
+      "sourceEntrySha256": "50c8f96609ee7bb62eae637fa6ceda66b0e5cb208fa50f8b8182e35d34a8fb61",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_012",
+      "entrySha256": "15a579dbaf6751fd32b43767419c47a2b67f77eccf8096b072d2c80a110de71e",
+      "ordinal": 12,
+      "originalLabel": "open_hands_cross_step",
+      "overrideSha256": "d837c1b7b1a050772c79a1761f6f70af2859a86d925a25fa9579c1dbb887df0b",
+      "pathKey": "set_a",
+      "proposalSha256": "a7dcd8f0510b3f4616b523bfb72de9b4bcce6e5fbb1d37b92e643089b5e0bb1a",
+      "renderOutput": {
+        "decodedPixelSha256": "440d76ae12769f22259bd1d959a916b5878ecf90a7234d8b7ae0d5b382644b19",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_012.png",
+        "mode": "RGBA",
+        "sha256": "779f3705984a4c9a38582ff3278c4598d98daadc015840b711bfe293bf37d0d3",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0a4cff09a4e691b1bb25a6a2f5bb5a38d40d721a198776e3c2bc16849e636e87",
+      "sourceEntrySha256": "72e20f900cc3cf2729b261c18a29eedb95fc2fd29fa77dabb972ed3e4b42ca48",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_013",
+      "entrySha256": "a98ba1e625217cd4834f6b486e51d30a3da671e455cd86d6900b85a177d82cb5",
+      "ordinal": 13,
+      "originalLabel": "asymmetric_arms_hip_shift",
+      "overrideSha256": "95f35dc2242f15c7fa2bc7f3b5d435d8ba966302809c964fcead418ab00b25b5",
+      "pathKey": "set_a",
+      "proposalSha256": "b6ef159d334752ab9769f3c9bef961b40f71dfaf13b6ca3539099f112678718e",
+      "renderOutput": {
+        "decodedPixelSha256": "3c2f3466cd62001daaff3f932bdc2983578d1e011a90ed0700b4a4de5ac4915c",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_013.png",
+        "mode": "RGBA",
+        "sha256": "c8b099feb8930fd826fb24e8cb1823401f921bc974dcd6d7292e297f794b1d8c",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "f5e3a74c6a80254b97639142cbaf758980963d4cd885473dbd9d72464f6a2274",
+      "sourceEntrySha256": "8b3457198e299bf46f49fd3ada11fe5ad35a097043a38ef728c582906ea966f1",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_014",
+      "entrySha256": "da5e37cb5e0856c26d65f0aba54bf09b93f77a941f9f4152bcaffa69dd49ef18",
+      "ordinal": 14,
+      "originalLabel": "overhead_side_lean_b",
+      "overrideSha256": "3bbbb8e77d43c73e7894b2ed283d773724d11be2a2397a37af8d6cf3f88d927d",
+      "pathKey": "set_a",
+      "proposalSha256": "242608106eb25c2d9d656dad05870c156eb40d0f12d6eb215d94228392c5ace1",
+      "renderOutput": {
+        "decodedPixelSha256": "dc5f3ceb19263b97023b1d67ef0990901597c0ad392fa1cb41125d65b48fee49",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_014.png",
+        "mode": "RGBA",
+        "sha256": "e90a2e0c6cfa5865cd3d9719f9bd907f2fe8e393ba2215a6d57c0593b1fb1dca",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "1459ada1a10aef0653816103416f0e9a6e697ba93116074ad9708c0d162aedbc",
+      "sourceEntrySha256": "94c01fac5bacae2f9fdbcc12c029964faebecc3987e4c516a7dbd3226e22225c",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_015",
+      "entrySha256": "44065c289729164109ed74417f2426617503fee8d62040e13dd00d23cf04043e",
+      "ordinal": 15,
+      "originalLabel": "step_initiation",
+      "overrideSha256": "217411d0d3ed060f8a60394545c107b511c43ad4fef6e892e0f1798ffa99d753",
+      "pathKey": "set_a",
+      "proposalSha256": "a0b7eaddc966f4733d9d1aa2abbe7a46c7149a1bdcc8c165047c025a2f3f17c6",
+      "renderOutput": {
+        "decodedPixelSha256": "95b151b9ffe298c1df96480856e411b51d854f74d6137ad24e3a3d35a1b6cb03",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_015.png",
+        "mode": "RGBA",
+        "sha256": "2cdf03baaecea7a56964cc8894b78a1897b9f4ea5c2efa8383b251f7ffe83689",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "5aaa06b02f658595b7249f1541e608a64567c99540849c931cdd14164b4cb184",
+      "sourceEntrySha256": "ed3b5d0843e1e24268263399adae10c2d1ce5b06ab1b21ecbc7131101b693ef2",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_016",
+      "entrySha256": "014a62393756c1b5cb45e41ddf8c3bb38079caa524e123d62e53c8904f273859",
+      "ordinal": 16,
+      "originalLabel": "front_threequarter_mid_stride",
+      "overrideSha256": "bf71f1b38332ae7918e1c7456af8186dd85185ac73b0c15b0c1fcea1d9c3a4be",
+      "pathKey": "set_a",
+      "proposalSha256": "c03ed588ba34105e19bc5e016429c4f380e529b6a6870a938a7b9fe09e324291",
+      "renderOutput": {
+        "decodedPixelSha256": "089160a66b59b93ed000e638ab921164b19a168b8312a9bf644ae7e95adabb14",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_016.png",
+        "mode": "RGBA",
+        "sha256": "b8c4e224a9bc7ccc46e1aa4fb41be95018f4915ec90c77c4c9b2b0fbf1d2fe47",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "1c0e4f9276ce8155e94f8ed9eff04eac8f73252296a23fcf5c53c75aa59b090e",
+      "sourceEntrySha256": "690ceef5aa7275298578f4a646e1c4f19c5f08a39f6ef597c41c6681aef5c9af",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_017",
+      "entrySha256": "ed478b6d9842af43acac32ecf34d13cba4e89e3f44c1331dd168dfcd6ea2c1db",
+      "ordinal": 17,
+      "originalLabel": "profile_long_stride",
+      "overrideSha256": "48e4a9ff18340107bd751724c32d1a651b5659eb05a23f1f9d4d9d83647ad186",
+      "pathKey": "set_a",
+      "proposalSha256": "670c0df4802bfff661ea2d985ff1bb1d428c1d13fcec724e9065024fea548fd8",
+      "renderOutput": {
+        "decodedPixelSha256": "8d0be30b7f8c30bdd6b84f42aeb71b3cd19c01543bfbdd5639dfac2180b3824d",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_017.png",
+        "mode": "RGBA",
+        "sha256": "7b78bf2c462daea5a6b9134fd8f6ac129e9728a3bda5131776355704c4957d62",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "bf6f07af82b16dc0e2aca31e4a1b9684580cd1d3f2e3cea65ed93f33e835b5bc",
+      "sourceEntrySha256": "8f6b54302cecf5166df9e7b17f27b2ae1c61270591079881a6215c7dcab3880f",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_018",
+      "entrySha256": "1fba2fa22aa4af754d824ab01a9727cdf55bddfae267ca7de67c23ab44dccf04",
+      "ordinal": 18,
+      "originalLabel": "rear_threequarter_step",
+      "overrideSha256": "cce564bafa67aa996a39b1607daa320095939fece954f604c0d1155d77bf9320",
+      "pathKey": "set_a",
+      "proposalSha256": "f3cf76c983880505d1bb9895ecccdfa65fc45483517b808d216d577d1a590e6b",
+      "renderOutput": {
+        "decodedPixelSha256": "06ae5010265cd54982c9c12903151bf8e90b652c4718a2e69aa4e55481b43d6b",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_018.png",
+        "mode": "RGBA",
+        "sha256": "b466120f4e719378bbbec1318bec7741b7488552e05aa750dd0d63d91d57ed92",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "702cb639e66868311a13efa89d901e230332641eadacb289a0b77cc0c7429539",
+      "sourceEntrySha256": "25f6cef94333f87ce7c643a71b10fc56a2d9f0b532cbde36fbcfe9244ec3d046",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_019",
+      "entrySha256": "f405ad6806b2247a1e86a4a4f636eca4f64edf7b7cdd06e0f49b60ad9793d120",
+      "ordinal": 19,
+      "originalLabel": "front_threequarter_extension",
+      "overrideSha256": "d9ad4f458d0a820a20c952497e5241ce4a9869ecf7861ee0fd9bb1e56b9dcc55",
+      "pathKey": "set_a",
+      "proposalSha256": "7a09237acfda28ead3fc63a93604e40842d71917695012d8f5911340ea6b4ed8",
+      "renderOutput": {
+        "decodedPixelSha256": "97cb3aa9deda2c34ddef791cf64a88c0f551445d452f5e14ae4e03a071b48d44",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_019.png",
+        "mode": "RGBA",
+        "sha256": "d8024702dcbb32abf6254f1e1cdf1658c8f2ba2ae11ecf9e515a25dd14dbe1d5",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "7d2670ac9a1d4b324b8154e32db0ea68a1146dbe88501ae74b98cfb1b9be63c1",
+      "sourceEntrySha256": "68d169e91b67443fbe57aee739ff5fd6ad98ff66cad2eb41f08e5f625e13475d",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_020",
+      "entrySha256": "8a6244dab1ee46df16c411ccf58534a7a7e01da83aba3f5b52921aef6b482381",
+      "ordinal": 20,
+      "originalLabel": "rear_threequarter_stride",
+      "overrideSha256": "0ebeec263c419d3734c88cccf31ff3a40e9944839bc14b01c3872d5d85829aa0",
+      "pathKey": "set_a",
+      "proposalSha256": "feac7ee03a9f18199e39a469cd418a4d03b6cb0f1133906c2c3e29ab9ddc1f9d",
+      "renderOutput": {
+        "decodedPixelSha256": "e0b7ae2eae82da2da9cd86c094cc270adcfbbb7e2843b11ddc1a900e9a9cbd7a",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_020.png",
+        "mode": "RGBA",
+        "sha256": "6ad1b24467150dd47f782802dd72a63e0c54060fa060eb0969d5aae031b40ce2",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "a54a2ab04f0d0a773e24e2ce15567d60ee155ed5598eaea02f4f6c23a1c7e1ae",
+      "sourceEntrySha256": "ca43b4fddec81577b03301bcbc7989d262cb0d05810dc2641af7b49b0afb87ae",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_021",
+      "entrySha256": "3c1ad0b8006df03a251f8e1e53d6b98af87d59254dabdaebe364fbe9a35a38f1",
+      "ordinal": 21,
+      "originalLabel": "profile_cross_step",
+      "overrideSha256": "5bfcafb51e7f065d74f7df492e8637ab56dc20dfc471389c926d8becdedca053",
+      "pathKey": "set_a",
+      "proposalSha256": "70a6883d8a0d8f794cb1651617917ff3c5e75ee9446031f214f0302da66046bf",
+      "renderOutput": {
+        "decodedPixelSha256": "ece0e1ac8beb477270110eaeceff3c4c37e82182ca19565e578e935fa1fcc94a",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_021.png",
+        "mode": "RGBA",
+        "sha256": "b5b4e9263ff9607f994cf5b0acc7049e1b5e84286e9936869c98bf054a6054b4",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0496b39bb4fd6d89d36c506b99336194e3d2b2332184e1e75b5569e542d361ab",
+      "sourceEntrySha256": "59d98704fbd376c0af0c5d2ac626591377ed3b4ec41a0dcc0dfb22be457c8c45",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_022",
+      "entrySha256": "fc1ffb4dd760db5b767c9fa93a87977143adce76a056db4e9b7c746326eba1d1",
+      "ordinal": 22,
+      "originalLabel": "front_threequarter_long_stride",
+      "overrideSha256": "adfdfca97b64cd646fe4033531bd63aae51de81b043041c048cd2b2db615be79",
+      "pathKey": "set_a",
+      "proposalSha256": "e3f8ffa615770baf4340748f88e85c3a4065d8393e77bd6ef2795d5a547b437e",
+      "renderOutput": {
+        "decodedPixelSha256": "b6a4b48a0fc397cbc7240b92bb6bfa5ffd9ec289e4b0c37566447a2881f9403c",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_022.png",
+        "mode": "RGBA",
+        "sha256": "4ce85098c000d276d6d8147f1ea6dda4fee4bfde1fda079e9ce1357cf1ea3fb6",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "41b316ab079b68c0e6c2d8c59618eb38a8fb4a08d49cf6e184f9a9576e8a3ce8",
+      "sourceEntrySha256": "6473457e4c916a9ce52dc16b1d9a4cfa293221a97fbb4cb268c1c87f850eadfa",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_023",
+      "entrySha256": "b7359ade40c59dbaebef25cfb1f8d743f249e862aa3f485c3ac46a67e325bb74",
+      "ordinal": 23,
+      "originalLabel": "rear_threequarter_arm_back",
+      "overrideSha256": "436ae9bbee059624de6915592c884c408397a99984a8634e64b2fbd5a7a2c2f4",
+      "pathKey": "set_a",
+      "proposalSha256": "6b8992aaba998af6ceef2886e63e49f3b9e973ff3daa0634c4541f959e73ee1d",
+      "renderOutput": {
+        "decodedPixelSha256": "f076f6b95b2ec7b12abfbb83b4e470d16a887be8389bd3f8504de3486101afc2",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_023.png",
+        "mode": "RGBA",
+        "sha256": "54df6dcba5e17c6a76ca575039253ba2e116a1ae3e982d6bd463e53a4dc9b28a",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "4266fb3bb8d385d5c5d0c1a89739ebcf16bd18215bd4a235f4655d7c7057d309",
+      "sourceEntrySha256": "e4bfc4793c9436b020580818f0c614a7f3ea773868918cbd532f3598eb523d2b",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_024",
+      "entrySha256": "5f42a5dc8c94bd501fe59960c0c8e743b09b32ef202c46371d9b47efabf574fd",
+      "ordinal": 24,
+      "originalLabel": "profile_leg_forward",
+      "overrideSha256": "97c0b8a57631af431a35fc1fa8d65f0fabf7bfa199a5a76b81706852533db7a8",
+      "pathKey": "set_a",
+      "proposalSha256": "eb128db04e860caea6d3b522c75dd9c6dbd3d94c746c0ce622b68c8fb26c2c10",
+      "renderOutput": {
+        "decodedPixelSha256": "d31d2e62a7b887544f1462b8f8bbd45d80420fe482b4b72022f54812d5129602",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_024.png",
+        "mode": "RGBA",
+        "sha256": "31caadab7e4e68a8d09108373afbeb3588974a3d006727846050d01df818dff5",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "92ef260e05fd333fe6bb8d150ed8f5b9c4315eded0c561b370afa531bdecb065",
+      "sourceEntrySha256": "279242edb769fac01d1c63bff0a8681102e17593d19f5501d781f3721806e87d",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_025",
+      "entrySha256": "52fa3f280add6d8becd3154b369526efeab16bb8447bf91e59a9bd38df70b8bc",
+      "ordinal": 25,
+      "originalLabel": "front_threequarter_toe_off",
+      "overrideSha256": "5b65c40dc18ea82897e67dd9e01f181645eb30ff44ebfdc2ea1c0339b6fc46f4",
+      "pathKey": "set_a",
+      "proposalSha256": "5745b1a25e7915d7a37b3ec1151750d27058962a0c04b16e9cb8bb8ba628fb4c",
+      "renderOutput": {
+        "decodedPixelSha256": "5a9cd4ba3256c21babd05b54630ba2cbbd6d9f781ca615cbb02e28007788cfa1",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_025.png",
+        "mode": "RGBA",
+        "sha256": "d2d9e3e54d314f4152f792cd6f9e85bd77b20124b860b60789dc804040adc8d0",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "e3985c02ae333025b6032d23af5073e0c92bf336324d1db33a67b0c597a2a715",
+      "sourceEntrySha256": "af360251c1c4886e1c91379abe86b8519e8d686a3843b743b50edf42cb33c967",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_026",
+      "entrySha256": "f6d455982c804682f9af84451b1654352de6d456be6c299924c4fe3659c30597",
+      "ordinal": 26,
+      "originalLabel": "rear_threequarter_long_stride",
+      "overrideSha256": "650eaadb31e869501c062af5d765cad1b41e5a9d7a691032014a24d654621673",
+      "pathKey": "set_a",
+      "proposalSha256": "f6fa08f1b1870d02bcfd41e312af4556db86cc6a20d54108319d5a3449d28676",
+      "renderOutput": {
+        "decodedPixelSha256": "ca811ca7cfcfd078ceea52518bbcc9e52474073c3b8ebd1072e8cf323e0b909a",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_026.png",
+        "mode": "RGBA",
+        "sha256": "a0c2763e44560bf9a09d0d94cf5517ba327cc8e096edd5fbd2f304a537ebf1d1",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "67541505af8eebbb31df2cb157a372bda538aab8870c445757380f48ccf588ae",
+      "sourceEntrySha256": "9110ffc5145e5e6dbad5908374b367f46a47a5089d5266388fe3951c926ff2c7",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_027",
+      "entrySha256": "9a5a9076184813e5f720fe210b77ee53258bb5db515b30033f1f01064ba28e71",
+      "ordinal": 27,
+      "originalLabel": "profile_knee_lift",
+      "overrideSha256": "3d376442d5d3b679f5733bc83c2acfefb578becf35d4a97dd39c969200bc1732",
+      "pathKey": "set_a",
+      "proposalSha256": "9783270df2cdf2c1f619e3cddc8515b11166ef8acf902e345543e53e0846a657",
+      "renderOutput": {
+        "decodedPixelSha256": "d8cdb6b6bcd676f95d9bc1774043e7ddbf1c8a01acc42bc7e880be68845b7bc8",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_027.png",
+        "mode": "RGBA",
+        "sha256": "e9d2014379182717cbc51a71ace8bf5c4d6a1ee640b026eedeaaf3505fd44b26",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "d26c14bc92c02d678b10fe529cee8cfa3ce503cc075c2ec30c5dd343484dc624",
+      "sourceEntrySha256": "9b3d7c082a3b2b83ecd11a335a2d35a56b6b936a8f11dd9bfd80bfb36864eaf9",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_a_pose_028",
+      "entrySha256": "5d3a7a57de3ab5adaa5f2ada9dc631889a5e1539341f384599ee3b5b23cf2bd2",
+      "ordinal": 28,
+      "originalLabel": "front_threequarter_heel_lead",
+      "overrideSha256": "cf52b4721ee44b957f3864d56b5ae2765a6c7b1317814e05a0494ca003a810f7",
+      "pathKey": "set_a",
+      "proposalSha256": "80d82eca9bacf661669bfa404c901ff37ce30cbb7d91a9428659846e8d057c66",
+      "renderOutput": {
+        "decodedPixelSha256": "82aba85877ca7a1d6045d781003dc702c353653d9a661cb476ceb12662c960f2",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_a/set_a_pose_028.png",
+        "mode": "RGBA",
+        "sha256": "b2d6ff2241de41e4b7c73dce1cfc5952c74de429edcc1eb644ab9ce8b2962f99",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "76081dd432128ed36bc24a63840992e24551d95a9d49eac3b6608ccfd4bcaf8a",
+      "sourceEntrySha256": "e11dd99ebbf32dfe10b922cc0adb8f43fc8dd331faa96588483c66f3f027592b",
+      "sourceSetId": "set_a_edge_extremity_refined_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_001",
+      "entrySha256": "ca9d67d7d8cc86bda260487695d12bdb606a86cf1d0839f08eb37efbce74223f",
+      "ordinal": 1,
+      "originalLabel": "neutral_upright",
+      "overrideSha256": "09e7c4e7c262e0d3c2f3969dad82d7a1ca28c0bb90ef572fb44d38f8d28aa251",
+      "pathKey": "set_b",
+      "proposalSha256": "dfb9a4603cf25faf646fa491f37597dc35ecd1da6e249983a1324705a4ffe421",
+      "renderOutput": {
+        "decodedPixelSha256": "66666cb2e0b835ac8462dee206641b672940071b0249fe65b244e5cde62f75ed",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_001.png",
+        "mode": "RGBA",
+        "sha256": "f7dc0a6d1dfcce0bb65afbe1690011c41ac8a96e531be274bb590d8a951a53db",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "8e768b1a4ec77d47ece2896f50ade40da0a5362b40d5568d508ddd9b1ae8c2f4",
+      "sourceEntrySha256": "76028bc50c30b51395f597b43ead8bdd4a068442509c2621a78d0804131251a7",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_002",
+      "entrySha256": "a214a021791b291343a277cae326f9f39342c9417426b76d21fe2d6d81da17dd",
+      "ordinal": 2,
+      "originalLabel": "neutral_shift_left",
+      "overrideSha256": "58afb4e03ca9ab7237dd8f15514aede5421ffb0867c94180796c33d3c41be946",
+      "pathKey": "set_b",
+      "proposalSha256": "ccf50c7d857115310320c0bd413278b7d3513034c5fbf85f4e8019f374ceaae0",
+      "renderOutput": {
+        "decodedPixelSha256": "f7dc528f2c486c732d736a5e10513e9ca7041d8a33617eef97138e33b3147184",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_002.png",
+        "mode": "RGBA",
+        "sha256": "0602dbcab4e7702c0a8500760fa7e3b905a9262bcdde42a8cfcd796a67e935a8",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "1c644a5b4e0d2cefe81301b021600630421f426c1370af9ce1ba20a92e41d749",
+      "sourceEntrySha256": "e2f816d227a5ae77fa0c6d025026d6c736efe946665b040f85f483f1abfb0e28",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_003",
+      "entrySha256": "27c38bf78c6df3670807e3f3615ec060627a29155e852ff7a2a660c5306c9433",
+      "ordinal": 3,
+      "originalLabel": "neutral_shift_right",
+      "overrideSha256": "c191768ef693891038122f482a6fb5069b8dd96c874c0f37b8c41761fbc38e8d",
+      "pathKey": "set_b",
+      "proposalSha256": "6f1c7a55b10dad212793d9a34e90a6636b74e2a9487bc6db17946fe74b3ba15a",
+      "renderOutput": {
+        "decodedPixelSha256": "625724b0a37303252623893df8fd7c480e825526054f4a2613b2ca23343ace65",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_003.png",
+        "mode": "RGBA",
+        "sha256": "21abc4cc1b4e3adaf842b893d2ed02101f6a17feaf9c36f9faa3a75ffc3e0b22",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "476b319cacb27d7d63be5324b2686d2ed085f638065219fe24f5af2822bc845e",
+      "sourceEntrySha256": "c9555f991bb95c64fea36d0aa01a46ef0ff49ea3e2a6ca30c4c6334da9fa8f0c",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_004",
+      "entrySha256": "d047516f3a73bf67b55d5f0add13edbedb9f6ca9ec46b9c5c5965cb1cf144ec0",
+      "ordinal": 4,
+      "originalLabel": "hip_shift",
+      "overrideSha256": "3c3d26cc103a4a3e660f72f157d52071feb4158faecea607d2ea316939b06f02",
+      "pathKey": "set_b",
+      "proposalSha256": "de696d174ca7a8d2e10aaaedf8d7c106cc0f2a90f92b70733feb2c7def404eac",
+      "renderOutput": {
+        "decodedPixelSha256": "6edf2e62f3db629bada42644257b21eaaf2950c0d349f0d5605e07bb410b3be4",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_004.png",
+        "mode": "RGBA",
+        "sha256": "d3c44b0f2c5f637b2b309aa52b648478dc6a86a9da49594c6381b09b20cea738",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "2cf75cbc3573776089b1dec4cd8ec65ebccc2cc009503f5acb9ee0ee8642851a",
+      "sourceEntrySha256": "6eda2992787a60be2388cc09aa95cb8c23206f91e09ad5f357b403231f51db9d",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_005",
+      "entrySha256": "f31c0f35ae91d05794a73fa0c498d66d4c648ee46b5db5954f4307b8f80760d7",
+      "ordinal": 5,
+      "originalLabel": "weight_shift",
+      "overrideSha256": "f5d36bef9a86b5aafb72dcce22c9bc231c539a6da8a12c9d5b0ebb556a052c32",
+      "pathKey": "set_b",
+      "proposalSha256": "3991693c36de1d75e13af44854691c88b180c4639f57d5718d4ad17cd62cb0bb",
+      "renderOutput": {
+        "decodedPixelSha256": "1526a9c562f81d355ab1b8222b72e4833febb3bab7aaaec8c00164a374940521",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_005.png",
+        "mode": "RGBA",
+        "sha256": "07c02a8b6e1e06a52ea9531feb2e2626390ea6590d19c3ecdada658fb94233e5",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "2ee6d7e805ca4171107df60d9cd19761f669183fee083363532e9631305345d9",
+      "sourceEntrySha256": "049de54ad0e14a6ec6dc3ab3118af11ee27d0892fe8644a058d3ee8960e90596",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_006",
+      "entrySha256": "1f7933fb083330770f4d9b5b9a51e444ecfae353819cc1474a8c1a1f0b8e8d4e",
+      "ordinal": 6,
+      "originalLabel": "head_tilt_left",
+      "overrideSha256": "daba9a40039a5c3570eaf198eb8843511056ca16adab40db442cb2cf0cde6892",
+      "pathKey": "set_b",
+      "proposalSha256": "042c1025942ee9d121b61ea72d7b4ad0509b073c59a7369b2dfb2f735d1ca62d",
+      "renderOutput": {
+        "decodedPixelSha256": "c383e3c3af3ab43e7c5b614398f954e6d5b93d3718e0c8ab432cde79f53d6bbf",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_006.png",
+        "mode": "RGBA",
+        "sha256": "5a4c181ad07561c1725d45bda161509b2d9cd6e5a2d1f5bcca2d032a1e305531",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "15aaa1473ae3f09b9d3656e947cadd7d52931fe5ba11fc7a849c8a02dc539e84",
+      "sourceEntrySha256": "7f1ba3bda3b57b64de2ce54e6b8c9e8a0f924b7cb4db8324b7b8cb4d34db2f7a",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_007",
+      "entrySha256": "31858048387847d5437939e84824fa0b645ef8b7baaca2b2db1eb06ab8f46530",
+      "ordinal": 7,
+      "originalLabel": "head_tilt_back",
+      "overrideSha256": "c25772ffd7dc60ae840f78e62a65b1474f20f78a91e34f8cd8a39850178851d7",
+      "pathKey": "set_b",
+      "proposalSha256": "82f71ac6e47418f4ebb40ae3329e2473d43df2291ab6a49c121a9a67639b4446",
+      "renderOutput": {
+        "decodedPixelSha256": "0a397aaafeb1ca7ddf5874b9050fc80f883229bcdeb25a7f29033ee23f37f168",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_007.png",
+        "mode": "RGBA",
+        "sha256": "d5818825062dccec3b1f44fa49b4e1d8e034dd415ae5e6c5b8641a4c114be40c",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "bea7c9854afdd0d5db137e5c0e9325eede9cb8e4dfdd77e47e6cd4fa80456a91",
+      "sourceEntrySha256": "d84cef1c09541c0b69b013e0ad3ffdca783386ebf1aa29d7bc91529784058354",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_008",
+      "entrySha256": "f252451f7dfe236503de2780e2990e3d74991112018a1144ace3e14f378ac621",
+      "ordinal": 8,
+      "originalLabel": "wrist_pose",
+      "overrideSha256": "bebe6164ef05bbaf8474c65f37ef471debfa47e2708309fa9a6cb2410c28b0a6",
+      "pathKey": "set_b",
+      "proposalSha256": "3480ae05814002ac5bb72fb2fd9d5711154e47333e5cf176355c352a21a9aea8",
+      "renderOutput": {
+        "decodedPixelSha256": "d0eccd4e91a4dd2966c0d57e79fcd2508478c222a7271ee8ecf0d12dc2522b01",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_008.png",
+        "mode": "RGBA",
+        "sha256": "8b4ec2b2383cbaefc15253e08f9de1961e2f769a0254f3a8c3ef0cc76a3e21ea",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0515d83c6e17dacfd3f3bac9f49567c02e548025d63c249abe9e2b04d790e90a",
+      "sourceEntrySha256": "fa71ffe5bbe48d05279ae607bedc53984145b96955072c58bc180cce85c9679b",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_009",
+      "entrySha256": "7a8cb6a2ed6196e0a4dc2c7ddbd9fcd94afa6dd734e2092cfc12e9f65ef5578b",
+      "ordinal": 9,
+      "originalLabel": "center_reset",
+      "overrideSha256": "23bbcee923e00acff1080a0eeb74f947b7da01534eaa4f35f0e730b560129714",
+      "pathKey": "set_b",
+      "proposalSha256": "793d540dd97fd3bd2c123fc2618861e09c087150eea896c56722a16826dfdb99",
+      "renderOutput": {
+        "decodedPixelSha256": "09994fdbc1125dea78cfa47ae14d137a10571c20266cae8584365354ab2b7ce1",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_009.png",
+        "mode": "RGBA",
+        "sha256": "048d0d6ea87eb3266cb4582b7a1c3f0965a6a8c52ea3d0cef1c0a5fcc02fc511",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "24aba0cc06246490d5af184f90ada4652b91bcb0c0eae3535dd2232cd7701301",
+      "sourceEntrySha256": "da589457be36a86a23725fb640afe97ec4a32a5355bb56b83974002d3d2b1c63",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_010",
+      "entrySha256": "e3ecb718db0822f206b3cdc83220fad37323ae78ef2edde5d9d32fdc136fb360",
+      "ordinal": 10,
+      "originalLabel": "calm_ready",
+      "overrideSha256": "7befc34c692ecc64ac033f80f717ce6c5201ac6ff3d8de7a2df2478a397874ee",
+      "pathKey": "set_b",
+      "proposalSha256": "e4a7cdf51287d0896f791d0417aa165ca8f3c96ce3d92581eebfbeb51eae9311",
+      "renderOutput": {
+        "decodedPixelSha256": "dee45446c57fac2413ded8092ec4e1b94e4c67d3e3583574a460cbbeae1b383f",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_010.png",
+        "mode": "RGBA",
+        "sha256": "3e694a1876ffe5dc0e397d242a8d3aae5d191367127e1fd6a795d65623949f6d",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "61f6696f79b5a58e393457d685f078c835a195329e78cd315a5512cc2c75629e",
+      "sourceEntrySha256": "3b4c8df6b0588369bfb5c1c92f8fd079ffadd6015a7ba717a0f2c6c743bf7b32",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_011",
+      "entrySha256": "8ff56f48c3a0eb8886188de0a47be678caa74299c078697c973f97fdfb273420",
+      "ordinal": 11,
+      "originalLabel": "upright_lock",
+      "overrideSha256": "4d55f3f35b27e9af620c34ba5722ec4f404273033ebd304bd6d2fc6ce305bcc4",
+      "pathKey": "set_b",
+      "proposalSha256": "f742ff1d8983a41cced10c9c9432acd84a202ec6f533282dacb5951fc4af9129",
+      "renderOutput": {
+        "decodedPixelSha256": "6b00a4bfb6bb7e8b3086a600791f5fa9b375f722077cd36f8ebfaa11fcc9642d",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_011.png",
+        "mode": "RGBA",
+        "sha256": "e5c651b501f18e3314b693f6c4b1e3c964abdb67873236c28619dbfa97ef2da7",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "386859c398a2bfac7ad55b22248c7c335261c99b52e9cdf97fb9c2f0374e62a5",
+      "sourceEntrySha256": "69717c1c8acf510ce26f6f58b7d8d8aa19dfda2a7c163d69261812623435ccb2",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_012",
+      "entrySha256": "27172cbdc6c7c6d141be0f4f676103ecda30c2bf705701ea13a42b7d400d8d21",
+      "ordinal": 12,
+      "originalLabel": "quarter_turn_front",
+      "overrideSha256": "cd13709ce538e677bf30ea157de49569749e654a2170780bc855b3e1173e5314",
+      "pathKey": "set_b",
+      "proposalSha256": "2276f2d2d99462266fbe092fd9e0d84db14caac7816d937e571d9256c6026065",
+      "renderOutput": {
+        "decodedPixelSha256": "10594b8254cad0fce589502b6a4b2104f7779665682c5015a506b73254b8f8b5",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_012.png",
+        "mode": "RGBA",
+        "sha256": "6bbf91048773ebfc463d53e73aff875667f0f7a2cee54e256fd230ebbd257b55",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "fa30ac5ee1c95e53d96d06a763d762633b793902f09b3bda126b9eab2ffc34af",
+      "sourceEntrySha256": "7efff3e35b1d07a32dec8d9665cba612317ee2c76786a555777da0f10be3b746",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_013",
+      "entrySha256": "1e0f991a1b530845c7f93b6532fdf814bf6381c766459dabbe2abe569ff68bdb",
+      "ordinal": 13,
+      "originalLabel": "hip_cock",
+      "overrideSha256": "20d1ee3128f9658f0fd7fc2a7bf9c62733dd420d46aa62357292e35425ee512c",
+      "pathKey": "set_b",
+      "proposalSha256": "61be77fb891c2e3f043b8044f915c26b905b7282f67a47ee977fe3612e6a15c7",
+      "renderOutput": {
+        "decodedPixelSha256": "7dfac72e5eb8706dfac49f1e03230ef5c47efb2f1d00acc1ed2c5a0d2825d940",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_013.png",
+        "mode": "RGBA",
+        "sha256": "6f505a57d5e92559a57d75c2f18e40558b56ae38b29f245e4a1acebf56545c37",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "27fcc634c5a691af5978b7cebf911442fe2d8bcea245e2f7de92dba46de59cd8",
+      "sourceEntrySha256": "1a0813927ece75d963004cca2fd73c69ff250e423e437308dbab70e4518e8e19",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_014",
+      "entrySha256": "32ae53f817676f533a14c95b66e3b0a4a4add6f70391b42723c676178c2c9097",
+      "ordinal": 14,
+      "originalLabel": "subtle_lean",
+      "overrideSha256": "42d42ca69d80e4687c974f21efdaf0365625885089db7602da2e895cc9b23669",
+      "pathKey": "set_b",
+      "proposalSha256": "67c99dbb3daa9207803f756502045d45a1edd184c526ca6cb2c9b23474fde4a9",
+      "renderOutput": {
+        "decodedPixelSha256": "85872385993d9aaa5062a5f9fca8f8ea2f7f665d6f44ee7527960041aa64a38c",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_014.png",
+        "mode": "RGBA",
+        "sha256": "a9572aa57d760539ecd437705b47134f4e26b3496244a8e27cca73ecef74fc09",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "45ac7d49a8dc50b11467c93d8f85a7b3e4b1de67038b850af586c84d2ee0a4da",
+      "sourceEntrySha256": "9d3d18b8e6742fbb0501fa02fc5eb7d0232a45db988fa75b3f7e483026cd0c81",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_015",
+      "entrySha256": "eee14b9238678d13f9c2302b5bbdc8bf5354ee9698d05be9d5ea3139b4bf3a8d",
+      "ordinal": 15,
+      "originalLabel": "angled_glance",
+      "overrideSha256": "30391b1d3d65b30d56329b39a5ed1d4fed836f1ca51890cfbc14f898a03ff5b0",
+      "pathKey": "set_b",
+      "proposalSha256": "872cbb84898efba15290a5b54f6c746b313d85acd39f9b138a0ec6cd04226a58",
+      "renderOutput": {
+        "decodedPixelSha256": "7f8e64a429e2b16a83d6b58536e92359bd6940677ba118604f6c1d5250bb5617",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_015.png",
+        "mode": "RGBA",
+        "sha256": "1fbf4881053a80c9eec38547cfd93389af0bd95800c74a5f7f1918c7460c6eb8",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "f45d03c16c79b1f3626476c2af1e3faf97a79b397e2b02ed366e8c554e74e39f",
+      "sourceEntrySha256": "3a58f34ff5d8f7210cb2a660bdb053762e04517763598570d696aec2b47f8a02",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_016",
+      "entrySha256": "cc818a649f61c594645d17e4d805747092d77fecd86a54f344a9b1c68fe5517a",
+      "ordinal": 16,
+      "originalLabel": "center_ready_2",
+      "overrideSha256": "872ffceb9e8d81fdf75e19df135b1954b6dbf7bdda048a50fe6e73c98f61275c",
+      "pathKey": "set_b",
+      "proposalSha256": "0aede22a1893645460b6b2997853ed448051fb1d25c5eda3866393050032a995",
+      "renderOutput": {
+        "decodedPixelSha256": "308a27441a1241b5f520220387254f7214db3ae3bc6c14c01ff180bd08e095c6",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_016.png",
+        "mode": "RGBA",
+        "sha256": "7a0d39636cea805e105c286cbe893ccfa23e7f5a466fb5506fa7bf1dcdff7c89",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "c5b2e2c6bb97a68c0020335d24d451f1af3d3023406f26cb6cee0528fda65d3e",
+      "sourceEntrySha256": "2a192fa2359bc94a4cf0b206c537334922655a8bbfb55e24452542d4da212d34",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_017",
+      "entrySha256": "340cf267957def5db0a80afc6b1ab8125949aeaee7ea9cb9ce5af54176a9c54e",
+      "ordinal": 17,
+      "originalLabel": "calm_upright_2",
+      "overrideSha256": "21eeaf345e4b0c397c55c655993da7f46943fc7f1f36974dc8c2f4c084516164",
+      "pathKey": "set_b",
+      "proposalSha256": "63e628105fa0f93f21278de8d79f8c7a4206b1ef8dc83f1c3e140f432394f949",
+      "renderOutput": {
+        "decodedPixelSha256": "f247f8b884bd27cf09f70713100766d48da212d71f788364b3468a3fbd3b026b",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_017.png",
+        "mode": "RGBA",
+        "sha256": "700fd888c340f4b51c5b0a09b760994560d92b9bc9c08fe1835141a6f8bcfe8f",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "66ba6562bf7fb6b7c423067382d1401c474fcea1086f5960bd9f90d25fe24775",
+      "sourceEntrySha256": "b4aa914e4df0cb18c7205ae6fc8be62697ad385160694ec91d942a90150a41e2",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_018",
+      "entrySha256": "380033031c2878005b5febc655374ebfb5a177b0732343db7d12d018d52b65c3",
+      "ordinal": 18,
+      "originalLabel": "head_lean_right",
+      "overrideSha256": "be02b591aa3d0a610b34baede58a84fd8d3e4aee8c8c397488609bfb3d4a4c84",
+      "pathKey": "set_b",
+      "proposalSha256": "ec95cb8d6513cddf741ba34ea49f1fa7a9fac8b294f6ecc9801ae43cb00e3e63",
+      "renderOutput": {
+        "decodedPixelSha256": "204d8884d84229f651e968035981a5594443aa257117f7dfb75cfc347888edf4",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_018.png",
+        "mode": "RGBA",
+        "sha256": "ea1bbd5d7299e343dc45cd9a5ec0d65a15a4aa1e042b04e10a10fc7e14e20942",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "9d3b6909ae31fce77cae0f3533e4b0b4a889723265c0187fe0965481faa77df7",
+      "sourceEntrySha256": "d9792bdda7f88e5b390ab6931d88de44dd94e7aff4cb107c1c487eabc63e1365",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_019",
+      "entrySha256": "72320d1f9b0c4c5e1ac0ce71534d973709492dd5ead8fbdca8cd575307a18438",
+      "ordinal": 19,
+      "originalLabel": "steady_hold",
+      "overrideSha256": "533cfcd13550db5b5525d71a98ed37eff256b38e51361a15677b85430c4f96b4",
+      "pathKey": "set_b",
+      "proposalSha256": "6e52e12a3a8048222785330c281b341533fd92c05aa255ebdad437e57c4554f1",
+      "renderOutput": {
+        "decodedPixelSha256": "1322ad45cad6f41b680a7f0f300b3039b8b36f2a18630db27e71ea0e31dccea8",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_019.png",
+        "mode": "RGBA",
+        "sha256": "02d086b88cb0471860f44f6e2304ca6422788bb00d85a0ec49f27c1fe6c5ffd5",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "919d6ef4ed4e1b5692fccd2c10af3cb8cf2fde5577c440b97d24db2294f38436",
+      "sourceEntrySha256": "1506e564cd6fe45a3a330b3f79195666142b24d0ad25dbc9b79bc682027a8959",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_020",
+      "entrySha256": "e185a20bcfb136a7313cda207739118866dbebeafdc83e8afa290ad69fe59c2d",
+      "ordinal": 20,
+      "originalLabel": "open_stance",
+      "overrideSha256": "2047cc62591e549fe7aeeaf30c7fd1f137b504e43976026eeb8ae12317a254f4",
+      "pathKey": "set_b",
+      "proposalSha256": "02539c7d9fb3b0d552877fb76442c960901824676563503960fdc7c68c8c64e2",
+      "renderOutput": {
+        "decodedPixelSha256": "3fb76fba148c6a90682cb723074b0ae499a4989623f478bc777015c02e096935",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_020.png",
+        "mode": "RGBA",
+        "sha256": "f5e4c9e137d6e285a1dc01b693c8ede0aab7a01951df3b4002cbaa3cf646f212",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "de9f34a7fa7b981fb76c3784da9bfe56642e488bebb1b3a136f58eaca885b1ef",
+      "sourceEntrySha256": "5846f736b0fc446ab5e85e5359e1f262a5c095552706c739bfd03315edf19eb8",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_021",
+      "entrySha256": "eca0d6d320fa3f74aa4f8eef1ff52de563cc041dc923537dc10496c0873ea772",
+      "ordinal": 21,
+      "originalLabel": "white_bg_reset",
+      "overrideSha256": "b2754f2596f7b87f744709df2ea11a6fc870138390ed64d78d9200e7c644279c",
+      "pathKey": "set_b",
+      "proposalSha256": "e5bd04aaca72ced3dbbeef8b53f0e8d4f49877728724e69b95db566a62ecaefe",
+      "renderOutput": {
+        "decodedPixelSha256": "55d71d69b80ee6eb5a6c846748a177cf7fb09d21d5978111626960270418a63d",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_021.png",
+        "mode": "RGBA",
+        "sha256": "a4f20e7ddbeb8b0d5dd4e3e989782f8f5df6d284257b2d2b879e6144afa855ac",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "51bbd16e7bf1cadfcc1cdabe9b3234301ed942c7e43f72223bcf30b765049995",
+      "sourceEntrySha256": "202888f059f47bbb0e5916a52be35d71c242d3cecb2eb39c25f41343b1b3e29c",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_022",
+      "entrySha256": "012e2270771aadf85073c9373883ed23d663f2f523e0b0ec8f0bf7d68c2070cd",
+      "ordinal": 22,
+      "originalLabel": "calm_white_bg",
+      "overrideSha256": "2fb6f004aadc1ac5142abcb91257e8b7d0f5a8aa72c27dc25adc08b1b7fe9481",
+      "pathKey": "set_b",
+      "proposalSha256": "31bb89a0cc39a189ea3a90f2e3eb99e5f786bc23ced842f3040dcccb1575b702",
+      "renderOutput": {
+        "decodedPixelSha256": "db96da5ae48e060a5bb7a679da1c8f7d79ce1e699d1c4ec59ad0232e69b2f8fe",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_022.png",
+        "mode": "RGBA",
+        "sha256": "089371bea1f9dc62c34b94f14a94dcf60b5b0914f26581209558384e6cbc6734",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "87999d1697ca55862ea9300870b0cb5e50d480c0159979d0fe3547151f9b4201",
+      "sourceEntrySha256": "81961eff84af01f2eefdaea7cfbc77623db6c1d8f6dcd2219bbbdbba8fa51ce0",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_023",
+      "entrySha256": "ea5f07245abb65e4e7c3efd6998ef8bd9497e7c0412a0072e9da458be03a1324",
+      "ordinal": 23,
+      "originalLabel": "hand_gesture_start",
+      "overrideSha256": "91910b3104984b01f05b057c80c1f692dd99397f2eebbc8d369c98e0b4314a8c",
+      "pathKey": "set_b",
+      "proposalSha256": "2a408ccf8cc6dafc6513df441d30d9b5e777d8e3dc81af2ae3ffeae3f7eb92a5",
+      "renderOutput": {
+        "decodedPixelSha256": "22e337f7ab03bf27dbb60eb1878f6571ce26e7183242cc8fbbe9da059144d982",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_023.png",
+        "mode": "RGBA",
+        "sha256": "4d8cddb192117749a7ae85a24109eba239646c7d0cba80eb1115cfd15857c214",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "b3e5579f84d4a2efc4e4c63de9509d7e0c2660a811ee40eba0cdad870c8b1fec",
+      "sourceEntrySha256": "f93dae6e3811d1c3b818cf9e5cd61cd07be9981c75ff320ce3e64783036fc184",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_024",
+      "entrySha256": "b6588035aacad720006f0f89c5ac3e2d0bcef79ab0c92e4f38ecb67aa40c73cb",
+      "ordinal": 24,
+      "originalLabel": "hand_gesture_open",
+      "overrideSha256": "1f1a8efdd4bad4bb791bfa34341fc340498d9ef1439827c82d8a7f516f3d147a",
+      "pathKey": "set_b",
+      "proposalSha256": "6bf7c1c7eb09c8a3a2f19f9e3016ee3b2ec823471178d2b4173bd435549dd6cb",
+      "renderOutput": {
+        "decodedPixelSha256": "fead3c0e7029bb6109442505111007e17a2e5d3ed61a59bf7688796b6c61a233",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_024.png",
+        "mode": "RGBA",
+        "sha256": "5dcd3d1ee0e118dc43adc8174b3380968479b86af4d80a0fb88b350df5ec2fcf",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "e2dd87bf7c25fe14819d37f68adf6f2c0dcfe0cd6e9b5d1f70938c0dcfb5c7cb",
+      "sourceEntrySha256": "fe715c5d517c35c9fbebb900ea2e03eb31b341f7b3e9815db9085ed8bddac890",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_025",
+      "entrySha256": "69ca8f89d3cee76bbc61a051183aa16629ea37d4a389021518b87342df2fb2eb",
+      "ordinal": 25,
+      "originalLabel": "stance_widen",
+      "overrideSha256": "873f9862b9dd43c9a765a0d5d5dd4a6af11d60ce52ed7628b6abf745a3a98e01",
+      "pathKey": "set_b",
+      "proposalSha256": "9d39f2771ca521c9972d5665b7b57ac16b3b716cb3c36d7326b7a3c95b0c3202",
+      "renderOutput": {
+        "decodedPixelSha256": "1fa4a5bd5938d3284d8a6bb66d2bc7e8894cbfa67f666a3af91908f88cc0adda",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_025.png",
+        "mode": "RGBA",
+        "sha256": "8acb28b73b26566b675f19325cef9e7a20b4c533b4879bccea16241fcb6a27f1",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "35ae4f55cf46094bc76fc90129116ca93b980c238d9cdba7646a0136f20afe48",
+      "sourceEntrySha256": "1996e0b6977698b03dfb209c9d8ee86b5716e01611ff23b6df930950074855ae",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_026",
+      "entrySha256": "971075fc8112b89f36a4e88c68512b48adf3d448cbe16e2c99e45ecd4a95b47c",
+      "ordinal": 26,
+      "originalLabel": "deepen_stance",
+      "overrideSha256": "7d1db3771550fa50a10516fdd9e26fa04c5e50263c448aeb92af0d2645ac55f7",
+      "pathKey": "set_b",
+      "proposalSha256": "45076e3b50e4a95dec629c45760d17c7e2cfbd518bf10f543eee0070ff555ea9",
+      "renderOutput": {
+        "decodedPixelSha256": "251eba596506652eee472bae5c68d935d4781dc7a8f975aace17914e3368ddb2",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_026.png",
+        "mode": "RGBA",
+        "sha256": "d3dbfe67cf4b87acd1b6721dd913efe8c74d3a9d3fd02bc9b9fc92d405341674",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "d30b0a3de521136c9b32783010622e2c3f5cced52124f61c1304b4af43243902",
+      "sourceEntrySha256": "049595f65a9bf14194fc6c4cb791ff43ceacca41619954b6cbd8c8e3e2207e66",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_027",
+      "entrySha256": "3f859503bd2907d3f5094e23e330019b1eedf7e65767597cf03d9a07f4f752eb",
+      "ordinal": 27,
+      "originalLabel": "wide_knee_bend_1",
+      "overrideSha256": "5d13db29675622df913e2fe22ed697dc8f8ca9cee1839bb051eac36533fbcf80",
+      "pathKey": "set_b",
+      "proposalSha256": "c3b4f2ea44e307be2e9f539f4de54eddd1d33ed787e87927ec1d54c9837a83ac",
+      "renderOutput": {
+        "decodedPixelSha256": "f34bf9545079682c7b445709c719a39d0b66eebb72cf315fd58421df066611d6",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_027.png",
+        "mode": "RGBA",
+        "sha256": "28489aac4e47a0c16bcc3b64c4be15d1797048cbbcced3ee08c0c0f454ecbe69",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "fac51ef056762b2c410c0be5c9d69ef55b846b31845f2d18a98e055630bad0a0",
+      "sourceEntrySha256": "0d27cfed667481fad6a61e30eef5d9343bdb6d61d885ddfbdecbbc5457cecdab",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_028",
+      "entrySha256": "a0ac23895f1fc13fa7ad5012638bf8fce238736e24191ea6e8304b8d0dbd851e",
+      "ordinal": 28,
+      "originalLabel": "wide_knee_bend_2",
+      "overrideSha256": "87e2bdd567af80049322d4a7f855c8fa96f836a41ff592d0404cf7ecdf727fd9",
+      "pathKey": "set_b",
+      "proposalSha256": "5a6e661420102a77a8e42bef9af059ed76b23ba0b431fd4eba604050d4f9b02d",
+      "renderOutput": {
+        "decodedPixelSha256": "dd87051e55d3f976ee0e010f3163d723da1c19948e65fd3b4fb5c54c1cf066ce",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_028.png",
+        "mode": "RGBA",
+        "sha256": "df01a883ae515a065c82981e4e402cc102b707f5af162d2f396f7a4fca61136d",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "64d82aeabb77329c7108ddf0278e0d5697af76c29a5831b5ad28629ea5864649",
+      "sourceEntrySha256": "a2d2d65687f0b21395d667b8e249f18d24cc662804c58d6b59f87b22aca806f3",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_029",
+      "entrySha256": "6fd1a5ed0092b9d2ffbde6b545f7105c37a6b39fb9477d20a37aa10944277920",
+      "ordinal": 29,
+      "originalLabel": "low_open_stance",
+      "overrideSha256": "e5e94f56bfe3ea9938f4a08d5691305685f83057788e21707dbbbd24ed1b49b7",
+      "pathKey": "set_b",
+      "proposalSha256": "e68bdecc7aa287edfa7a17c1ebd519b025d3e1f519a39754bd068b14ac7ee022",
+      "renderOutput": {
+        "decodedPixelSha256": "856981ca36576902c318f24979a7698fb6e6a15b2dca313a474f52b8207cbfe3",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_029.png",
+        "mode": "RGBA",
+        "sha256": "95b7897ce5a3d5ec276645083a0236592406085681937255663630be0a5858bf",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "fdce296d5304c5d0603258baa19e62f6cba40c8cc8ec70318f0365f4b2ce3c8c",
+      "sourceEntrySha256": "f892cb1509e06011407d52aba61fc396f44b29fab958f78b35973dc701ccb739",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_030",
+      "entrySha256": "2f3aec80071a4b1fd1f7b5e22b50f7b2f3562cd96d729a106382fc55ad47ce21",
+      "ordinal": 30,
+      "originalLabel": "final_wide_stance",
+      "overrideSha256": "6a0bb3c67c68648c91bfd1a2c1d09a43e82eb8c79bac8e85d1adacc7a495a1ec",
+      "pathKey": "set_b",
+      "proposalSha256": "920fe943ca2ba854ba13d3b2bd142c98f65a4a8862c38e5cf4a00f1c9dc5ae83",
+      "renderOutput": {
+        "decodedPixelSha256": "947694df087d9828d6785f6bb2bdcb1cfdc90a72a4ebbef12fd537faddd01aad",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_030.png",
+        "mode": "RGBA",
+        "sha256": "6020f8dcf851be37987700c2d37ca559fd24b96ccc73b507eeb01fa4d52c99ca",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "b71e05a89cdd4edd2ebc9a331aea086f17e0342655b8dbf83baf67e5fd90c794",
+      "sourceEntrySha256": "86cfec784e1be75a9e48d68b066dede2e8484d07dddeeb350666325fee5c756c",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_031",
+      "entrySha256": "073034930b901083f7b2406fc0f95cf4a653629962d7bcfa01180e577dde6455",
+      "ordinal": 31,
+      "originalLabel": "neutral_hold",
+      "overrideSha256": "73278094e8cd0ede289d41ea6ebb4db5f27868100bc96f67edc42ca3fea2f651",
+      "pathKey": "set_b",
+      "proposalSha256": "ade248c497fb87ab840322a331644a738ab05eeed4ef71f8cd98502d0cc2edd2",
+      "renderOutput": {
+        "decodedPixelSha256": "554b806a2c60f97a2809b9b645b526a147e98b64d576f01d13145de8e862fffe",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_031.png",
+        "mode": "RGBA",
+        "sha256": "bceb667c6bbf42b5ffb5b9e03a85980441e81ed5528cfbeba1c6e9983dd2e5cf",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "c9493834d0c9b29e8376fb336fd26df7c2eec16a00fd0e026e9e6745844146b8",
+      "sourceEntrySha256": "80eda49b073efd5c41576c17009d2a74fd7597af829c88d7169d4a30634ffa7c",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_032",
+      "entrySha256": "faea5e182504d04cce4972ec36790a32401bb5ca1893e8ca9b8d2f56198e03ec",
+      "ordinal": 32,
+      "originalLabel": "upright_pose",
+      "overrideSha256": "029675f8719029882cc153febc798fd046717eedd826e435f8422f2e1d774656",
+      "pathKey": "set_b",
+      "proposalSha256": "607710211978c477becad1e242eef6d9bc40930a799258919c7cc22aa5c0969c",
+      "renderOutput": {
+        "decodedPixelSha256": "86047efa7c8c3fcaa1809deaab5fb3329209137c799a2954ba38e3049121bb05",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_032.png",
+        "mode": "RGBA",
+        "sha256": "51b34db0463ff7a5d696802d1a138d73dba23a7e8a9fb9e923b98aaddf69f95e",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "c5f362d43825fbea096203830f92e2ecb4df14eac6110d1b02f850964112d116",
+      "sourceEntrySha256": "f22c00f080796b74aeb8c759d159bf4af0759bd73bb78f8713160e381f4adabd",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_033",
+      "entrySha256": "b6cccf49bf61a7c4de0006393b93c91a9e872984391f27a15cf62a25d457522f",
+      "ordinal": 33,
+      "originalLabel": "head_roll_back",
+      "overrideSha256": "2693e667d82645c1ea5c52837ff04ab2440a75b63358452c1156aac294035ea1",
+      "pathKey": "set_b",
+      "proposalSha256": "e99b53d46823821bf673002b49ba8930f3a3e937d5fe94281b3e1a26b7604364",
+      "renderOutput": {
+        "decodedPixelSha256": "92a470e9c28ad776c60b1cf1e7d6a8965ddd32a9c904ab350c88e62f0eeca6ac",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_033.png",
+        "mode": "RGBA",
+        "sha256": "4c85e5d29ff43347348bd9223a7acdd18ac223305c02ece12880c54b501edba3",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "b4f5f08131ebed0aced7508c10e75e5d4c79db984363f59eea406b0d49c1d776",
+      "sourceEntrySha256": "91c129d927ab5b20e7e0234f23c095c0593e33be55fa5979b7e3345aeb42375e",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_034",
+      "entrySha256": "70f58c4b2a56c404375323f891c15dabaf9984c65eb0b4ededa8f6e175986c0c",
+      "ordinal": 34,
+      "originalLabel": "deep_head_roll",
+      "overrideSha256": "2e2597cd33d2c9293d8e8ff289136e19afdcbaeb776c9dff9e382118c9069636",
+      "pathKey": "set_b",
+      "proposalSha256": "013de70c9d7e95fbbd3dbd8adb4387ae6755dec43b9532a3525ade74cef61d7d",
+      "renderOutput": {
+        "decodedPixelSha256": "5fbd2963b6bafec7eaef08fb3a48c41273c730f9cb73e855318e91823f971780",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_034.png",
+        "mode": "RGBA",
+        "sha256": "9be9a3bd615906e41c8709d826959016964d26ca5843342c75f7ce09e47631b7",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "fd590c9ed14e910b06878ef9cbef1d36c8e47bd4f5ab985f1a1e3f33ae9ce110",
+      "sourceEntrySha256": "9d5c6dca0e62f4d06298fabb47cdbea8f677c5f0457430eec4e542f8d771f6ac",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_035",
+      "entrySha256": "d4b51be69f516592e3fc23fc103842829b4840f46b621f8331a9faf16af790e2",
+      "ordinal": 35,
+      "originalLabel": "hair_swing_left",
+      "overrideSha256": "ef764f87c6235e1a51f6ff1d3725317f739bb6c7a2be3b6d7028a6509f966633",
+      "pathKey": "set_b",
+      "proposalSha256": "3249f4c995666b6b5a35518a1b29a70dd879a679b994db8a33bdcd13c6d2296a",
+      "renderOutput": {
+        "decodedPixelSha256": "776d0f441f69c46ff7bf8b9cdda3b5815593c180ddd7c19a45759534be4fc967",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_035.png",
+        "mode": "RGBA",
+        "sha256": "4f75ef55a757ac5f0c105e91e3b37f7bfa381972d754496d44636ebe982aa80b",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "58e25df6db98e47741ee730da578f473c175aa8d399e48cef9378e380e396231",
+      "sourceEntrySha256": "8038e430f7f178303d10c757b560fc4d3bd26c8dc818d3e36da8649c0d772467",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_036",
+      "entrySha256": "da23640bc57f2c890810d0e70d49726f9067f9410e4308db8136b2d9d7ac5319",
+      "ordinal": 36,
+      "originalLabel": "hip_pose",
+      "overrideSha256": "883e1379da5dfa224cd47015ad33404484d4be0ab99376e0de761c10c80634f8",
+      "pathKey": "set_b",
+      "proposalSha256": "52cf2dac3d059b5683d2478ee6d4561ae8aa815a3e840884bf953300b15e3bb7",
+      "renderOutput": {
+        "decodedPixelSha256": "37c4dc92579f36b97a5f50a43dc93a40102081a523556823f7520f412790be78",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_036.png",
+        "mode": "RGBA",
+        "sha256": "e56a9967ca6b226ca8c5d17c5f55e91d6069b3f7fc3ce3583bf2fabfe1047071",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "f06089b75808bc61871f20a92c2fba34238875f60ddf767bcb6db71f7647b001",
+      "sourceEntrySha256": "e539531d3302f455972b98011aa93c9bc3b4c91ebfe7e4f97d29cbb4ec07bb11",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_037",
+      "entrySha256": "47d774b42331f51236bdf7a4cb139e9871aa3133dfe86a596c5f43aa75c62df7",
+      "ordinal": 37,
+      "originalLabel": "hand_on_hip",
+      "overrideSha256": "48aad879b13a84049874d4d3646242f65695ad517eff9a804ef94070f8485b05",
+      "pathKey": "set_b",
+      "proposalSha256": "2d699af66de8a0294a36ba1bd9fe9be96ea6ba8a16a4d178af95af865604b373",
+      "renderOutput": {
+        "decodedPixelSha256": "0c46895dde70047f5a18fa898837e048c862e4fb56b9767cceb34edf91803243",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_037.png",
+        "mode": "RGBA",
+        "sha256": "9b8492041aab358533bca71e063906109332ef385b15fdc1fdc31daa6656ac79",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "a55e7bf3e0d225671d49ee6c6a67c8f28821bc3d1eb44cd0551ee0b2fc182ef6",
+      "sourceEntrySha256": "3dccc99f39d0445ebdfefc1ce0ce9925e1105bffff88fb8bdc269bf62d7d8b20",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_038",
+      "entrySha256": "fca15be3ea5d77a33d44151edaf500a70d3ad3159140d8e5d316262a3d90772c",
+      "ordinal": 38,
+      "originalLabel": "angled_pose",
+      "overrideSha256": "74979a6519e0d39e8ba962af4138a34f1f4b83862adc8e222c6a69b296042f74",
+      "pathKey": "set_b",
+      "proposalSha256": "f271444b05a5d8ae64b12cbcd52eab80de6e7eecb5c73e862dc166908e1d738f",
+      "renderOutput": {
+        "decodedPixelSha256": "17099cd26bff313ee5e8b132b21735ac45a01e58e522d2237866a501167d0bac",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_038.png",
+        "mode": "RGBA",
+        "sha256": "f0d4039df7c33aa53bcc693b7ecfde38bee9291a3842689b9dc53032b273e3f4",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "35555e19673f7fb29da57392764f9ce744ca5940946093be025825edb1870df9",
+      "sourceEntrySha256": "d1f0104c74eabf0d5f6560eeae239e74d37a8e6cdc9fa54532cd36dca4ceff84",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_039",
+      "entrySha256": "456cbaeb04bd52cb01dca59eb336ab98d034ec7ed791c55f3d76981ffebb28fe",
+      "ordinal": 39,
+      "originalLabel": "smile_ready",
+      "overrideSha256": "f773a06ee7d4a6493637b525cb29f80b9f4cda3ed8c734a8ee70949f948bb2e7",
+      "pathKey": "set_b",
+      "proposalSha256": "03b11eb94f2c15d235c513222d7e56a4bb956eba7d36c7bcd1c6f77801803910",
+      "renderOutput": {
+        "decodedPixelSha256": "131d3186498f20daa47d504d3825556cd4b0ea05fadb7142112d5e671954c906",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_039.png",
+        "mode": "RGBA",
+        "sha256": "6e90758a9cceda34ba1972bc099457809a1add6bfe6238e0b3efcc223d59dbef",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "c1ea6fa15da9204853547fafbe470f0e361bb3168ba6d1150e9d395f4617569e",
+      "sourceEntrySha256": "d8c371bb468bba5be1b6716b3fec0623acf2df9b20461cd5e2ada419085c5066",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_040",
+      "entrySha256": "6b702df6d833c9ec83650ad27545c89108c38afe05c787a4d5bd56a97721d658",
+      "ordinal": 40,
+      "originalLabel": "hair_motion_front",
+      "overrideSha256": "ae2bfbfa46bba6873d1a9d511cef368eed742a8b8c833c2f0b4f58eca56dad71",
+      "pathKey": "set_b",
+      "proposalSha256": "9e18815b0aba595f85f6cd839a54b81bde18c880fafe2fa1a3d09fde11bf52d1",
+      "renderOutput": {
+        "decodedPixelSha256": "54df1d312e3f505aa2ee19dc500b4ba76e2bb6d70ec8523726773308b962abbe",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_040.png",
+        "mode": "RGBA",
+        "sha256": "f3f4e2dd8f990ee7d04dbd2a4503f6149821f512c87d96de738c45c34b964bc7",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "56c23b75bbcfc9376365cd390df9bb0c4576bb8e9e1202454ce3542e65e9fbfc",
+      "sourceEntrySha256": "4b9631e74a5c4e8b09cf5e18cc241f3b065066f6f045fdf582d1c49cb1453088",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_041",
+      "entrySha256": "2edb602d669b1c772e462f8871032c3d8be6ebc1d5f935b5a3ada646cabd6cc2",
+      "ordinal": 41,
+      "originalLabel": "step_begin",
+      "overrideSha256": "c1671da63396e0e8ae8009b5a26c5f39de1f47cfbcab012813ada703ba7ddffb",
+      "pathKey": "set_b",
+      "proposalSha256": "4c94af553bce9bf2607f9be9b766faa427ea3d03fa3e7358404526f219cfd1d1",
+      "renderOutput": {
+        "decodedPixelSha256": "2409270d3e16dbc8915cd3774f62a4fe9d0ff88919c43208edb7023e304c5465",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_041.png",
+        "mode": "RGBA",
+        "sha256": "d25ffe30e07633faf6594b46f9afc09778ce231f28be4bb2a0dc505920137431",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "d21fc28445696066883cf322a20531209cdc9fec0912b50783ffb442cf520bcb",
+      "sourceEntrySha256": "4115e940778477ba19d29903532bb741e70d10210719352b808e2d0f49eefdc1",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_042",
+      "entrySha256": "8f7d5ebf62bd17ab87daa9e7b74b87b1e4502b4ed947a4503276102a6b93a503",
+      "ordinal": 42,
+      "originalLabel": "walk_start",
+      "overrideSha256": "ef9498f1ea66947f22bad115a50e1d425f1efcb88b13895a340a6107facaba3a",
+      "pathKey": "set_b",
+      "proposalSha256": "7e3167631e3a0c80e4b503d90dc60dce87523cd0a2ab870419c8d7fb81a83b87",
+      "renderOutput": {
+        "decodedPixelSha256": "575ce56f9925dac835cd956180fe46ea7456ef24b6346c7a7a10f066c8c815bc",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_042.png",
+        "mode": "RGBA",
+        "sha256": "1bf64c209cfa51e548f631df992ff7a3ca7e0c1318b425a115aec3d863bfad78",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "d5c1428c64ead22f7cf5052c8974baf3c560ba1f5e4b070a3c396068e4f7ff83",
+      "sourceEntrySha256": "eb00a8ab9afa6fba6a4312061d18bdcae2d6b502fcca3da822b2d0bb1956de41",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_043",
+      "entrySha256": "df813405e71709143363a6f28192d9f2b8a31c9a7fd028643333e69fcf7a51d6",
+      "ordinal": 43,
+      "originalLabel": "walk_mid",
+      "overrideSha256": "98aa140f5ee6c905cf9b139b7367171a20117f9485d47c32191bee03cfb97534",
+      "pathKey": "set_b",
+      "proposalSha256": "0c0135e6ef5210226cdb63be1b88704730ab7d7793f4dbd73b8d5172023bee84",
+      "renderOutput": {
+        "decodedPixelSha256": "bf2aefa7ca0c12a0cd1acfe3a5f2685ddc35e5e7cbaee258f7c113d15c421389",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_043.png",
+        "mode": "RGBA",
+        "sha256": "bb7d4a4e05280b1b508166ee681901e80e7debb13f7b8832a433eda1c3a9fb9d",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "d11b42ad190b237c6b3e9510147c15d3a8de7d35689b56bc672e3d82b7c4db4d",
+      "sourceEntrySha256": "58bc9a4aa232a8bb2b19e594ebe88880fd02a379b43043fb19d4b4067a2537f4",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_044",
+      "entrySha256": "ecc6321e0bf5f9b691444eb9ca8a2f97356037777eaf385dc839f217acb9e330",
+      "ordinal": 44,
+      "originalLabel": "profile_walk_1",
+      "overrideSha256": "4658dc2c087de415fcaec00299589532ce37c01b8616ee565af66a3dbf65cdcf",
+      "pathKey": "set_b",
+      "proposalSha256": "1d176da770dc4b0d27654ff2dd8156a7186c3a5b93ed83b515dd6523195038a7",
+      "renderOutput": {
+        "decodedPixelSha256": "23aef81488e98153e4b812129be0a63271b1bee359feefb1e928841855848043",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_044.png",
+        "mode": "RGBA",
+        "sha256": "3a91d81ed63bac0693995ee442798b7cf90c0fc86bd2a50a631c6d3666807b09",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "df9b9c7d230570bec92f42904718e723e341fac8fa5628125c8433fc434a51c6",
+      "sourceEntrySha256": "f7fef42a37f4d1a5bcf1432d65785e00a31d3574f20d03ad39f7fa3996dc093f",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "blocked_source_defect",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_045",
+      "entrySha256": "bb49f0038145df86cc47d392d0838273c9d0bf42f83516e23fe6c3ab8d716d8a",
+      "ordinal": 45,
+      "originalLabel": "profile_walk_2",
+      "overrideSha256": "73fd16be6bc09cab01f86b78fd3ceb61f1a6abb88dbdd4391acc6dfa59bdb561",
+      "pathKey": "set_b",
+      "proposalSha256": "a6cad34cd7312237c026b76601ae00be3bf985b384d71bf8ef15243cac745860",
+      "renderOutput": {
+        "decodedPixelSha256": "27ac663bc2452d7778d292f298dcdb98390ef16b6a0eb33b1bdb42ee9b2a5487",
+        "heightPx": 2112,
+        "logicalPath": "qa/quarantine/set_b/set_b_pose_045.png",
+        "mode": "RGBA",
+        "sha256": "efb199e83a5b1bfa7b83377666833996a6e8b85a36a04d377f459032c31ca9e3",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "21a0fc137e03e17bffb783a350dd084be8b51324046604eb6fce6e3741f894a3",
+      "sourceEntrySha256": "8682c2fec3b675a7a245428c213268205c97cbae3b28ace37cec78c24f57ce30",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_046",
+      "entrySha256": "a39665078c1ba1ae9e7daf3375f9d360671c982ed06c27f54e09c97baf2f8f38",
+      "ordinal": 46,
+      "originalLabel": "profile_walk_3",
+      "overrideSha256": "99c9392328a9b8bc7a4febcd483081846f36c8548933c51c30cbb6932badb739",
+      "pathKey": "set_b",
+      "proposalSha256": "73d72b40a440c560a698a8731dbe5ebadafab6dc14e83ccfaf5b6324bc5b9844",
+      "renderOutput": {
+        "decodedPixelSha256": "0e406936c11b02ddcec3a713a0e4b24ee597384595494b1918bcdad5cd4c388c",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_046.png",
+        "mode": "RGBA",
+        "sha256": "407485edd550ea5f34cf93b57dbf5525cd89f7186f5e441041972dd166c12740",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "794c69cbcf07d18f5c15165ecf12ae79f35aa143c5d10429e83a4ee5c4922432",
+      "sourceEntrySha256": "4f4f7a7c79c1f4930511cb15be2ee97e64f8297d218d2d4cfc412f8aec529b04",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_047",
+      "entrySha256": "2b5760d17ec64e607cc90b0e4f50b40e9e676f9580a593c4aef0a4f80a69a21a",
+      "ordinal": 47,
+      "originalLabel": "profile_walk_4",
+      "overrideSha256": "b9ad0520417038413cec603cf1962f613ecbaefb84f5c94983f41f5eb6892ca7",
+      "pathKey": "set_b",
+      "proposalSha256": "70526d58511180bd1953280f8dbf42064b30df56ee829272eb892feb6f7aa5dc",
+      "renderOutput": {
+        "decodedPixelSha256": "cf96f867c72aecac81e02e499b6ab2a80dde6168fd951205ed42457f97a5f047",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_047.png",
+        "mode": "RGBA",
+        "sha256": "bb60da4bbe7fc89a58f93f71ac4203fffb6a3dc8a87f201cc2d1c6085a861285",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "7785ea172af1b92e6f15e80054d9e4eaaea31af797ebcf74c4c37b9f93d36121",
+      "sourceEntrySha256": "ab2e92368b139034697c820c3fd0506079f018ec0b2a2b4bca62b466baa3f2f3",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_048",
+      "entrySha256": "bbaca801cbf0b0e3e6341d0dbfaecce1e69565ecfc73392f381a88c84c8019b9",
+      "ordinal": 48,
+      "originalLabel": "profile_walk_5",
+      "overrideSha256": "8d172bf118b2309d345c2d7ea1fdf0769a44e23bda8655c38a5aeeafec1474e4",
+      "pathKey": "set_b",
+      "proposalSha256": "bf434c8403bbca1c0871ac72a96a89b341fe3f68a118f089610e3de2ceb3258d",
+      "renderOutput": {
+        "decodedPixelSha256": "c6629389a2f5344e6439fe416a56bf64b353678b2f2ef35d8d67ee6a3951a0e9",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_048.png",
+        "mode": "RGBA",
+        "sha256": "bf54a2c2be09047444d67327e9860b005c5c242ba711d8b21649d970254c5f9a",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "6f4036ff85fc1d09f3c3fe981a62e5c14a1b93a3dbd11d32490f02b730322ad2",
+      "sourceEntrySha256": "91e3b507b324b62043ccbeb3d100cd0108a0bbbb9a2cef100db2a5ece23fd79f",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_049",
+      "entrySha256": "49f566ee9a8d9095cf37c6608887ff44a300ac76421db60ebe0a7c95e22fbf5c",
+      "ordinal": 49,
+      "originalLabel": "rear_profile",
+      "overrideSha256": "ef15005f4aadaacbce3b1f771de33a9c3ed54af24e247e6289bf9a58e04ad0f3",
+      "pathKey": "set_b",
+      "proposalSha256": "32a0a1a76c5b6a9335b2878132d2e37496f28f7711dd8f359a2b48451009405a",
+      "renderOutput": {
+        "decodedPixelSha256": "c7b106a29fcf0d7a29f741c58800b7578ff31e329883bdf4fddebb9fd6d8b7a9",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_049.png",
+        "mode": "RGBA",
+        "sha256": "39ddba09a28c93dbb3dc9f69f662cb71039b46129dd9bb81e4fa559e9f309297",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0c248480631a61fe97419283af74ba28bf31c233085e6a491c2b4bd8f1016e4b",
+      "sourceEntrySha256": "9a50c7c9fcc2751b0eb6e531732f1c0243aa45de68fe82aebae6522c5ba75c8c",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_050",
+      "entrySha256": "0934c87c6c4891fd4ee9f7705dd55d249a15d57a000b7d45f5d6028fbbb9b115",
+      "ordinal": 50,
+      "originalLabel": "long_step",
+      "overrideSha256": "1b8cb7b0a23346743a749060c1d1bc151ec5c79226786c002001ba3a68e67119",
+      "pathKey": "set_b",
+      "proposalSha256": "577e6856aa4f496be80af33046f3d346c1cd82142583884ba9b8b8f957d3818a",
+      "renderOutput": {
+        "decodedPixelSha256": "1f0d06aea52bb749349f171190a5a17a5451b2b9ad16bc78d89025380611d191",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_050.png",
+        "mode": "RGBA",
+        "sha256": "16abe514cd1ca67f8f96d68a70b4c6078b483a08c844c7ba98efa65dc5f9b075",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "f3909d63f6af314905bfb3528131d546cd08d627ec475531691d2ab48e591190",
+      "sourceEntrySha256": "84689bf6885b0413fc835798aeb8f414d8167235baddb243a7587eeeed3a7449",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "blocked_source_defect",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_051",
+      "entrySha256": "0073061fc9f1629eb7e5d65d161b5e5a5c0644c898444618549903c975795923",
+      "ordinal": 51,
+      "originalLabel": "studio_edge_walk",
+      "overrideSha256": "ebc3e5535ca4717637a84c5282227b8ec7f033721890b184ec401a9cb95ba0a7",
+      "pathKey": "set_b",
+      "proposalSha256": "e7b4445f94a9ae2f5d3e6f6e55149be01a3cfe9b80bdefa9a670092926ce3c6c",
+      "renderOutput": {
+        "decodedPixelSha256": "157302b33ebde8a440fc6e81107a25b86dceb38b8e61c4e025d8bd1ac40badcc",
+        "heightPx": 2112,
+        "logicalPath": "qa/quarantine/set_b/set_b_pose_051.png",
+        "mode": "RGBA",
+        "sha256": "28bcd506c892c3b3b961e15e4b72b240fcc533df4c81be44a28a1bc10bc490f7",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "770c74bf702e1874aa7b2281026ff727b090f49ac21f4897d506b8d311771d44",
+      "sourceEntrySha256": "4e7ef1cae8319dd40d596fb029c5322c760f4d7fb55685442e17794d99359813",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "blocked_source_defect",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_052",
+      "entrySha256": "2bea68a05fdf39884a9becc88eb3c586ee41b64763d39ed15c49b0162dd83eed",
+      "ordinal": 52,
+      "originalLabel": "side_glance",
+      "overrideSha256": "b10f0ca67245b66e9eeff3cde53aec9f7101c8d845e3a6738f6fa50ef4860be2",
+      "pathKey": "set_b",
+      "proposalSha256": "349cabfff224f403aab9fc2bde3e80ebbe31eeb666abec415d867b5a1da4eb8d",
+      "renderOutput": {
+        "decodedPixelSha256": "8ba60c93103c11a8ece492ed8d1c7183e7e900541a2f87cce1d9c9bab83de266",
+        "heightPx": 2112,
+        "logicalPath": "qa/quarantine/set_b/set_b_pose_052.png",
+        "mode": "RGBA",
+        "sha256": "8c973196608853d8eb282b3f542b60274c8e1f09e00f26fcb5181fa2aada1c80",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "32a13e18c4c9a17e2e6997b81b97c509bce8e3b6a30d53df0a202587ce316be2",
+      "sourceEntrySha256": "8911023ce0001014f8fac42c63db14758781c3893e37e2151f8efbb192b7f28a",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "blocked_source_defect",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_053",
+      "entrySha256": "0c3a071738ae8fe73ee7366104f1c24c1117f53ea6c5b253f2dcd3775bb1062e",
+      "ordinal": 53,
+      "originalLabel": "turn_glance",
+      "overrideSha256": "c558de7183a18cbf4ef748493b58cb0a658b4290b964208e9d613cd6dddbc907",
+      "pathKey": "set_b",
+      "proposalSha256": "d030cc3730a5acec08bb6a2429498711226f1e46ba17d850a6ad12af5890f8c5",
+      "renderOutput": {
+        "decodedPixelSha256": "6487068839490ebff42dcf27bd5af72d27b135ebe3c22a09566eeac1028e7d81",
+        "heightPx": 2112,
+        "logicalPath": "qa/quarantine/set_b/set_b_pose_053.png",
+        "mode": "RGBA",
+        "sha256": "61bedbc3c40700f48318ba62c68a8688c1048f7612fcc657e85db06deb939c5f",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "c167fc7a4354aac4d7ae8dab7703d0ee95887f8a46f742d1d45b8dcdd911118a",
+      "sourceEntrySha256": "7e0322e346c56b758759ac3f1ad5ccf6384a5c365132358fdfa73bc9aa3c8805",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "blocked_source_defect",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_054",
+      "entrySha256": "35e19311c0532a256254338c6eeb945ce676ca5bad7e29dba925750763423874",
+      "ordinal": 54,
+      "originalLabel": "slow_step",
+      "overrideSha256": "a9878dc44eba9c1643bd2f935ff8887e97d4ea1e37756ddcf89d0ff10bdee238",
+      "pathKey": "set_b",
+      "proposalSha256": "89561c59e5f1b56734cbc48ad7355a37d06a53090fbff104576719cb9aebaecc",
+      "renderOutput": {
+        "decodedPixelSha256": "a9dcfa2fa1be91b262671cd75c71862e68146d91840e189182306ccfe1955bb3",
+        "heightPx": 2112,
+        "logicalPath": "qa/quarantine/set_b/set_b_pose_054.png",
+        "mode": "RGBA",
+        "sha256": "7f957dd35369d7f673cae2e5b7dea6e08919340d043abf731b399361662713e9",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "157cdb8c78f3cdc674ece00aa00d760f04a15ae5555ee29c86fb9d1110ce2348",
+      "sourceEntrySha256": "dd4b99ec9c9103737514327fd086e97732cfaad1367ce7e56080d982cd900c9a",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_b_pose_055",
+      "entrySha256": "3938fee848273b70f9a353a334d5d66f977331aaafab18651409270f89041d34",
+      "ordinal": 55,
+      "originalLabel": "final_profile",
+      "overrideSha256": "0b3b38b15da1bfb291abac9cf94325fbb4a449026d6d166f92e5867a352185e6",
+      "pathKey": "set_b",
+      "proposalSha256": "41c0781f327d7c0f0bb478c798afdbfd9c43bebc45564965eec6b0a5e14f2edd",
+      "renderOutput": {
+        "decodedPixelSha256": "f4b34b874b50a079f7ea324e327f832ea5794bd146dd9676bfd9d181f04544c2",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_b/set_b_pose_055.png",
+        "mode": "RGBA",
+        "sha256": "ec9c0981ff1d4ee539b997474eceaa742adf36f428959256131effb97d69b74d",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "3a1f38920033d027ec77904e1f662210da8fabd46b9f9245efbfb17de616c6eb",
+      "sourceEntrySha256": "917197f7274fdd4566532cb77bd97749e7e9c779601ceeb9a270c5483130013e",
+      "sourceSetId": "set_b_full_isolation_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_001",
+      "entrySha256": "97fdbc76dc4fea7737fc66a30d59d80145a1f5bc6055fe66beb453d2d7fc565f",
+      "ordinal": 1,
+      "originalLabel": "upright_stance",
+      "overrideSha256": "c4653c8d1ee781906d0319364da855d3bf10472bba88d4fee6d68d9a3a6a3cdc",
+      "pathKey": "set_c",
+      "proposalSha256": "e9ca49805ac2b091cbbc1834dd07af3aa8bbe91966c69a17e0eacbfb4f8ffaa3",
+      "renderOutput": {
+        "decodedPixelSha256": "dc3fdf9398dbdd49c04dbc8d28c7eff2cc9ce5f7cddfa6ac18cbbdac5efaada4",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_001.png",
+        "mode": "RGBA",
+        "sha256": "490cfc1038bc6a5008cb413107908894c4f26cd6dbcc2c8569ff94e1857b61a3",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "70fa59fac209964e163292319331293130b0947633c9df930711b8253930e960",
+      "sourceEntrySha256": "337b4671887a1bf92de13c885368a78d1b56e2a26078cd0bd89d64b5ae2cd36d",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_002",
+      "entrySha256": "e25df24b4ba0449a021a1ef4d0775b3dab879e16a7635ebd05171f6c0142faa1",
+      "ordinal": 2,
+      "originalLabel": "soft_lean",
+      "overrideSha256": "91bdf21558ccbdede5b0a9315992236b9d7de2e91f8146676fc56b3f2b3923ba",
+      "pathKey": "set_c",
+      "proposalSha256": "0972ea2a3a46a3d3a0545f792f6e4829f24493dc79800c6a368de51035370699",
+      "renderOutput": {
+        "decodedPixelSha256": "97f02381a5fc254bdbd07d94748b35a786500781bdfab6161836e9bdecf9951f",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_002.png",
+        "mode": "RGBA",
+        "sha256": "52dbdf1eca7d1ed328065ce3985b5e74cca1119bbce06dce2bdffb51a44fb558",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0f807c22e04394ea6108dd5a98ed737766802f75741e72d8f5ab2b538467b606",
+      "sourceEntrySha256": "b22df9a9f3c5d5d8f5b42f84db54fa55734949af6b6600bf63929b1e7f05a48f",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_003",
+      "entrySha256": "fbe4e42f2b5f54fe042352a78837c9452abc4a8c1f1030af4e9cc3269e15b9bd",
+      "ordinal": 3,
+      "originalLabel": "hip_shift",
+      "overrideSha256": "7e57aa84dadd1a44a49119526613a3fafe28c94d1a4e070a559063c6df1b88e4",
+      "pathKey": "set_c",
+      "proposalSha256": "2e5307ef226bd12221740ac90119f04c93b0ebee4390dbc84f4b7e8f04b3f60a",
+      "renderOutput": {
+        "decodedPixelSha256": "abfd792f0f30dd936aa8c74f842195ef821ca5baa1c88bb8af607ce2ec7354a8",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_003.png",
+        "mode": "RGBA",
+        "sha256": "3ace529232692830843923ec6543820f354bd41c2d9f39568d1317b8f3d7223a",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "c6adc1ad6753f5982fcba7da1e2f5a7412cd539e261db77848a83d49c8f3dda2",
+      "sourceEntrySha256": "c1d7de1482e46b4b813328f860a7b2574bc31ce766bd6ac8715abc992b5c76e9",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_004",
+      "entrySha256": "866130ce222cc415577f52b51afbe88b3a36ee54368a2d0e7198a92d2fa493d8",
+      "ordinal": 4,
+      "originalLabel": "head_touch",
+      "overrideSha256": "ff4bdcf725cb4444d890d29da582a102f79d52d2e59a61b417cfddf11beedfb5",
+      "pathKey": "set_c",
+      "proposalSha256": "0ed26d114a0018c72218522d5aa466af881e5175822ce423278b8c1dfb33832c",
+      "renderOutput": {
+        "decodedPixelSha256": "80071a74d88ba9b8a9055c23c16e81086991a531350f2239d966e93d77114e05",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_004.png",
+        "mode": "RGBA",
+        "sha256": "9c862f930b6a27d4bca70decaf8f0c5993328f8f7abd6f1324422b06572d6f37",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0191a8be825e015c33bbe9bb412bddf2dc08b017d69984e0cc115be0faa1d21b",
+      "sourceEntrySha256": "d3dd8a0dd2be5f55714591c95379ccc2baf1fc1355d9bd280b6bfe07aa34a149",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_005",
+      "entrySha256": "ef938b8da3257fd1e24d9961efa3a2886e7a02cc5d7d4d645f7b1628166833ed",
+      "ordinal": 5,
+      "originalLabel": "cross_body",
+      "overrideSha256": "663f295286b037d21f523fbca3c49677292b72f9259661fa05ee621b2d2fa494",
+      "pathKey": "set_c",
+      "proposalSha256": "71a9d3501a87dedf487353a6f96c0759d15d191664d00bbd20f81eedcbe2783b",
+      "renderOutput": {
+        "decodedPixelSha256": "e4cb1a2f02163c4fff05ed036e326ce6494d815fb2939f0f3bb300600f09e84f",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_005.png",
+        "mode": "RGBA",
+        "sha256": "56f8b40328f9084f6b0504a8a7033ce09fa23c0cf11ff5112e0957c3d95081e2",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "8a28b98f1d5331b538ac138be451dabb718f4c998f483b0f618b83c673698bba",
+      "sourceEntrySha256": "493ba517eb81ec0b2e8b9c6abebd511258df115b27c07537052c684c614de57c",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_006",
+      "entrySha256": "0d5ab5299a503181a1f4957367ecdbdf99f365ddbb382460ba30b58e2cecd68e",
+      "ordinal": 6,
+      "originalLabel": "hands_up",
+      "overrideSha256": "f6609f5742f1d5786ba67240a93ff05d9e9e696e25fe88b1d6b5d7ad12fe238f",
+      "pathKey": "set_c",
+      "proposalSha256": "b7555a5a1e3d9af367d753aa8b483b85a5e93f87809ae2db609e79976e97b8a7",
+      "renderOutput": {
+        "decodedPixelSha256": "1860da4dead84bca8cb05449221e6326224a3505e07be983ebab3a3e9d5d358b",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_006.png",
+        "mode": "RGBA",
+        "sha256": "92fef2f14caccc04b9bff7e6b197c1da20342fc32d649dad82740a3ae3ea8a5b",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "1f66308b9d81a3ffda7d0ebd8f5ee0c231c9c9a7849a9490ecfd8575d9fc7076",
+      "sourceEntrySha256": "c5522aa12977190cfdd9d8563e37790f0d4220d0f6f538de603bd6d6e12e59ef",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_007",
+      "entrySha256": "4101eb52048e39e432ee3f1c0d10c4aa79c988d28686e6b4d2d1d8512c1853e8",
+      "ordinal": 7,
+      "originalLabel": "side_turn",
+      "overrideSha256": "b833ed6c79d294c49d4cbc13d3e80c4bd9f27f73767b96a1048891266e9c4ba4",
+      "pathKey": "set_c",
+      "proposalSha256": "189fd92b5169f409b5909d686d5145becce7f169847bfa157f340c99f243d36b",
+      "renderOutput": {
+        "decodedPixelSha256": "4476d4063f6c8340c95fdba2a6cd5059fddf97f74ff3930529110ad34f223e5c",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_007.png",
+        "mode": "RGBA",
+        "sha256": "a9f835c29725e3eda1ac76bc9064e9495e813519d84d842bd8eac62dd34af999",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "1fecd3d4e745acae9358dfd99d3411683d99fc344c72c80425bce9acac7bd40d",
+      "sourceEntrySha256": "0fd9dc88560203439fc41a3c7eb3cdad2b07314b19d56fd4c318614369a58a76",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_008",
+      "entrySha256": "23c6709f8ab956d7b96de2ae248b419eabc81e7dedf54c552dc2ccaa26295344",
+      "ordinal": 8,
+      "originalLabel": "walk_pose",
+      "overrideSha256": "734e107f4331d5c7d3ee2fccbc883928296bb49a53fccd7eca9db3d382efd5e6",
+      "pathKey": "set_c",
+      "proposalSha256": "46b050377a70617d37c6bd833c68ba08179b64fff5cda3ff4f95a9dfe0ec4a05",
+      "renderOutput": {
+        "decodedPixelSha256": "7a7e130f427fc4115cc0b8c3cbc628a76b68e86d6975a5a32098566af2524ad2",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_008.png",
+        "mode": "RGBA",
+        "sha256": "24a38e039d4fa03fde581755e033beaf969a0c67d7e5fff794f73e8169bbc40f",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "66ea81e3e8060635e4845ed33f2b5550cc52c01deb65db857e440631dd328c9c",
+      "sourceEntrySha256": "6dc7f811d04a144361c474ca78996d1a0cf7aa066c7066f780d309a9538ea7dc",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_009",
+      "entrySha256": "10b6e95551b9be0d777e8061a91d951b98f32953a29849b95f4688b01c0a6487",
+      "ordinal": 9,
+      "originalLabel": "profile_step",
+      "overrideSha256": "b3c55884c9b485f0aebb6f099828e245dcba9e4143df28dd5cf4da98a333046f",
+      "pathKey": "set_c",
+      "proposalSha256": "ed613a862c27278232ecb51f91392482e10e6826f0bd994db10c1175756c6077",
+      "renderOutput": {
+        "decodedPixelSha256": "b29c07a7288c3327ada8750030f911a0452e12abdc5e047a3466c50e622eb611",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_009.png",
+        "mode": "RGBA",
+        "sha256": "cbd4452e53e33655190500ca5cfdf05f0b368c96040a6ed10c795c0fb42b1453",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "c57a78dfb85046c5f5fb894ced06626bde0b8b80c2cecb27dbea866f3b429b3f",
+      "sourceEntrySha256": "ac085d79d13c7637357eb114d9e9405cc4ce940ddc033a0709838e8382f58710",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_010",
+      "entrySha256": "c694b23a2926925c084a08db86cda230d64b25d94067856cf4e914c593420f40",
+      "ordinal": 10,
+      "originalLabel": "pose_reset",
+      "overrideSha256": "ae0ea2b90356e15a0fc6a4267db867740066c87cb56bd93d5c93d89c437c8508",
+      "pathKey": "set_c",
+      "proposalSha256": "fc54526e9a41faac8fabdfdd512987026e2e030d4b64f8f944396242b46bb739",
+      "renderOutput": {
+        "decodedPixelSha256": "07e98a3b8f6a174cde509bae3dd17336da9e9d4a1d122c85f3727e7e77830e20",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_010.png",
+        "mode": "RGBA",
+        "sha256": "e00c0d38cd1cd8d27fce647e9aa0806a1772bbcd3b67ede1b44385cf8984277d",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "ccf3ce76db273dccc83a417b295d76aaca06ec3406046926282d14c91b0f48da",
+      "sourceEntrySha256": "73057c60c9e87d826d2ecef992c01f9fc43097077fa8bc587eb2c6390c1982fc",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_011",
+      "entrySha256": "a829812695c9b0c396a91a1f1b3d3fd34d5fe700e54758e868f98fbd5b728955",
+      "ordinal": 11,
+      "originalLabel": "front_lock",
+      "overrideSha256": "afc65413ded363c307428819e083be6c00541c1a3eb4a9b01392ae1f16a25eb2",
+      "pathKey": "set_c",
+      "proposalSha256": "d8b012160b881a0470fa4647c28c278bd3cc16c6f46e50c8f40ee4dd727e7bc1",
+      "renderOutput": {
+        "decodedPixelSha256": "417aa78a056b98e7caea89ef9f597d411f6b02e37b4f6e9df6429380f8925ff9",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_011.png",
+        "mode": "RGBA",
+        "sha256": "49d5050c5f914b07038cd2f0237b7bb3f6cfba1940b68d3e66e670c4f3a70b38",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "dee5db12b105a92d979a657c6f87e9b30c90bdb7db05f7827c6895355707792e",
+      "sourceEntrySha256": "830bedc1a4036e607f9ce08b8072721b6398c68b51fb646fb6f47dc8363d66c0",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_012",
+      "entrySha256": "89b7a7a463093eb4181bf667a8a7af22aa78e6ace7b9e3f40f6794c5d82149c9",
+      "ordinal": 12,
+      "originalLabel": "hip_pop",
+      "overrideSha256": "422de0e0810802e8277bbb673982cd7529b1e4b3a92d7c77ff01d8e8b3eb9f75",
+      "pathKey": "set_c",
+      "proposalSha256": "bc9d96909a566d78d94768e9a8dc9faffdbe325cb8a76541042d67243206caf2",
+      "renderOutput": {
+        "decodedPixelSha256": "87469a4e6f8a860068d9da13f304266435d41f590c805f7bbce66bb6ff74274a",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_012.png",
+        "mode": "RGBA",
+        "sha256": "6f7e7f58df9ca349b75beec6d307d300d0aeffbbf808c070ecf0abf18fae762c",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "8bb0a34f2966638cc372dcb9ad33c917d268a4f864e7e8ca94b7d85b191619f1",
+      "sourceEntrySha256": "7f2d88577614524205754c28d1887a024c63c11b08f92b1a978806774d599239",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_013",
+      "entrySha256": "548afb7263994fa66ef75b387d2133cae0fd8ec01fe497a9972ec33f8dd15105",
+      "ordinal": 13,
+      "originalLabel": "chin_tilt",
+      "overrideSha256": "6376b7fc755e95d05216d5694cef76ed0e882e680d4e41f8fb27f849e41b5084",
+      "pathKey": "set_c",
+      "proposalSha256": "8d7c8bfb60085611da6ac2f0d8a07f1a4b5640eade49c20721851943338afe77",
+      "renderOutput": {
+        "decodedPixelSha256": "382afc71de9a477fb83a054f7532176263ddd8ddf51779bfe340729b4d5fdb32",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_013.png",
+        "mode": "RGBA",
+        "sha256": "2c191649c3794fbbaac36c29ec26fdc9bfd9f9c1e85acb5f385a296a2583e922",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "57fb7a0597604af0e18cd69d0c0d699f50d6168e4626944794c249a2856d659d",
+      "sourceEntrySha256": "ffe1d6ee5f5dab2d3608bc166956970d7aab710b75e38ed7a7b3934c52aecab9",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_014",
+      "entrySha256": "c38a5eae7f816f25570de5307213dce4dc586266116cb266f1af02b0e45365ca",
+      "ordinal": 14,
+      "originalLabel": "waist_touch",
+      "overrideSha256": "0c84d30c2d0ba3057a8e9baa4cfec960576a35db4f5c5953f51df7b71b26e69e",
+      "pathKey": "set_c",
+      "proposalSha256": "31fc30c4832cbdd2d687a91529ae490b21e3547acab1e01412e5eea07f7d81c4",
+      "renderOutput": {
+        "decodedPixelSha256": "9c2a5a11c579bb7445b1f98273c0e98f9ee7ad7e5ac81ab6d4d21f03fbd36cae",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_014.png",
+        "mode": "RGBA",
+        "sha256": "5efedd568502e86e8344085bd8f755ca26f7009dc2a1b419ccd6d9d211918644",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "67355793c8a49b2c2f4915d22abe675e6b9587fd2d1eb1de35fcb10d2d57dfaf",
+      "sourceEntrySha256": "1d9f4534f32604ead82463ca3deba24559f564fc1c18d3682a1918bee83b8051",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_015",
+      "entrySha256": "aee802d6d143eb07be0757bc9097aed28dcc900d03c1bdc82ac5fa6547a48490",
+      "ordinal": 15,
+      "originalLabel": "arched_pose",
+      "overrideSha256": "a403a7832214ad1cd9c76db306d5444fcdf860fffe6e2ad45d5d21db18b2eeeb",
+      "pathKey": "set_c",
+      "proposalSha256": "0bb01318a4efdb1d9a4685f942b7cbfa7a9713f14be269b9a00a2aa103deaafe",
+      "renderOutput": {
+        "decodedPixelSha256": "bcaea0bddc6d4f6942e52d6840bdc6a9dee6cd752eb799b2524202647ad158c0",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_015.png",
+        "mode": "RGBA",
+        "sha256": "92135f6371c12910934529ddd6aac2b535dea0a78641f60ef1eb4de0a1047b29",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0dfd86baea10e3bb034bdc92f1a8bc27266e4b717afa3e3d076f2d94d4dc8589",
+      "sourceEntrySha256": "5ddb2ebc6f75f8919efb5df8b98a9c8794b078fdc5b0865df1c89f4370b1737d",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_016",
+      "entrySha256": "3d0eb87795214aa91f8fa2e02986e83a2f4054f7d4286c320dae1b0bf3d33725",
+      "ordinal": 16,
+      "originalLabel": "leg_cross",
+      "overrideSha256": "478ef88ca3121e097bf25aebbb616a6628c3bedadaecfb55caa0a31e8f9f41f5",
+      "pathKey": "set_c",
+      "proposalSha256": "244dc2ec69da8405242b36b58abc6fc25a132e3c1af0242672ccdcb6f74ebfe8",
+      "renderOutput": {
+        "decodedPixelSha256": "4bee7b397d297d061171a89c7a7cfc799c5ca72cec87fd46191b3535654895cd",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_016.png",
+        "mode": "RGBA",
+        "sha256": "dd415667975e5d281861db1481819f12d5f81480dc001692777454e1b8aecabc",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "63d0ee2be379a3716affb94d6bf34985429d5f3c19d79e374aa38cbe599d7dcc",
+      "sourceEntrySha256": "85efd91ed4812348c5dc7b9943376f635469746cc3b10fa156053eca9e9d22fa",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_017",
+      "entrySha256": "3df48cbb4406517633e87e884d51b5215e7a3fd6b7b276e342921e5dec8deefa",
+      "ordinal": 17,
+      "originalLabel": "glance_pose",
+      "overrideSha256": "02b0136d7ab80476c3bddd2d063d3d79448bf466785c4720a9db46c7c355e377",
+      "pathKey": "set_c",
+      "proposalSha256": "8ee9fbbec39845402b621a5da2b8dc1b41ec6e9c9b64ff3673ffe0eb8022c4d0",
+      "renderOutput": {
+        "decodedPixelSha256": "153cff3946d4857b2f4b4e8248244b02b7736dfa7fbf5f7b36ef0269d44ee73f",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_017.png",
+        "mode": "RGBA",
+        "sha256": "f5520ffbff83579b9c92b0b76065dae41cb1f669f55f98f4835ae319a568032e",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "952d749b87d5e8e5de3b74b7f8f42cba0d296005182741a21c3cd52cc5bc0f24",
+      "sourceEntrySha256": "7ace3f565752fbcafff69c59b4ba446a59fe4d86b1c92dd9ddabcdce66598aa8",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_018",
+      "entrySha256": "b525f96d421fb7e1a2d99ba28487b49a4d17310959c5d32b25af7d97cf3d3087",
+      "ordinal": 18,
+      "originalLabel": "torso_turn",
+      "overrideSha256": "dd5cefcd54feacec1a034403b1348ee1a1c1edb4cc28fc003e10e9a1e24d7e20",
+      "pathKey": "set_c",
+      "proposalSha256": "dcc6efecc345bd4be9a9a2a18804c1fa1e7eb017e6a36d77236e3670ab8b2a0d",
+      "renderOutput": {
+        "decodedPixelSha256": "a45b5a7647b60b9990c73ff00017f914da4e0d41979b7294a49a50fa079c26ce",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_018.png",
+        "mode": "RGBA",
+        "sha256": "df05854f205ad6207511490f3f33aef1b30c5935a4a082a66ecd12d0d8054231",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "b4a694a60ff5f2de4c5c2cba95291764c6970e934281c25d6176ac72761929cf",
+      "sourceEntrySha256": "5b1db7f40bd0bc3cb99ba1cd589976a883d002933d632fb8c1046ef78d950947",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_019",
+      "entrySha256": "2f63cb2d0dc98a2c87b6a46a1ce81df8492378b84910f9b92f62436140222b86",
+      "ordinal": 19,
+      "originalLabel": "steady_hold",
+      "overrideSha256": "43aaa4f9a216bab586624afb02f189df4f13369e479722a12ce180f25dde54be",
+      "pathKey": "set_c",
+      "proposalSha256": "8bab0d165a398aa715b36e8a0731118f22d0dcf8a1f4ce868008b912471664af",
+      "renderOutput": {
+        "decodedPixelSha256": "a5565aecb16d978e966e81ea480b63d772b5122146aab67604194e5e190efbbd",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_019.png",
+        "mode": "RGBA",
+        "sha256": "e32574801792af6fbf211c209ca392d0ec536d6353b5b5a7bd1ef58e6dd5a90f",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "40df82d7e19fb4542564aeaf2bb4d5e7ee19e45f4ce9f72ca00d9893e7689bf5",
+      "sourceEntrySha256": "853f63f014aeeb7923421d9024e995d8f82d73cae0431e20f6a147b3c821858a",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_020",
+      "entrySha256": "0c55084cc1f359cae594ccede5fac9cb1b5a111d37abd3339af73fbdf87808c9",
+      "ordinal": 20,
+      "originalLabel": "front_smile",
+      "overrideSha256": "76e57afc9397085f19312ad402c34e3eb3a4b9343d1a57ca672bfd0ff35856ad",
+      "pathKey": "set_c",
+      "proposalSha256": "78c95986a171b5eb56803ee5cccb2c485dd4cc3da1788eb4ffb38e98340010df",
+      "renderOutput": {
+        "decodedPixelSha256": "7d8def00ecf9eb84f6072a9977773664e54a395ac75fdecadcfee2c00d82190a",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_020.png",
+        "mode": "RGBA",
+        "sha256": "c4edf8a290e8e0eedebb07c81ead0c4952b7a4d61df03752fcc2d0fbaf3cbd90",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "fa381777a242f92750d84f7b26cebb9c94e8cab91d841702aa1f93ec7c667ee4",
+      "sourceEntrySha256": "994472f0c085b76af1c636b63985ab3d8bc98a98db924ac7016adadfd39371d4",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_021",
+      "entrySha256": "357ce2d2e515427e5df61c0dcbe1eeb64d941f11de674440e61a1701a080d607",
+      "ordinal": 21,
+      "originalLabel": "reach_pose",
+      "overrideSha256": "3bd41591aa37e838e0be0477d075678edb177ed02464bf12e91aef05edfb231f",
+      "pathKey": "set_c",
+      "proposalSha256": "c67a31805a074acf8daaca4be422fe180b2853bfb0d5c3eb4e6f68dcb5ecb1ad",
+      "renderOutput": {
+        "decodedPixelSha256": "e09c773d5b7fbc41f40eb0b285617aa03534a62b37502a701ef77b32496a68bf",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_021.png",
+        "mode": "RGBA",
+        "sha256": "4f8473fb82506e6415cf72060cce4012c3f1846e216e9c32043bbe2cae9f5de4",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "10c8161563aa866e5ac37b6d55b96eb276eb4f73b5c3a4244b00c88da076c897",
+      "sourceEntrySha256": "a2608f30c7a79d61811c723ccccd0b9868580bfac1f0b429ca12821036b90162",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_022",
+      "entrySha256": "0e470fd789db7e7eab9ab25816ae2e949559dc91682607bcdbc9c5b9efc1bb28",
+      "ordinal": 22,
+      "originalLabel": "final_pose",
+      "overrideSha256": "133f2345d665070a42b97ff4e16e7e46159876876baa0bca456b31c822fc317b",
+      "pathKey": "set_c",
+      "proposalSha256": "09350420da9479fde9bab5445f7abde40fca9ff2f708c66ddb3c8322a450250c",
+      "renderOutput": {
+        "decodedPixelSha256": "795cd6da94352574439b9042a0ec4bea857f88f8cc7a153d632c124c68604ef5",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_022.png",
+        "mode": "RGBA",
+        "sha256": "d033b31e14f4ef5b168c62d6bf4130a9e54ee1f8b75755a8c11561dd39405c06",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "6529395ab68aa71ce3124c9434a83361203dae27c5335043ff0d9c08d67a78d2",
+      "sourceEntrySha256": "8412fe4ecee26aa362a9be4dd2b88d760ad85b350ee3a38aba3739f0186134a9",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_023",
+      "entrySha256": "49eb6b59d9c72a475e60123ab5fe2d8dc722b3dfc18a5fdf4f4f8e6078a0c7e2",
+      "ordinal": 23,
+      "originalLabel": "upright_stance",
+      "overrideSha256": "8022a5ca272ebe1a6456561581a42469b95215f31f57d7f3119a22a282db9319",
+      "pathKey": "set_c",
+      "proposalSha256": "ebd332e22ce5ead7a04e57e68d2e3c786258bbf9f8031d2fda74d3603857e6c4",
+      "renderOutput": {
+        "decodedPixelSha256": "2a38fe7601dacf006c599c9baebe6eaf8a290b9c1742178320da624bf8edff07",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_023.png",
+        "mode": "RGBA",
+        "sha256": "0d15765156443a8728445c9709aa1c0597c88326cd97017d134042bbfb17c439",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "7d7db8fd802fe911fda86c641b244c2942dd39891233030b1342dfa10a63c500",
+      "sourceEntrySha256": "fc6dc2c9d446ca790a5c5e3984aab27c037b27148f231924f66f96286004d05f",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_024",
+      "entrySha256": "40f211553f17960c89dd6e95baefc3a1f77e449f1095ba3b9901bded8a0c6cc5",
+      "ordinal": 24,
+      "originalLabel": "soft_lean",
+      "overrideSha256": "dacc3b95a4fee2275b8d62dc4b591e1768a0af79490327e67eabb59921b0b36a",
+      "pathKey": "set_c",
+      "proposalSha256": "c3c8486976af2c8424d8948e9d01bf9618340f260f3af3eefffc09ef9fb3a954",
+      "renderOutput": {
+        "decodedPixelSha256": "18c0ddaef879fe5dcb9b0f13654a69d7966c19e413a5736a1a91b3916605b7ab",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_024.png",
+        "mode": "RGBA",
+        "sha256": "4ad531b2f5a2c80a914c431c48e2941cccee23c9a101f7cd7130b3f6e85000c1",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "aed4823603aeb838f12c02f58668fd2551d7472cab3eb21873d66f42dacb02ef",
+      "sourceEntrySha256": "aaa2e1ef2d40f43d1300b14b7b47ad93d0799a916472f251f166c3506b456be3",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_025",
+      "entrySha256": "1822e0790eeca496e543d9bbb517dc0dada74b7a8bb6bab220b7a6f11cdec1cb",
+      "ordinal": 25,
+      "originalLabel": "hip_shift",
+      "overrideSha256": "9b31745eba62fb2e4f2631b1a85fd4561f45dd2ea3b4870f49c38d00b6ea4c6c",
+      "pathKey": "set_c",
+      "proposalSha256": "132080cd77fc621c6cc1d28f8dd9c442b07212bf5c4414fbe5237112778a930c",
+      "renderOutput": {
+        "decodedPixelSha256": "e28e293123887cb3a710f3c7efc22ad71d0263ac020a56e6fdeb4bb2f4c8b195",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_025.png",
+        "mode": "RGBA",
+        "sha256": "097fb925402c9a15b070da2392e9dca09a5731795ad7667f82b7a29448bece39",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "6c806af9ab903ea2388fde82ab58ffddff5dfc58a6f5523ee736fcf9a99c31d9",
+      "sourceEntrySha256": "160309873e8764962c63d0ba5d36459363a42f73adc201d01a0733804b16d9f2",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_026",
+      "entrySha256": "947e0b3b612671aeeb803ae9ef1e0415d845af5eabfbfa90f46050681c7c5c65",
+      "ordinal": 26,
+      "originalLabel": "head_touch",
+      "overrideSha256": "d3a6955e6fc2c18af6b3cf5e25ce682e9c56c10190894dc7f8323c6deb43b57c",
+      "pathKey": "set_c",
+      "proposalSha256": "3121300aa8eeb33a5597a63a8b950231ded792b557f4f5c845b4157c6d965754",
+      "renderOutput": {
+        "decodedPixelSha256": "2a4b026ebc7d97ea5f28c6bd787e84fbf11f2cd2397116a2b7978671068854ee",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_026.png",
+        "mode": "RGBA",
+        "sha256": "1202df40af66cbc22063cf1a619901712e06571bcf42424f67b308f432427a2e",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "17b175d4bc6ce6c9eb928f3fe02fed77bd65ab78a232bb1af4775a32622d5d96",
+      "sourceEntrySha256": "2cdb1a2f408e40ceb6e551d579d1105cb808b0705d0d0f093e97ad934f50184b",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_027",
+      "entrySha256": "d6732db838f9eafb8673e49b4b6733df88ec20f067fdcd88e8ddbee358632b3a",
+      "ordinal": 27,
+      "originalLabel": "cross_body",
+      "overrideSha256": "8c43d87ca3255a0d6e3875f434ac7512f6048b6309996af150186fe6ddb380a7",
+      "pathKey": "set_c",
+      "proposalSha256": "a489963b976e6eb0f0ab38edcd7eb06101a8db4a222c72935b3b7093b991f914",
+      "renderOutput": {
+        "decodedPixelSha256": "4dfd0ec04b21d9c192d01fd22cc80480390da57c57122edd74ac0dc0edad52f3",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_027.png",
+        "mode": "RGBA",
+        "sha256": "48630aca5e5930d18f05a5930b7d46207bbd03a59ea506132139bb5243039905",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "70707a3c00659da35361340a29e9ba8ac5229f87fc1f79696fdc7eec547fecb7",
+      "sourceEntrySha256": "0e10460b270c4bc2916ced27aad64c8aa13da852c6a3a954a0b8be9625fbc1f7",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_028",
+      "entrySha256": "013af78c829363889f2b1517dd1ca4f5b6fd4f93c4c31f4136ca7184a6c7d51a",
+      "ordinal": 28,
+      "originalLabel": "hands_up",
+      "overrideSha256": "433c2393fb73dfb56f3c1202b98cf42a12ac9562e3449804052a46affeb1e231",
+      "pathKey": "set_c",
+      "proposalSha256": "3e44fb21519b9b460bfeacfb4dca247d3c7d14b6411f64cad49e65897682eb54",
+      "renderOutput": {
+        "decodedPixelSha256": "d095f5e64c042cdeb7b355d87da573bec0f9f4dd4f099ed3b8671373d4521b04",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_028.png",
+        "mode": "RGBA",
+        "sha256": "c550e9650c39d427ed219b7b56c16653b9cd5a7ec3f36b40e7e9749db3453ba7",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "f00b03fa2ec83ee205e5fa5f06cdccef0194fd62994791acac14770a1a080901",
+      "sourceEntrySha256": "86f0f3eca65c44d4816a5b13d9d2e916997ecca3c7ce271ae86992e80f6eac9c",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_029",
+      "entrySha256": "3114cdfb76b70ef4d38a25b887ca729d751d5cb063a2bf3d485636ec5a651795",
+      "ordinal": 29,
+      "originalLabel": "side_turn",
+      "overrideSha256": "3c8995bef7c2c1d227c68e48b458a01528e8bae402e79cca8851914155c54139",
+      "pathKey": "set_c",
+      "proposalSha256": "35e692a28db748ec72486b9229e65ce5afd685d65c070d1edffcfaf9aa5f963c",
+      "renderOutput": {
+        "decodedPixelSha256": "a629ab2de29e793e97e2249d5aa8f365ca7d66b42617eef88e7bf08e63e99580",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_029.png",
+        "mode": "RGBA",
+        "sha256": "99003f1324cfcc119f6b9ab34dd1a8ed031cd82a8eeefcde57e8201d47a63c78",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "8dc599e497abe270cedf531062c5245a20c2c78e6e2c0cc370f557d14e42fc37",
+      "sourceEntrySha256": "42c4d02d8778c029b38ce5d4369f621ce8d172794395c498912962f62aeddb64",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_030",
+      "entrySha256": "8c6daf1360ef8c689ecde26d51525a33de849bca9c3ca57200d6eceba03d862d",
+      "ordinal": 30,
+      "originalLabel": "walk_pose",
+      "overrideSha256": "ba275f0964d9d53d74abc93233d2ff74390ba020200f7eea0aa1c52d08f4811e",
+      "pathKey": "set_c",
+      "proposalSha256": "e3e2a803a01f30a7220dc801da830f62b216f4b7599fe8e137f5e037a4d09d2e",
+      "renderOutput": {
+        "decodedPixelSha256": "d8b9eb1e123b7cb522f1f23b3f9258dd42618f747982db3c8a7bfcc3944abd04",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_030.png",
+        "mode": "RGBA",
+        "sha256": "356fe3a1ac5f97d3481158006d9e3c62c06f03775e22aacb02fc424680a617b0",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "a950cf8795ce551078c2e6aa8e30884624d0e4df0a1e9d516e28477c8277543f",
+      "sourceEntrySha256": "d34cfd7e4d6c47f15feec08041c7aa7a88aa32e70eb20de49ef16f26ca2ba3e2",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_031",
+      "entrySha256": "009c9212e693e0b125bf915bd81d2451e2e048395740ccfd1e44fa71a547fb89",
+      "ordinal": 31,
+      "originalLabel": "profile_step",
+      "overrideSha256": "f4eda60bd50f1b858a438c0401c292d86dec6b490784b9235a68b75586f137cc",
+      "pathKey": "set_c",
+      "proposalSha256": "5fcff839e49a2b98f4219126ad79a489cf03e14fed96a13833616a8e307b8684",
+      "renderOutput": {
+        "decodedPixelSha256": "895710455d041c3bd5a25c68d343b6b5964dc0f2c27eef7a894c3618506a77d0",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_031.png",
+        "mode": "RGBA",
+        "sha256": "7da067ee70f837c7a060abc62041241a1bce2aac8415983d4319d9c33ba4a9fe",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "ec286b349255d78ab82bae22ed3c1bbbaa88b600e0b4622ebac4a3b954075e14",
+      "sourceEntrySha256": "ebb75fbc36251ce28c7b5a2c5caca05f321bf45cd28655cc384fbf0911179a55",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_032",
+      "entrySha256": "41af102221db1531a83fe03e3453b0537c0bd00ac4c9d74612532cf212394539",
+      "ordinal": 32,
+      "originalLabel": "pose_reset",
+      "overrideSha256": "345e11e73b259f1813e3e731c421d886a0d19907355e9105710123682d7d6647",
+      "pathKey": "set_c",
+      "proposalSha256": "105fe45e45dd1ad334929ee51c2c7aa112a03cb2b743da7aacaf677684b23676",
+      "renderOutput": {
+        "decodedPixelSha256": "b564d35092545b94b093f49d3d334ffb81c0ffed72ccd3a87375c5a79b1ec1af",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_032.png",
+        "mode": "RGBA",
+        "sha256": "05ca48bc8da7c3ecd270d5b6edaed35ba2b148e7f2bcce00b643abfe89240f37",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "86121c8a908ef99cf54a9f96cfa305cf26d1ece9d32d19053dceafaeff1dfc7d",
+      "sourceEntrySha256": "2e4fdf4518f81836b6671796ebd2db3c777c0fad469602cd1a42711023b779b8",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_033",
+      "entrySha256": "37e5435a7db560253a178cdff0d96ee5768aa2e4c4fda4becf13ff194190d5b5",
+      "ordinal": 33,
+      "originalLabel": "front_lock",
+      "overrideSha256": "718d2c5694ac238ccfd58bbbf6f55506eae1ca4310782dd048acbeef307e23af",
+      "pathKey": "set_c",
+      "proposalSha256": "af39fff70572ca3ba541209d84e8da4df2ec00e8de9f005702b8d8e796d4be5a",
+      "renderOutput": {
+        "decodedPixelSha256": "5f0cad2ac69fb9d094e5aadffd1060810eecb45de8febff553ea2e2cdd67b967",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_033.png",
+        "mode": "RGBA",
+        "sha256": "254ab15db9e0e931c93c1cbe86c153207b2cdab0957ad9dc43b063984c993fde",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "8cab08ecdee688bd78ef0c281e6d535d1eae1309c8f55a586143f2c0a8dfb3f5",
+      "sourceEntrySha256": "32c3e302850f649cad0603b23ec45396ea42e829bc4d3231cc937fd848b14cf9",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_034",
+      "entrySha256": "63b2b5f92e168206a65d4e0d83fdf8b384d329e3cae0099543604c0c5f771200",
+      "ordinal": 34,
+      "originalLabel": "hip_pop",
+      "overrideSha256": "a79cff4d8da8ff85aeef04b7710e158f95fdbc43e3ee17d8f681e4644f5176c2",
+      "pathKey": "set_c",
+      "proposalSha256": "623de086cb64276b1e8ffc87e1fe93d23c13b371a47ca7ce814aafbf9202a39a",
+      "renderOutput": {
+        "decodedPixelSha256": "5a02e45b34044d24a97ab799d9fa3f2c0fcfe5ac0178c3b5563a8a3af2dd8ca1",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_034.png",
+        "mode": "RGBA",
+        "sha256": "d2d9d972ca6243e73ab3bd12c81ebf2967b8839963889a5008834990a41d967f",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "f47b99f6784abd9260c53a4c988809ad6c4b98a29c908649c32f95be72ca3e66",
+      "sourceEntrySha256": "6bd22880418fa5fc521aa019c563d49de4fd70a50d906b4e860997965d4cc742",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_035",
+      "entrySha256": "734db43227873da5fadffcdcb82ef70fa05e87d1dd52638f994d39fb6b757356",
+      "ordinal": 35,
+      "originalLabel": "chin_tilt",
+      "overrideSha256": "55207fdcb2d655eead1010c2b275467ece61a10df458757e931c296073946e3e",
+      "pathKey": "set_c",
+      "proposalSha256": "acb7b14aeee68b8549460da35cd84e866713f5cae9ae71f821e0c46caba47391",
+      "renderOutput": {
+        "decodedPixelSha256": "bcfaa5845f0efefbbe4a5c355da70e0dd446ccae4998b20b1c951389cc362c9d",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_035.png",
+        "mode": "RGBA",
+        "sha256": "8a7d889a3c8594de2411488dfa3562662bef918597ae8f2f7b6970cd36ad9270",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "bc59a912677718a679097de8414b728a65fea42532420c8abf4dab7a5e864979",
+      "sourceEntrySha256": "7f22a1ee49678e62dc4a187bde7c6745f62c97a8ef3f8435242b4a4944cadfb1",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_036",
+      "entrySha256": "cab64e5da69000a97ae065d87b1cd2d4ff6a164821a5502ca7570241b27e37c4",
+      "ordinal": 36,
+      "originalLabel": "waist_touch",
+      "overrideSha256": "cf6c627d6264a4fe1fa6d52071b7486f16a066c3989e5ff081ff363dd45c2d6b",
+      "pathKey": "set_c",
+      "proposalSha256": "3d50f27165d098c06079f9591423e2573c1241f01770ef53d3ee8fa9f5aa46b4",
+      "renderOutput": {
+        "decodedPixelSha256": "bd8e2f0b390121a0cbf2db26b0b9b1e96f6929ab322cb7cce1050f6403522de3",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_036.png",
+        "mode": "RGBA",
+        "sha256": "d2b5bb65c5ae28a186b691a431d93b1fb42a1f35ed32855e91b7dcf729b46a5b",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "72a510c904c078595d797421e8474a09a8000b455c8b6c861916e1e33cc1d27e",
+      "sourceEntrySha256": "ad020d11a7b931964453ae7eb165f9d96644503368062bde1d4b0b291ef90428",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_037",
+      "entrySha256": "fd7293ce20c7245a3f258fa104765ca35073890f8b05369aaa4488e17c322be8",
+      "ordinal": 37,
+      "originalLabel": "arched_pose",
+      "overrideSha256": "ec71d8495346d7db8c2ae7a7fde738dd9fc7247a7ac8da68561933a61f7f3281",
+      "pathKey": "set_c",
+      "proposalSha256": "d09ebcd46844b6417c33edcfcee812b44e464aac907bfe742436ab6da073c260",
+      "renderOutput": {
+        "decodedPixelSha256": "90bbc7b21e1aef0f04e79105a924c6a3a7e8a0b74b1b7568984c21868d66408e",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_037.png",
+        "mode": "RGBA",
+        "sha256": "8ab4790019ab1c20532e837d660ba1b5548120d1c98bfce1838c297c2bcb31c2",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "0fecbdfee45dbdd6f0b564c67cf7518b57550a823206bf052c1ece66dbcd24ed",
+      "sourceEntrySha256": "4d8b22e9ecc8051b5f4b17e6e274fe6dc57c62fe66856ce1cc557d9a22e0fb39",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_038",
+      "entrySha256": "c7365175f3fea97932244f9fd680fe5b8729b1849d71e2cb24184d4378722a38",
+      "ordinal": 38,
+      "originalLabel": "leg_cross",
+      "overrideSha256": "a7581d8cca52fb9c336e45807b774c9595f2db6aef99e3c63545b2c143bff6b8",
+      "pathKey": "set_c",
+      "proposalSha256": "da09ecb3e6ab435fbb4a91c3e6e37a1cd372642af51c4d1cdc8c561b59624db2",
+      "renderOutput": {
+        "decodedPixelSha256": "669af59936152259b773f2804deb1018aa5592e12748b595481cefcf8f26d2e4",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_038.png",
+        "mode": "RGBA",
+        "sha256": "bb553fb0139e99b5c445a7c67f59d82b93679528fd52ac86747226aeea992f51",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "951bc912856d1c043dc3e3f53e05314b58b58d77cba7dfa7c5090473a14a00de",
+      "sourceEntrySha256": "5104eb8b9e71da75a3996a1fec7f6d4d77b4b1c2ab193a1dc09f57ec3c64c0ab",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_039",
+      "entrySha256": "4ab7a6d7f66ecd5c1157ca35273d3d711963a4020d7388fd428aef649cf2825c",
+      "ordinal": 39,
+      "originalLabel": "glance_pose",
+      "overrideSha256": "027febddfca6c91f548116816d88719f47b293518b0921404dc72c9406167040",
+      "pathKey": "set_c",
+      "proposalSha256": "00d106ab49106bacb7aac721e95cd03845cb126168055b4c4f71acd724a9d022",
+      "renderOutput": {
+        "decodedPixelSha256": "547023a9e68cf0112af74cdd6d61485116f56ea429a893b2791860d586d6e7d4",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_039.png",
+        "mode": "RGBA",
+        "sha256": "ea4ebbce054ba0dead3238496095a0c19e00fcb8559ef84917070ec6c45088c7",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "82718a8971f653a7d07192c92b3e8c5e95cbfbfb544dd4191a7bd88259d35336",
+      "sourceEntrySha256": "8fc07dfdd7171bb95e4a8c88b2cc2415a748ff6fbfe6a5ecbc7d367f0d275e8f",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "acceptance": {
+        "mechanicsStatus": "review_required",
+        "qaStatus": "passed_transform_checks",
+        "registrationStatus": "registered",
+        "renderStatus": "review_required",
+        "workflowValidationStatus": "not_validated"
+      },
+      "entryId": "set_c_pose_040",
+      "entrySha256": "fd759bdc84bd04f29914c190b32d958a80389ef53a4a6f6413c3f865d597ba1f",
+      "ordinal": 40,
+      "originalLabel": "torso_turn",
+      "overrideSha256": "21dd6d63dee62270eadad4048a96405a26eb486bd7d7f0f5a9d991fe0a36081a",
+      "pathKey": "set_c",
+      "proposalSha256": "4dcf4bda50a38f748ac391486eb40aa00b81b32f36e698351bbab8a9040107c3",
+      "renderOutput": {
+        "decodedPixelSha256": "7330248a6f45ba2e643c4de2886f8bf70dc7e9b1da8d9186f2ab367930fb0a13",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_c/set_c_pose_040.png",
+        "mode": "RGBA",
+        "sha256": "72e33f71168c0f3c4eb4f2f41e5508e0c5a5d7c5586555881f7b1aae5f4da990",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "renderRecordSha256": "fc2e02d268cb6732f3fbb5e5e4c067199f7b982dae4aa6f9610a5aab40a1adcb",
+      "sourceEntrySha256": "d9a4855747f17da4c2469458046c329dc1ec34dcaed5cfe3c2ac567cc90c7545",
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    }
+  ],
+  "extensions": {},
+  "indexSha256": "7234cca5856568baf457e3b06e91d4ed658a78cadbb61ec60a02fc0b5015901f",
+  "schemaVersion": "2d-doll-pose-corpus-index-0.1"
+}

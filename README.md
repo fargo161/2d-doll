@@ -11,11 +11,11 @@ The project optimizes for **combinatorial expressive power**: a small vocabulary
 This repository contains the **design and development foundation** for 2D Doll, a first canonical Poser runtime slice, and an inherited pre-overhaul prototype preserved for provenance.
 
 - **DESIGNED:** The high-level creative model, conceptual responsibilities, terminology, and development principles.
-- **IMPLEMENTED:** A new canonical runtime under [`app/`](app/) with explicit rig-definition, pose, character/world, camera, and editor-state boundaries; complete-body fitting; independent character and camera navigation; visible root/joint/attachment handles; direct manipulation; scoped resets; semantic elbow flexion mapped across Front, 3/4, and Back; and a minimal semantic-pose save boundary. The inherited Canonical Base Body Rig v0.1 remains unchanged under [`baselines/`](baselines/).
-- **TESTED:** The new runtime's startup, complete-body fitting in all views, character/camera separation, wheel zoom, handles, representative direct manipulation, slider/numeric synchronization, arm/leg hierarchy and branch isolation, cross-view elbow mapping, reset scopes, pose persistence boundary, compatibility data, and extensible depth contract. Import integrity, inherited structural validation, and the inherited failure baseline also remain tested. See the pass reports for exact evidence.
+- **IMPLEMENTED:** A new canonical runtime under [`app/`](app/) with explicit rig-definition, pose, character/world, camera, and editor-state boundaries; complete-body fitting; independent character and camera navigation; visible root/joint/attachment handles; direct manipulation; scoped resets; semantic elbow flexion mapped across Front, 3/4, and Back; and a minimal semantic-pose save boundary. A separate [`pose-corpus/canonical-v0_1/`](pose-corpus/canonical-v0_1/) boundary registers 123 external source states and generates fixed-canvas reference candidates without changing runtime pose state. The inherited Canonical Base Body Rig v0.1 remains unchanged under [`baselines/`](baselines/).
+- **TESTED:** The new runtime's startup, complete-body fitting in all views, character/camera separation, wheel zoom, handles, representative direct manipulation, slider/numeric synchronization, arm/leg hierarchy and branch isolation, cross-view elbow mapping, reset scopes, pose persistence boundary, compatibility data, and extensible depth contract. The pose-corpus inventory, descriptor-driven fourth-package path, schemas, 123 render hashes/canvas/alpha/safety checks, and visual-evidence manifests are also tested. Import integrity, inherited structural validation, and the inherited failure baseline remain tested. See the pass reports for exact evidence.
 - **VALIDATED:** Nothing in the intended 2D Doll creative workflow yet.
 
-The new runtime is a bounded mechanical vertical slice, not a complete Poser. Only elbows use the new cross-view semantic mapping; other joints retain transitional degree controls. Pose-dependent depth overrides have an implemented state boundary but no editor UI. Pose load, PNG export, touch/mobile validation, undo, final artwork, heads, expressions, clothing, interaction authoring, IK, animation, multiple characters, and Placer behavior are not implemented.
+The new runtime is a bounded mechanical vertical slice, not a complete Poser. Only elbows use the new cross-view semantic mapping; other joints retain transitional degree controls. Pose-dependent depth overrides have an implemented state boundary but no editor UI. The pose corpus is also provisional: all anatomical landmarks/profile measurements and contact semantics remain unresolved, no local proportion retarget was applied, five source-defect renders are quarantined, and none of its 123 candidates is accepted or runtime-integrated. Pose load, PNG export from the runtime, touch/mobile validation, undo, final artwork, heads, expressions, clothing, interaction authoring, IK, animation, multiple characters, and Placer behavior are not implemented.
 
 The inherited v0.1 viewer has serious documented runtime and architecture problems and is not the canonical runtime. Its [functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md) is inherited pre-official-repository evidence; the later repository-native verification report records current reproducible evidence. Current canonical design requirements live in [Rig Requirements](docs/RIG_REQUIREMENTS.md).
 
@@ -36,6 +36,8 @@ Run the dependency-free repository checks with:
 ```text
 npm test
 ```
+
+The tracked pose-corpus records are included in `npm test`. A full external-raster verification additionally requires the supplied ZIP directory and generated artifact root; see the [pose-corpus test instructions](tests/README.md#canonical-pose-corpus-tests).
 
 ## Conceptual Model
 
@@ -84,6 +86,7 @@ These generalized canonical concepts are currently **DESIGNED**. The inherited v
 - [docs/RIG_REQUIREMENTS.md](docs/RIG_REQUIREMENTS.md): current canonical rig requirements, primarily DESIGNED.
 - [docs/RIG_ARCHITECTURE.md](docs/RIG_ARCHITECTURE.md): source-aligned architecture for the first canonical Poser runtime slice.
 - [docs/rigging/README.md](docs/rigging/README.md): repository-native body-rig specialist team and the broader Canonical Body Rig v0.1 **DESIGNED** contracts.
+- [Canonical Female Pose Corpus v0.1](docs/pose-corpus/CANONICAL_POSE_CORPUS_V0_1.md): measured source-ingestion, coordinate, scale/canvas, provenance, normalization-candidate, and QA contract with explicit unresolved mechanics.
 - [Expression Maker and Face Intake](docs/design/expression-maker-face-intake.md): authoritative **DESIGNED** context for the combinatorial facial system and its normalization workflow.
 - [Combinatorial Panel Composition, Interactive Elements, and Effects](docs/design/combinatorial-panel-composition-and-interactions.md): authoritative **DESIGNED** philosophy for semantic scenes, reusable interactions, modular environments, and event-driven presentation.
 - [Inherited functional audit](docs/audits/canonical-base-body-rig-v0.1-functional-audit.md): pre-official-repository evidence and known failures.

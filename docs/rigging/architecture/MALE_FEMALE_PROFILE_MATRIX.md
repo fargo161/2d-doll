@@ -48,7 +48,9 @@ Root/pelvis, anatomical pelvic center, center of mass, waistband, sitting contac
 
 | Profile | Evidence | Reality |
 | --- | --- | --- |
-| base_female_v0_1 | Provisional segmented mannequin; no owner/anatomy approval | DESIGNED ID; structural reference only |
+| base_female_v0_1 | Provisional segmented mannequin plus `base_female_v0_1.corpus_v0_1` evidence from 123 flattened source states; all requested corpus measurements remain null/unresolved and no owner/anatomy approval exists | DESIGNED ID; structural and corpus-scale reference only |
 | base_male_v0_1 | No repository asset or parameter data | DESIGNED ID; content SPECULATIVE |
 
 Production-candidate acceptance needs annotated neutral views separating pivots, landmarks, overlaps, seams, and masks; a stated stylization target; projection maps; visual-range evaluation; artwork replacement and garment fit proofs; and owner workflow review.
+
+The pose-corpus evidence object's `BODY_HEIGHT = 1.0` and 1,728-pixel raster scale standardize candidate stature and output resolution only. They do not supply canonical segment proportions, bind offsets, or profile anatomy. Those measurements cannot become defaults until reviewed landmark evidence is resolved and approved.

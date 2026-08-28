@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "2d-doll-pose-corpus-orientation-vocabulary-0.1",
+  "vocabularyId": "canonical_pose_orientation_v0_1",
+  "status": "designed_vocabulary_provisional_observations",
+  "canonicalBodyOrientationIds": [
+    "front",
+    "three_quarter",
+    "back"
+  ],
+  "observedProjectionClasses": [
+    "front",
+    "front_three_quarter",
+    "profile",
+    "rear_three_quarter",
+    "rear",
+    "unknown"
+  ],
+  "mappingRules": {
+    "front": {
+      "canonicalBodyOrientationId": "front",
+      "status": "direct_reference"
+    },
+    "front_three_quarter": {
+      "canonicalBodyOrientationId": "three_quarter",
+      "status": "provisional_reference"
+    },
+    "rear": {
+      "canonicalBodyOrientationId": "back",
+      "status": "provisional_reference"
+    },
+    "profile": {
+      "canonicalBodyOrientationId": null,
+      "status": "reference_only"
+    },
+    "rear_three_quarter": {
+      "canonicalBodyOrientationId": null,
+      "status": "reference_only"
+    },
+    "unknown": {
+      "canonicalBodyOrientationId": null,
+      "status": "unresolved"
+    }
+  },
+  "screenDirections": ["left", "right", "unspecified"],
+  "rules": [
+    "Observed projection is evidence and remains separate from the runtime's canonical orientation graph.",
+    "Profile and rear-three-quarter observations are not coerced into canonical Front, 3/4, or Back states.",
+    "Facing direction never changes anatomical L/R identity.",
+    "Head observation is independent from body projection and remains unresolved until reviewed."
+  ],
+  "extensions": {}
+}

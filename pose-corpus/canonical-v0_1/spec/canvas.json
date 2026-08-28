@@ -1,0 +1,17 @@
+{
+  "bodyPixels": 1728,
+  "groundYPx": 1984,
+  "heightPx": 2112,
+  "measuredRelativeExtentPx": {
+    "xMax": 600.748391,
+    "xMin": -645.345988,
+    "yMax": 3.045378,
+    "yMin": -1873.112888
+  },
+  "originXPx": 768,
+  "resampleSupportPx": 8,
+  "roundingMultiplePx": 64,
+  "safeMarginPx": 87,
+  "status": "provisional_frozen_for_v0_1_evidence_run",
+  "widthPx": 1536
+}

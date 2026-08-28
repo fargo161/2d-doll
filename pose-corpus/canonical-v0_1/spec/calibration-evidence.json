@@ -1,0 +1,213 @@
+{
+  "groups": {
+    "set_a_capture": {
+      "confidence": "medium",
+      "groupId": "set_a_capture",
+      "neutralStaturePx": 1680.0,
+      "observations": [
+        {
+          "basename": "pose_15_walk_01_step_initiation.png",
+          "confidence": 0.62,
+          "entryId": "set_a_pose_015",
+          "groundYPx": 1800.5,
+          "headTopYPx": 120.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 1680.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        }
+      ],
+      "sourceSetId": "set_a_edge_extremity_refined_v1",
+      "status": "provisional_unreviewed"
+    },
+    "set_b_video_a": {
+      "confidence": "medium",
+      "groupId": "set_b_video_a",
+      "neutralStaturePx": 890.0,
+      "observations": [
+        {
+          "basename": "01_videoA_f001_neutral_upright.png",
+          "confidence": 0.62,
+          "entryId": "set_b_pose_001",
+          "groundYPx": 921.5,
+          "headTopYPx": 25.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 896.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        },
+        {
+          "basename": "11_videoA_f121_upright_lock.png",
+          "confidence": 0.62,
+          "entryId": "set_b_pose_011",
+          "groundYPx": 925.5,
+          "headTopYPx": 35.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 890.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        },
+        {
+          "basename": "17_videoA_f193_calm_upright_2.png",
+          "confidence": 0.62,
+          "entryId": "set_b_pose_017",
+          "groundYPx": 915.5,
+          "headTopYPx": 27.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 888.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        }
+      ],
+      "sourceSetId": "set_b_full_isolation_v1",
+      "status": "provisional_unreviewed"
+    },
+    "set_b_video_b": {
+      "confidence": "medium",
+      "groupId": "set_b_video_b",
+      "neutralStaturePx": 705.0,
+      "observations": [
+        {
+          "basename": "31_videoB_f001_neutral_hold.png",
+          "confidence": 0.62,
+          "entryId": "set_b_pose_031",
+          "groundYPx": 730.5,
+          "headTopYPx": 22.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 708.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        },
+        {
+          "basename": "32_videoB_f010_upright_pose.png",
+          "confidence": 0.62,
+          "entryId": "set_b_pose_032",
+          "groundYPx": 727.5,
+          "headTopYPx": 22.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 705.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        }
+      ],
+      "sourceSetId": "set_b_full_isolation_v1",
+      "status": "provisional_unreviewed"
+    },
+    "set_c_video_a": {
+      "confidence": "high",
+      "groupId": "set_c_video_a",
+      "neutralStaturePx": 1662.0,
+      "observations": [
+        {
+          "basename": "01_videoA_f001_upright_stance.png",
+          "confidence": 0.62,
+          "entryId": "set_c_pose_001",
+          "groundYPx": 1690.5,
+          "headTopYPx": 28.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 1662.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        },
+        {
+          "basename": "18_videoA_f194_torso_turn.png",
+          "confidence": 0.62,
+          "entryId": "set_c_pose_018",
+          "groundYPx": 1729.5,
+          "headTopYPx": 33.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 1696.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        },
+        {
+          "basename": "19_videoA_f205_steady_hold.png",
+          "confidence": 0.62,
+          "entryId": "set_c_pose_019",
+          "groundYPx": 1686.5,
+          "headTopYPx": 26.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 1660.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        }
+      ],
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1",
+      "status": "provisional_unreviewed"
+    },
+    "set_c_video_b": {
+      "confidence": "high",
+      "groupId": "set_c_video_b",
+      "neutralStaturePx": 2366.0,
+      "observations": [
+        {
+          "basename": "23_videoB_f023_upright_stance.png",
+          "confidence": 0.62,
+          "entryId": "set_c_pose_023",
+          "groundYPx": 2402.5,
+          "headTopYPx": 36.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 2366.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        },
+        {
+          "basename": "33_videoB_f137_front_lock.png",
+          "confidence": 0.62,
+          "entryId": "set_c_pose_033",
+          "groundYPx": 2553.5,
+          "headTopYPx": 23.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 2530.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        }
+      ],
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1",
+      "status": "provisional_unreviewed"
+    },
+    "set_c_video_b_replacement_scale": {
+      "confidence": "medium",
+      "groupId": "set_c_video_b_replacement_scale",
+      "neutralStaturePx": 1247.0,
+      "observations": [
+        {
+          "basename": "39_videoB_f205_glance_pose.png",
+          "confidence": 0.62,
+          "entryId": "set_c_pose_039",
+          "groundYPx": 1283.5,
+          "headTopYPx": 16.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 1267.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        },
+        {
+          "basename": "40_videoB_f217_torso_turn.png",
+          "confidence": 0.62,
+          "entryId": "set_c_pose_040",
+          "groundYPx": 1263.5,
+          "headTopYPx": 16.5,
+          "method": "silhouette_contiguous_width_profile_plus_lowest_alpha_envelope",
+          "neutralStaturePx": 1247.0,
+          "resolutionStage": "generated_proposal",
+          "reviewStatus": "review_required"
+        }
+      ],
+      "sourceSetId": "set_c_edge_refined_green_cleaned_v1",
+      "status": "provisional_unreviewed"
+    }
+  },
+  "method": "confidence_weighted_median_of_declared_neutral_reference_proposals",
+  "rasterSelection": {
+    "bodyPixels": 1728,
+    "candidateNeutralStaturesPx": [
+      1680.0,
+      1662.0,
+      2366.0
+    ],
+    "reason": "Confidence-weighted median of declared calibration groups with rasterSelectionEvidence=true; other groups do not influence the canonical raster-quality scale.",
+    "roundingMultiplePx": 64,
+    "status": "provisional_freeze_for_v0_1_evidence_run"
+  }
+}
