@@ -1,19 +1,20 @@
 {
   "corpusId": "canonical_female_pose_corpus_v0_1",
-  "corpusIndexSha256": "7234cca5856568baf457e3b06e91d4ed658a78cadbb61ec60a02fc0b5015901f",
+  "corpusIndexSha256": "1185bdd6e4d571962a3ebdb804445ddd3c6607997ade3d9107bb6455a1597959",
   "counts": {
     "accepted": 0,
     "blockedSourceDefect": 5,
-    "producedCandidates": 123,
-    "qaArtifactCount": 8,
-    "registered": 123,
-    "reviewRequired": 118,
-    "transformQaPassed": 123
+    "producedCandidates": 132,
+    "qaArtifactCount": 16,
+    "registered": 132,
+    "reviewRequired": 127,
+    "transformQaPassed": 131
   },
   "issueCounts": {
+    "CANONICAL_CANVAS_OVERFLOW_REVIEW_REQUIRED": 1,
     "LOW_SOURCE_RESOLUTION": 55,
-    "MECHANICS_REVIEW_REQUIRED": 123,
-    "PROPORTION_RETARGET_NOT_APPLIED": 123,
+    "MECHANICS_REVIEW_REQUIRED": 132,
+    "PROPORTION_RETARGET_NOT_APPLIED": 132,
     "SOURCE_ALPHA_CORRUPT": 4,
     "SOURCE_BACKDROP_RETAINED": 1,
     "SOURCE_BACKDROP_SUSPECT": 1
@@ -22,7 +23,8 @@
     "Silhouette proposals do not resolve anatomical landmarks or left/right semantics.",
     "No local proportion retarget was applied without reviewed control topology.",
     "5 candidate(s) remain quarantined by source-declared defect dispositions.",
-    "Automated evidence establishes no owner or creative-workflow validation."
+    "Automated evidence establishes no owner or creative-workflow validation.",
+    "One or more new package poses require frozen-canvas overflow review."
   ],
   "qaArtifacts": [
     {
@@ -88,10 +90,82 @@
       "sha256": "94f57ed2e10165fa490bdc9aa29ebe63d0ff6ffcbb0124e781fbafb5233600f4",
       "sidecarLogicalPath": "qa/source-defect-review.json",
       "sidecarSha256": "b7a9ad95171c8f3d230591f456cc338247969c201bc05b01d8cc51143b15c9a5"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 9,
+      "kind": "canonical_contact_checkerboard",
+      "logicalPath": "qa/canonical-contact-checkerboard.jpg",
+      "sha256": "2c545abcfce3b9dcf81cc4217a7a6c4e0d44debb8d85016b5d5c310766a74b8f",
+      "sidecarLogicalPath": "qa/canonical-contact-checkerboard.json",
+      "sidecarSha256": "cca7112e2cbf9164477c3730ce4afd590236cb113353ccaac96e4216ce3e7477"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 9,
+      "kind": "canonical_contact_black",
+      "logicalPath": "qa/canonical-contact-black.jpg",
+      "sha256": "c46ccb4205c45d2556dbb5ebf0649bf2ab93e579b37da81e7f71b632b4808293",
+      "sidecarLogicalPath": "qa/canonical-contact-black.json",
+      "sidecarSha256": "cecd7fa1ed254792e3f8eae6581e0b027e6d648e838e9d34ee67f6c804f82e34"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 9,
+      "kind": "canonical_contact_light",
+      "logicalPath": "qa/canonical-contact-light.jpg",
+      "sha256": "83ecdb624d35637393c1378a4da7214df306e0abe22bdb1f7d0ab99b381454a8",
+      "sidecarLogicalPath": "qa/canonical-contact-light.json",
+      "sidecarSha256": "d9eb42d416dea7a6f4dceae7268c7abccd5f820b3e78687825b56c4dbc500c51"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 9,
+      "kind": "landmark_root_ground_overlay",
+      "logicalPath": "qa/landmark-root-ground-overlay.jpg",
+      "sha256": "f4a6ee8cb415c45a68bd168de557469e4f1752890fef87816f9fa2db0fd36472",
+      "sidecarLogicalPath": "qa/landmark-root-ground-overlay.json",
+      "sidecarSha256": "8ce231ab94309b18a2c28ae61443fd8d0832c444f10fe24c189a47c75c2a97e1"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 6,
+      "kind": "representative_before_after",
+      "logicalPath": "qa/representative-before-after.jpg",
+      "sha256": "9c47b6bcf8656ddbe793e946657fd24f9f1e25de9afde36817e509ac381f3284",
+      "sidecarLogicalPath": "qa/representative-before-after.json",
+      "sidecarSha256": "a33d45e4550dcc8555b766c1c739a6eacb9e0c8360bf83e877c46e48caf107db"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 1,
+      "kind": "cross-set-scale-comparison",
+      "logicalPath": "qa/cross-set-scale-comparison.jpg",
+      "sha256": "a38959ed7ad4f0e15547e8652dfbd08efa8424046324adaf1e6eeff3bfaad0e0",
+      "sidecarLogicalPath": "qa/cross-set-scale-comparison.json",
+      "sidecarSha256": "25490ccbc5f70b9122e57e734c862eecf208b57bdde59dc96e0f1e8c6ba169d3"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 8,
+      "kind": "stress-pose-comparison",
+      "logicalPath": "qa/stress-pose-comparison.jpg",
+      "sha256": "57f53d28de01003bd1c8da70040eee7800039a969ab16716b3fb2e597b71adb3",
+      "sidecarLogicalPath": "qa/stress-pose-comparison.json",
+      "sidecarSha256": "a08154fbb769b50564fc9144d8309d1dcf0af332958e9af00cf4ba3cd0abb4ba"
+    },
+    {
+      "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+      "cellCount": 6,
+      "kind": "source-defect-review",
+      "logicalPath": "qa/source-defect-review.jpg",
+      "sha256": "c5e4793156b60719df63eae674e137fff8532cbd39fe7f67bc0b4d388a4dd8de",
+      "sidecarLogicalPath": "qa/source-defect-review.json",
+      "sidecarSha256": "da400a675f86b9cba07291812d15106193cc868dbe3fb31a302cda0f8c15578d"
     }
   ],
-  "qaSummarySha256": "10fff2a612a28060bed475c48157fdc69249ca42d6c79bf9b9828715fd33aba6",
-  "renderManifestSha256": "92f9ffee89260b8b175471931e9993ffbee9463fa4da98bd04d069370563aaa6",
+  "qaSummarySha256": "5738257ccd2c0cb76506bfe7db382487fb6b95f61b2d3c36a4867055ad2c4c94",
+  "renderManifestSha256": "e35f6f647f50d5a46271cbcf6dd8758fa3055f4f3b75b5a44a130a69f8a004f7",
   "schemaVersion": "2d-doll-pose-corpus-qa-summary-0.1",
   "verdict": {
     "inventoryStatus": "passed",

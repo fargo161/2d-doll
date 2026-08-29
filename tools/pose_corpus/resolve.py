@@ -84,8 +84,13 @@ def measure_calibration(
     repository_root: Path,
     source_manifest: dict[str, Any],
     runtime_index: dict[str, Any],
+    *,
+    frozen_body_pixels: int | None = None,
 ) -> dict[str, Any]:
     config = load_source_config(repository_root)
+    selected_source_set_ids = {
+        source_set["sourceSetId"] for source_set in source_manifest["sourceSets"]
+    }
     entries_by_source_and_basename = {
         (
             entry["sourceSetId"],
@@ -96,6 +101,8 @@ def measure_calibration(
     groups: dict[str, Any] = {}
     raster_candidates: list[tuple[float, float]] = []
     for source_set in config["sourceSets"]:
+        if source_set["sourceSetId"] not in selected_source_set_ids:
+            continue
         for group in source_set["calibrationGroups"]:
             observations = []
             for basename in group["referenceBasenames"]:
@@ -128,9 +135,32 @@ def measure_calibration(
             }
             if group["rasterSelectionEvidence"]:
                 raster_candidates.append((stature, confidence_weight))
-    proposed_body_pixels = _round_up(_weighted_median(raster_candidates), 64)
+    if frozen_body_pixels is None:
+        if not raster_candidates:
+            raise RuntimeError(
+                "calibration mode requires at least one rasterSelectionEvidence group"
+            )
+        proposed_body_pixels = _round_up(_weighted_median(raster_candidates), 64)
+        raster_status = "provisional_freeze_for_v0_1_evidence_run"
+        raster_reason = (
+            "Confidence-weighted median of declared calibration groups with "
+            "rasterSelectionEvidence=true; other groups do not influence the "
+            "canonical raster-quality scale."
+        )
+        canvas_policy = "calibration"
+    else:
+        if frozen_body_pixels <= 0:
+            raise RuntimeError("frozen bodyPixels must be positive")
+        proposed_body_pixels = int(frozen_body_pixels)
+        raster_status = "loaded_from_frozen_canvas_contract"
+        raster_reason = (
+            "Package calibration is measured for placement only. bodyPixels is "
+            "loaded unchanged from the frozen canonical canvas contract."
+        )
+        canvas_policy = "frozen_ingestion"
     return {
         "method": "confidence_weighted_median_of_declared_neutral_reference_proposals",
+        "canvasPolicy": canvas_policy,
         "groups": groups,
         "rasterSelection": {
             "candidateNeutralStaturesPx": [
@@ -138,12 +168,8 @@ def measure_calibration(
             ],
             "bodyPixels": proposed_body_pixels,
             "roundingMultiplePx": 64,
-            "status": "provisional_freeze_for_v0_1_evidence_run",
-            "reason": (
-                "Confidence-weighted median of declared calibration groups with "
-                "rasterSelectionEvidence=true; other groups do not influence the "
-                "canonical raster-quality scale."
-            ),
+            "status": raster_status,
+            "reason": raster_reason,
         },
     }
 
@@ -371,12 +397,121 @@ def _proposal_landmarks(
     return landmarks
 
 
+def _derive_canvas(extents: dict[str, float], body_pixels: int) -> dict[str, Any]:
+    safe_margin = max(8, int(math.ceil(0.05 * body_pixels)))
+    resample_support = 8
+    half_width = math.ceil(
+        max(abs(extents["xMin"]), abs(extents["xMax"]))
+        + safe_margin
+        + resample_support
+    )
+    canvas_width = _round_up(2 * half_width, 64)
+    root_x = canvas_width // 2
+    ground_y = _round_up(
+        math.ceil(-extents["yMin"] + safe_margin + resample_support), 64
+    )
+    canvas_height = _round_up(
+        ground_y
+        + math.ceil(extents["yMax"] + safe_margin + resample_support),
+        64,
+    )
+    return {
+        "widthPx": canvas_width,
+        "heightPx": canvas_height,
+        "bodyPixels": body_pixels,
+        "originXPx": root_x,
+        "groundYPx": ground_y,
+        "safeMarginPx": safe_margin,
+        "resampleSupportPx": resample_support,
+        "roundingMultiplePx": 64,
+        "measuredRelativeExtentPx": {
+            key: round(value, 6) for key, value in extents.items()
+        },
+        "status": "provisional_frozen_for_v0_1_evidence_run",
+    }
+
+
+def _boundary_overflow(
+    extent: dict[str, float],
+    *,
+    x_min: float,
+    y_min: float,
+    x_max: float,
+    y_max: float,
+) -> dict[str, float]:
+    return {
+        "left": round(max(0.0, x_min - extent["xMin"]), 6),
+        "top": round(max(0.0, y_min - extent["yMin"]), 6),
+        "right": round(max(0.0, extent["xMax"] - x_max), 6),
+        "bottom": round(max(0.0, extent["yMax"] - y_max), 6),
+    }
+
+
+def _canvas_fit_evidence(
+    relative: dict[str, float], canvas: dict[str, Any]
+) -> dict[str, Any]:
+    transformed = {
+        "xMin": float(canvas["originXPx"]) + relative["xMin"],
+        "xMax": float(canvas["originXPx"]) + relative["xMax"],
+        "yMin": float(canvas["groundYPx"]) + relative["yMin"],
+        "yMax": float(canvas["groundYPx"]) + relative["yMax"],
+    }
+    support = float(canvas["resampleSupportPx"])
+    conservative = {
+        "xMin": transformed["xMin"] - support,
+        "xMax": transformed["xMax"] + support,
+        "yMin": transformed["yMin"] - support,
+        "yMax": transformed["yMax"] + support,
+    }
+    physical = _boundary_overflow(
+        conservative,
+        x_min=0.0,
+        y_min=0.0,
+        x_max=float(canvas["widthPx"]),
+        y_max=float(canvas["heightPx"]),
+    )
+    margin = float(canvas["safeMarginPx"])
+    safe = _boundary_overflow(
+        conservative,
+        x_min=margin,
+        y_min=margin,
+        x_max=float(canvas["widthPx"]) - margin,
+        y_max=float(canvas["heightPx"]) - margin,
+    )
+    physical_overflow = any(value > 0 for value in physical.values())
+    safe_overflow = any(value > 0 for value in safe.values())
+    return {
+        "measuredTransformedExtentPx": {
+            key: round(value, 6) for key, value in transformed.items()
+        },
+        "conservativeTransformedExtentPx": {
+            key: round(value, 6) for key, value in conservative.items()
+        },
+        "resampleSupportPx": int(support),
+        "physicalBoundaryOverflowPx": physical,
+        "safeMarginBoundaryOverflowPx": safe,
+        "physicalCanvasOverflow": physical_overflow,
+        "safeMarginReviewRequired": safe_overflow,
+        "reviewRequired": physical_overflow or safe_overflow,
+    }
+
+
 def build_proposals(
     repository_root: Path,
     source_manifest: dict[str, Any],
     runtime_index: dict[str, Any],
     calibration: dict[str, Any],
+    *,
+    canvas_policy: str,
+    frozen_canvas: dict[str, Any] | None = None,
+    frozen_canvas_sha256: str | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    if canvas_policy not in {"calibration", "frozen_ingestion"}:
+        raise RuntimeError(f"unsupported canvas policy: {canvas_policy}")
+    if canvas_policy == "frozen_ingestion" and frozen_canvas is None:
+        raise RuntimeError("frozen ingestion requires an existing canvas contract")
+    if canvas_policy == "calibration" and frozen_canvas is not None:
+        raise RuntimeError("calibration mode cannot accept a frozen canvas")
     config = load_source_config(repository_root)
     source_sets = {item["sourceSetId"]: item for item in config["sourceSets"]}
     body_pixels = calibration["rasterSelection"]["bodyPixels"]
@@ -511,37 +646,18 @@ def build_proposals(
         }
         proposals.append(proposal)
 
-    safe_margin = max(8, int(math.ceil(0.05 * body_pixels)))
-    resample_support = 8
-    half_width = math.ceil(
-        max(abs(extents["xMin"]), abs(extents["xMax"]))
-        + safe_margin
-        + resample_support
-    )
-    canvas_width = _round_up(2 * half_width, 64)
-    root_x = canvas_width // 2
-    ground_y = _round_up(
-        math.ceil(-extents["yMin"] + safe_margin + resample_support), 64
-    )
-    canvas_height = _round_up(
-        ground_y
-        + math.ceil(extents["yMax"] + safe_margin + resample_support),
-        64,
-    )
-    canvas = {
-        "widthPx": canvas_width,
-        "heightPx": canvas_height,
-        "bodyPixels": body_pixels,
-        "originXPx": root_x,
-        "groundYPx": ground_y,
-        "safeMarginPx": safe_margin,
-        "resampleSupportPx": resample_support,
-        "roundingMultiplePx": 64,
-        "measuredRelativeExtentPx": {
-            key: round(value, 6) for key, value in extents.items()
-        },
-        "status": "provisional_frozen_for_v0_1_evidence_run",
-    }
+    if canvas_policy == "calibration":
+        canvas = _derive_canvas(extents, body_pixels)
+    else:
+        assert frozen_canvas is not None
+        canvas = copy.deepcopy(frozen_canvas)
+        if canvas["bodyPixels"] != body_pixels:
+            raise RuntimeError(
+                "package calibration bodyPixels does not match frozen canvas: "
+                f"{body_pixels} != {canvas['bodyPixels']}"
+            )
+    root_x = int(canvas["originXPx"])
+    ground_y = int(canvas["groundYPx"])
     for proposal in proposals:
         placement = proposal["placement"]
         scale = proposal["calibration"]["normalizationScale"]
@@ -560,6 +676,50 @@ def build_proposals(
                 abs((ground * scale + translation_y) - ground_y), 6
             ),
         }
+        if canvas_policy == "frozen_ingestion":
+            fit = _canvas_fit_evidence(
+                placement["relativeOutputExtentPx"], canvas
+            )
+            placement["canvasFit"] = fit
+            proposal["extensions"] = {
+                **proposal["extensions"],
+                "canvasPolicy": "frozen_ingestion",
+                "frozenCanvasSha256": frozen_canvas_sha256,
+            }
+            if fit["reviewRequired"]:
+                proposal["issues"].append(
+                    {
+                        "code": "CANONICAL_CANVAS_OVERFLOW_REVIEW_REQUIRED",
+                        "severity": (
+                            "error" if fit["physicalCanvasOverflow"] else "warning"
+                        ),
+                        "detail": (
+                            "The package pose exceeds the conservative physical canvas "
+                            "envelope."
+                            if fit["physicalCanvasOverflow"]
+                            else "The package pose enters the frozen canvas safety margin."
+                        ),
+                        "disposition": (
+                            "blocked_render"
+                            if fit["physicalCanvasOverflow"]
+                            else "review_required"
+                        ),
+                        "frozenCanvasSha256": frozen_canvas_sha256,
+                        "frozenCanvas": {
+                            key: canvas[key]
+                            for key in (
+                                "widthPx",
+                                "heightPx",
+                                "bodyPixels",
+                                "originXPx",
+                                "groundYPx",
+                                "safeMarginPx",
+                                "resampleSupportPx",
+                            )
+                        },
+                        "fitEvidence": fit,
+                    }
+                )
         proposal["proposalSha256"] = None
         proposal["proposalSha256"] = canonical_json_sha256(proposal)
     return proposals, canvas
@@ -768,12 +928,20 @@ def build_entries_and_overrides(
     source_manifest: dict[str, Any],
     proposals: list[dict[str, Any]],
     canvas: dict[str, Any],
+    *,
+    source_indices: dict[str, int] | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     source_entries = {entry["entryId"]: entry for entry in source_manifest["entries"]}
-    source_indices = {
-        entry["entryId"]: index
-        for index, entry in enumerate(source_manifest["entries"])
-    }
+    if source_indices is None:
+        source_indices = {
+            entry["entryId"]: index
+            for index, entry in enumerate(source_manifest["entries"])
+        }
+    missing_indices = sorted(set(source_entries) - set(source_indices))
+    if missing_indices:
+        raise RuntimeError(
+            f"source indices are missing package entries: {missing_indices}"
+        )
     entries: list[dict[str, Any]] = []
     overrides: list[dict[str, Any]] = []
     for proposal in proposals:

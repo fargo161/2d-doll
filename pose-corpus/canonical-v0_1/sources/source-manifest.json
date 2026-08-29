@@ -4,9 +4,10 @@
     "bySourceSet": {
       "set_a_edge_extremity_refined_v1": 28,
       "set_b_full_isolation_v1": 55,
-      "set_c_edge_refined_green_cleaned_v1": 40
+      "set_c_edge_refined_green_cleaned_v1": 40,
+      "set_d_pose_bg_removed_clean_v1": 9
     },
-    "registered": 123
+    "registered": 132
   },
   "entries": [
     {
@@ -15960,11 +15961,2022 @@
           "status": "unverified_claim"
         }
       ]
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/06_front_arms_high_asymmetric_weight_shift.png",
+          "artifactId": "set_d_pose_006.source_native_rgba",
+          "basename": "06_front_arms_high_asymmetric_weight_shift.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                161,
+                48,
+                697,
+                1224
+              ],
+              "128": [
+                163,
+                50,
+                695,
+                1224
+              ],
+              "8": [
+                162,
+                49,
+                696,
+                1224
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 199526,
+              "partial": 23382,
+              "zero": 775876
+            },
+            "borderAlphaMax": {
+              "bottom": 255,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 21427
+            },
+            "foregroundCoverage": 0.22317939,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2327628,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "5dc3193f77e455c9b6ec0e8769051c9e214186e2fad6e5cb03a00a97be103014",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/06_front_arms_high_asymmetric_weight_shift.png",
+          "artifactId": "set_d_pose_006.prepared_rgba",
+          "basename": "06_front_arms_high_asymmetric_weight_shift.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                162,
+                49,
+                696,
+                1208
+              ],
+              "128": [
+                163,
+                50,
+                695,
+                1208
+              ],
+              "8": [
+                162,
+                49,
+                696,
+                1208
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 198652,
+              "partial": 17550,
+              "zero": 782582
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 21271
+            },
+            "foregroundCoverage": 0.21646522,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "62f02426a4c83958bc192ed3a4b53950beca7d8b257ced9d1263e9600cfb305d",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_006",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_006.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_006.prepared_rgba",
+      "ordinal": 6,
+      "originalLabel": "front_arms_high_asymmetric_weight_shift",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "06_front_arms_high_asymmetric_weight_shift.png",
+        "ordinal": 6,
+        "orientation": "front",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (6).png",
+        "poseClassification": "overhead_arms_asymmetric_weight_shift",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "62f02426a4c83958bc192ed3a4b53950beca7d8b257ced9d1263e9600cfb305d",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "5117c7d5a409ef84925fa69b7307386cfcb613b5c357ce1ca721972451adbfd5",
+          "alphaSha256BeforeDecontamination": "5117c7d5a409ef84925fa69b7307386cfcb613b5c357ce1ca721972451adbfd5",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 1775,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 4931,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 17550,
+              "propagationIterations": 4,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 17545,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2347746,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 222908,
+          "preparedAlphaNonzeroPixelCount": 216202,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 1775,
+          "removedSubthresholdAlphaPixelCount": 4931
+        },
+        "qaNotes": [
+          "front projection",
+          "both arms raised",
+          "asymmetric bent-leg weight shift",
+          "studio-floor matte below shoes requires deterministic removal"
+        ],
+        "screenDirection": "unspecified",
+        "sourceNativeSha256": "5dc3193f77e455c9b6ec0e8769051c9e214186e2fad6e5cb03a00a97be103014",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "hair tips, raised hands and separated fingers, platform heels, ankle straps, and bikini ties are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the silhouette; opaque floor matte is retained below the platform shoes",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/07_front_arms_high_asymmetric_weight_shift_variant.png",
+          "artifactId": "set_d_pose_007.source_native_rgba",
+          "basename": "07_front_arms_high_asymmetric_weight_shift_variant.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                146,
+                47,
+                684,
+                1224
+              ],
+              "128": [
+                148,
+                49,
+                682,
+                1224
+              ],
+              "8": [
+                147,
+                48,
+                683,
+                1224
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 196245,
+              "partial": 23376,
+              "zero": 779163
+            },
+            "borderAlphaMax": {
+              "bottom": 255,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 21111
+            },
+            "foregroundCoverage": 0.21988838,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2337489,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "69d7b2b7f701c231930d39ec674171e1bf7cb8a00b5bbaa1059895b0629682d5",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/07_front_arms_high_asymmetric_weight_shift_variant.png",
+          "artifactId": "set_d_pose_007.prepared_rgba",
+          "basename": "07_front_arms_high_asymmetric_weight_shift_variant.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                147,
+                48,
+                683,
+                1207
+              ],
+              "128": [
+                148,
+                49,
+                682,
+                1207
+              ],
+              "8": [
+                147,
+                48,
+                683,
+                1207
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 195561,
+              "partial": 17450,
+              "zero": 785773
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 20967
+            },
+            "foregroundCoverage": 0.21327034,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "16200317ea62ecd16402965ba706cd59eaf8d7ae7504d9555360359be718da32",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_007",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_007.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_007.prepared_rgba",
+      "ordinal": 7,
+      "originalLabel": "front_arms_high_asymmetric_weight_shift_variant",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "07_front_arms_high_asymmetric_weight_shift_variant.png",
+        "ordinal": 7,
+        "orientation": "front",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (7).png",
+        "poseClassification": "overhead_arms_asymmetric_weight_shift_variant",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "16200317ea62ecd16402965ba706cd59eaf8d7ae7504d9555360359be718da32",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "2aec204dcaed9d72bd3e68ec9922b28b9e48c1df283e5080ca136ecc372968fe",
+          "alphaSha256BeforeDecontamination": "2aec204dcaed9d72bd3e68ec9922b28b9e48c1df283e5080ca136ecc372968fe",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 1710,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 4900,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 17450,
+              "propagationIterations": 4,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 17444,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2357319,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 219621,
+          "preparedAlphaNonzeroPixelCount": 213011,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 1710,
+          "removedSubthresholdAlphaPixelCount": 4900
+        },
+        "qaNotes": [
+          "front projection",
+          "both arms raised",
+          "asymmetric bent-leg weight shift variant",
+          "studio-floor matte below shoes requires deterministic removal"
+        ],
+        "screenDirection": "unspecified",
+        "sourceNativeSha256": "69d7b2b7f701c231930d39ec674171e1bf7cb8a00b5bbaa1059895b0629682d5",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "hair tips, raised hands and separated fingers, platform heels, ankle straps, and bikini ties are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the silhouette; opaque floor matte is retained below the platform shoes",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/08_front_neutral_stance.png",
+          "artifactId": "set_d_pose_008.source_native_rgba",
+          "basename": "08_front_neutral_stance.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                272,
+                105,
+                541,
+                1210
+              ],
+              "128": [
+                274,
+                107,
+                539,
+                1208
+              ],
+              "8": [
+                273,
+                106,
+                540,
+                1209
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 172135,
+              "partial": 14202,
+              "zero": 812447
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 18002
+            },
+            "foregroundCoverage": 0.18656386,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2437341,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "e0c74e8a3047405893fa4b22c680f968c9319cf1cd27a964ce315424dffa6108",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/08_front_neutral_stance.png",
+          "artifactId": "set_d_pose_008.prepared_rgba",
+          "basename": "08_front_neutral_stance.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                273,
+                106,
+                540,
+                1200
+              ],
+              "128": [
+                274,
+                107,
+                539,
+                1200
+              ],
+              "8": [
+                273,
+                106,
+                540,
+                1200
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 171697,
+              "partial": 10582,
+              "zero": 816505
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 17916
+            },
+            "foregroundCoverage": 0.18250092,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "4a33cf048fc72574f8497ba766317e56eaca06ff65442711bd2693055ac83bbc",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_008",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_008.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_008.prepared_rgba",
+      "ordinal": 8,
+      "originalLabel": "front_neutral_stance",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "08_front_neutral_stance.png",
+        "ordinal": 8,
+        "orientation": "front",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (8).png",
+        "poseClassification": "neutral_stance",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "4a33cf048fc72574f8497ba766317e56eaca06ff65442711bd2693055ac83bbc",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "d5b367db1ec3127eef38b26ff488e2241af21ffe92d34c83b88c7fd3424c6eac",
+          "alphaSha256BeforeDecontamination": "d5b367db1ec3127eef38b26ff488e2241af21ffe92d34c83b88c7fd3424c6eac",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 942,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 3116,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 10582,
+              "propagationIterations": 3,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 10578,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2449515,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 186337,
+          "preparedAlphaNonzeroPixelCount": 182279,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 942,
+          "removedSubthresholdAlphaPixelCount": 3116
+        },
+        "qaNotes": [
+          "front projection",
+          "arms lowered",
+          "narrow neutral stance",
+          "neutral ground-contact matte below and between the platform shoes requires deterministic removal"
+        ],
+        "screenDirection": "unspecified",
+        "sourceNativeSha256": "e0c74e8a3047405893fa4b22c680f968c9319cf1cd27a964ce315424dffa6108",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "hair tips, lowered hands and fingers, platform heels, ankle straps, and bikini ties are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the complete silhouette; a merged neutral ground-contact matte is retained below and between the platform shoes",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete neutral figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/09_profile_right_arms_high_weight_shift.png",
+          "artifactId": "set_d_pose_009.source_native_rgba",
+          "basename": "09_profile_right_arms_high_weight_shift.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                252,
+                22,
+                558,
+                1216
+              ],
+              "128": [
+                254,
+                24,
+                556,
+                1214
+              ],
+              "8": [
+                253,
+                23,
+                557,
+                1215
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 163090,
+              "partial": 19829,
+              "zero": 815865
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 17565
+            },
+            "foregroundCoverage": 0.1831417,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2447595,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "1d163cd9c696198ce5a4b761f058cc818b5a0b3282dc059bcc7643b56bab2315",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/09_profile_right_arms_high_weight_shift.png",
+          "artifactId": "set_d_pose_009.prepared_rgba",
+          "basename": "09_profile_right_arms_high_weight_shift.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                253,
+                23,
+                557,
+                1209
+              ],
+              "128": [
+                254,
+                24,
+                556,
+                1209
+              ],
+              "8": [
+                253,
+                23,
+                557,
+                1209
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 162919,
+              "partial": 14962,
+              "zero": 820903
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 17503
+            },
+            "foregroundCoverage": 0.17809757,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "972e72355d04626ed01b4023fcaad6e1ce01cb58408eb97b9ce7b7a3df1e2b64",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_009",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_009.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_009.prepared_rgba",
+      "ordinal": 9,
+      "originalLabel": "profile_right_arms_high_weight_shift",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "09_profile_right_arms_high_weight_shift.png",
+        "ordinal": 9,
+        "orientation": "profile",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (9).png",
+        "poseClassification": "profile_overhead_arms_weight_shift",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "972e72355d04626ed01b4023fcaad6e1ce01cb58408eb97b9ce7b7a3df1e2b64",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "2bc449e8379eb798cfb72685c65bca1096d98873d342163a01cbd5976d5388e0",
+          "alphaSha256BeforeDecontamination": "2bc449e8379eb798cfb72685c65bca1096d98873d342163a01cbd5976d5388e0",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 820,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 4218,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 14962,
+              "propagationIterations": 7,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 14958,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2462709,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 182919,
+          "preparedAlphaNonzeroPixelCount": 177881,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 820,
+          "removedSubthresholdAlphaPixelCount": 4218
+        },
+        "qaNotes": [
+          "profile projection facing screen right",
+          "both arms raised",
+          "asymmetric weight-bearing stance",
+          "small neutral ground-contact matte below the forward platform requires deterministic removal"
+        ],
+        "screenDirection": "right",
+        "sourceNativeSha256": "1d163cd9c696198ce5a4b761f058cc818b5a0b3282dc059bcc7643b56bab2315",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "profile hair contour, raised hands and fingers, platform heel, ankle straps, and bikini ties are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the profile silhouette; a small neutral ground-contact matte is retained below the forward platform",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete profile figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/10_profile_right_arms_high_upright.png",
+          "artifactId": "set_d_pose_010.source_native_rgba",
+          "basename": "10_profile_right_arms_high_upright.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                254,
+                29,
+                536,
+                1212
+              ],
+              "128": [
+                256,
+                31,
+                534,
+                1210
+              ],
+              "8": [
+                255,
+                30,
+                535,
+                1211
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 136301,
+              "partial": 15520,
+              "zero": 846963
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 14618
+            },
+            "foregroundCoverage": 0.15200584,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2540889,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "20f7de802c507f359c771f36022c2af43987b444e3decd4702fae7bb4cb122aa",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/10_profile_right_arms_high_upright.png",
+          "artifactId": "set_d_pose_010.prepared_rgba",
+          "basename": "10_profile_right_arms_high_upright.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                255,
+                30,
+                535,
+                1204
+              ],
+              "128": [
+                256,
+                31,
+                534,
+                1204
+              ],
+              "8": [
+                255,
+                30,
+                535,
+                1204
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 136156,
+              "partial": 11628,
+              "zero": 851000
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 14559
+            },
+            "foregroundCoverage": 0.14796392,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "ce402905045079e7c73ca3497c210568ae711704d0e911a6701a69d2529e75aa",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_010",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_010.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_010.prepared_rgba",
+      "ordinal": 10,
+      "originalLabel": "profile_right_arms_high_upright",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "10_profile_right_arms_high_upright.png",
+        "ordinal": 10,
+        "orientation": "profile",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (10).png",
+        "poseClassification": "profile_overhead_arms_upright",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "ce402905045079e7c73ca3497c210568ae711704d0e911a6701a69d2529e75aa",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "4d8e55e43d9cc55d57464efe22fabda77a95a819a643078284fc46184ac05f3d",
+          "alphaSha256BeforeDecontamination": "4d8e55e43d9cc55d57464efe22fabda77a95a819a643078284fc46184ac05f3d",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 765,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 3272,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 11628,
+              "propagationIterations": 4,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 11624,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2553000,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 151821,
+          "preparedAlphaNonzeroPixelCount": 147784,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 765,
+          "removedSubthresholdAlphaPixelCount": 3272
+        },
+        "qaNotes": [
+          "profile projection facing screen right",
+          "both arms raised",
+          "upright narrow stance",
+          "small neutral ground-contact matte below the platform sole requires deterministic removal"
+        ],
+        "screenDirection": "right",
+        "sourceNativeSha256": "20f7de802c507f359c771f36022c2af43987b444e3decd4702fae7bb4cb122aa",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "profile hair contour, raised hands and fingers, both visible platform heels, ankle straps, and bikini ties are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the profile silhouette; a small neutral ground-contact matte is retained below the platform sole",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete profile figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/11_front_neutral_stance_variant.png",
+          "artifactId": "set_d_pose_011.source_native_rgba",
+          "basename": "11_front_neutral_stance_variant.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                270,
+                112,
+                532,
+                1213
+              ],
+              "128": [
+                272,
+                114,
+                530,
+                1211
+              ],
+              "8": [
+                271,
+                113,
+                531,
+                1212
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 170565,
+              "partial": 14082,
+              "zero": 814137
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 17859
+            },
+            "foregroundCoverage": 0.1848718,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2442411,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "a97eba6f583638c61c468ef46e22ba0f03e5475230668002c107c2d41ac4e6ec",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/11_front_neutral_stance_variant.png",
+          "artifactId": "set_d_pose_011.prepared_rgba",
+          "basename": "11_front_neutral_stance_variant.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                271,
+                113,
+                531,
+                1200
+              ],
+              "128": [
+                272,
+                114,
+                530,
+                1200
+              ],
+              "8": [
+                271,
+                113,
+                531,
+                1200
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 169940,
+              "partial": 10457,
+              "zero": 818387
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 17753
+            },
+            "foregroundCoverage": 0.18061663,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "e1b7a68a2caa186fbc7389aa6e5caabf83c69f7ec1c20b67adfc667c28cfcf18",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_011",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_011.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_011.prepared_rgba",
+      "ordinal": 11,
+      "originalLabel": "front_neutral_stance_variant",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "11_front_neutral_stance_variant.png",
+        "ordinal": 11,
+        "orientation": "front",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (11).png",
+        "poseClassification": "neutral_stance_variant",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "e1b7a68a2caa186fbc7389aa6e5caabf83c69f7ec1c20b67adfc667c28cfcf18",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "5ac986bf380c9330d00e52b3d52e4b8c9cdbe62855258d15ec568e2bbf4bdc0d",
+          "alphaSha256BeforeDecontamination": "5ac986bf380c9330d00e52b3d52e4b8c9cdbe62855258d15ec568e2bbf4bdc0d",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 1173,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 3077,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 10457,
+              "propagationIterations": 3,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 10457,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2455161,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 184647,
+          "preparedAlphaNonzeroPixelCount": 180397,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 1173,
+          "removedSubthresholdAlphaPixelCount": 3077
+        },
+        "qaNotes": [
+          "front projection",
+          "arms lowered",
+          "neutral stance variant",
+          "neutral ground-contact matte below and between the platform shoes requires deterministic removal"
+        ],
+        "screenDirection": "unspecified",
+        "sourceNativeSha256": "a97eba6f583638c61c468ef46e22ba0f03e5475230668002c107c2d41ac4e6ec",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "hair tips, lowered hands and fingers, platform heels, ankle straps, and bikini ties are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the complete silhouette; a merged neutral ground-contact matte is retained below and between the platform shoes",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete neutral figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/12_front_arms_high_upright.png",
+          "artifactId": "set_d_pose_012.source_native_rgba",
+          "basename": "12_front_arms_high_upright.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                145,
+                44,
+                680,
+                1212
+              ],
+              "128": [
+                147,
+                46,
+                678,
+                1210
+              ],
+              "8": [
+                146,
+                45,
+                679,
+                1211
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 177335,
+              "partial": 20756,
+              "zero": 800693
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 19038
+            },
+            "foregroundCoverage": 0.19833217,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2402079,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "709d0ec68a5fcc41f01368a2f0e26625df87ebe0ddbe1be515fa0e249796ef03",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/12_front_arms_high_upright.png",
+          "artifactId": "set_d_pose_012.prepared_rgba",
+          "basename": "12_front_arms_high_upright.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                146,
+                45,
+                679,
+                1202
+              ],
+              "128": [
+                147,
+                46,
+                678,
+                1202
+              ],
+              "8": [
+                146,
+                45,
+                679,
+                1202
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 176910,
+              "partial": 15676,
+              "zero": 806198
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 18957
+            },
+            "foregroundCoverage": 0.19282047,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "82eb7f3cd913e24acc0206201cb501ad0b8e5cc1cbb0d8015be891a0f133aff2",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_012",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_012.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_012.prepared_rgba",
+      "ordinal": 12,
+      "originalLabel": "front_arms_high_upright",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "12_front_arms_high_upright.png",
+        "ordinal": 12,
+        "orientation": "front",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (12).png",
+        "poseClassification": "overhead_arms_upright",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "82eb7f3cd913e24acc0206201cb501ad0b8e5cc1cbb0d8015be891a0f133aff2",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "2869436d5eca12d61180118535997e2059fb702a3d7fd92090b04cc17d9ff84b",
+          "alphaSha256BeforeDecontamination": "2869436d5eca12d61180118535997e2059fb702a3d7fd92090b04cc17d9ff84b",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 904,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 4601,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 15676,
+              "propagationIterations": 3,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 15671,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2418594,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 198091,
+          "preparedAlphaNonzeroPixelCount": 192586,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 904,
+          "removedSubthresholdAlphaPixelCount": 4601
+        },
+        "qaNotes": [
+          "front projection",
+          "both arms raised",
+          "upright stance",
+          "neutral ground-contact matte below and between the platform shoes requires deterministic removal"
+        ],
+        "screenDirection": "unspecified",
+        "sourceNativeSha256": "709d0ec68a5fcc41f01368a2f0e26625df87ebe0ddbe1be515fa0e249796ef03",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "hair tips, raised hands and separated fingers, platform heels, ankle straps, and bikini ties are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the complete silhouette; a merged neutral ground-contact matte is retained below and between the platform shoes",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/13_rear_arms_high_upright.png",
+          "artifactId": "set_d_pose_013.source_native_rgba",
+          "basename": "13_rear_arms_high_upright.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                112,
+                47,
+                703,
+                1209
+              ],
+              "128": [
+                114,
+                49,
+                701,
+                1207
+              ],
+              "8": [
+                113,
+                48,
+                702,
+                1208
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 176275,
+              "partial": 20705,
+              "zero": 801804
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 18934
+            },
+            "foregroundCoverage": 0.19721982,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2405412,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "0bfff753437c9acb3bda7dc464a739828c606645e1e83819e1f186c788bc54d6",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/13_rear_arms_high_upright.png",
+          "artifactId": "set_d_pose_013.prepared_rgba",
+          "basename": "13_rear_arms_high_upright.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                113,
+                48,
+                702,
+                1200
+              ],
+              "128": [
+                114,
+                49,
+                701,
+                1200
+              ],
+              "8": [
+                113,
+                48,
+                702,
+                1200
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 175780,
+              "partial": 15656,
+              "zero": 807348
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 18849
+            },
+            "foregroundCoverage": 0.19166907,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "635c392e8f627faedc16634d9547cdf263af318f0097c28fe2e7f9235b6d67d4",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_013",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_013.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_013.prepared_rgba",
+      "ordinal": 13,
+      "originalLabel": "rear_arms_high_upright",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "13_rear_arms_high_upright.png",
+        "ordinal": 13,
+        "orientation": "rear",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (13).png",
+        "poseClassification": "rear_overhead_arms_upright",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "635c392e8f627faedc16634d9547cdf263af318f0097c28fe2e7f9235b6d67d4",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "54b44e12cc0a2b2aa45cc7c26f187876b783e61baedac8a48b7daa8f7efc7a94",
+          "alphaSha256BeforeDecontamination": "54b44e12cc0a2b2aa45cc7c26f187876b783e61baedac8a48b7daa8f7efc7a94",
+          "operations": [
+            {
+              "purpose": "remove retained neutral studio-floor/contact matte while excluding warm shoe and heel pixels",
+              "region": {
+                "yMinInclusive": 1180
+              },
+              "removedPixelCount": 955,
+              "selection": {
+                "alphaMinExclusive": 0,
+                "meanRgbMinInclusive": 100.0,
+                "rgbChannelSpreadMaxInclusive": 28
+              },
+              "type": "bottom_band_neutral_floor_matte_removal"
+            },
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 4589,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 15656,
+              "propagationIterations": 16,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 15648,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2422044,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 196980,
+          "preparedAlphaNonzeroPixelCount": 191436,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 955,
+          "removedSubthresholdAlphaPixelCount": 4589
+        },
+        "qaNotes": [
+          "rear projection",
+          "both arms raised",
+          "upright narrow stance",
+          "neutral ground-contact matte below and between the platform heels requires deterministic removal"
+        ],
+        "screenDirection": "unspecified",
+        "sourceNativeSha256": "0bfff753437c9acb3bda7dc464a739828c606645e1e83819e1f186c788bc54d6",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "rear hair tips, raised hands and separated fingers, platform heels, ankle straps, and bikini fasteners are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the rear silhouette; a merged neutral ground-contact matte is retained below and between the platform heels",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete rear figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
+    },
+    {
+      "archive": {
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e"
+      },
+      "artifacts": [
+        {
+          "archiveMemberPath": "source_native/14_rear_arms_high_wide_stance.png",
+          "artifactId": "set_d_pose_014.source_native_rgba",
+          "basename": "14_rear_arms_high_wide_stance.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                98,
+                46,
+                702,
+                1187
+              ],
+              "128": [
+                100,
+                48,
+                700,
+                1185
+              ],
+              "8": [
+                99,
+                47,
+                701,
+                1186
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 178110,
+              "partial": 22210,
+              "zero": 798464
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 19205
+            },
+            "foregroundCoverage": 0.20056389,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 2395392,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "source_native_rgba",
+          "sha256": "946793b2c0df65e9f755ba93364a08f537a3c5965bd00c0d88900a98e7df02e6",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        },
+        {
+          "archiveMemberPath": "prepared_rgba/14_rear_arms_high_wide_stance.png",
+          "artifactId": "set_d_pose_014.prepared_rgba",
+          "basename": "14_rear_arms_high_wide_stance.png",
+          "foregroundEvidence": {
+            "alphaBboxByThreshold": {
+              "1": [
+                99,
+                47,
+                701,
+                1186
+              ],
+              "128": [
+                100,
+                48,
+                700,
+                1185
+              ],
+              "8": [
+                99,
+                47,
+                701,
+                1186
+              ]
+            },
+            "alphaCounts": {
+              "opaque": 178110,
+              "partial": 17349,
+              "zero": 803325
+            },
+            "borderAlphaMax": {
+              "bottom": 0,
+              "left": 0,
+              "right": 0,
+              "top": 0
+            },
+            "componentsAtAlpha8Thumbnail": {
+              "count": 1,
+              "detachedAreaRatio": 0.0,
+              "largestArea": 19205
+            },
+            "foregroundCoverage": 0.19569697,
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "transparentRgbNonzeroChannelCount": 0,
+            "widthPx": 816
+          },
+          "image": {
+            "heightPx": 1224,
+            "mode": "RGBA",
+            "widthPx": 816
+          },
+          "role": "prepared_source_rgba",
+          "sha256": "cc90b68c7dac9f7b08bd1261fedddece7a35af65d1def379ccc20727a613fe3a",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1"
+        }
+      ],
+      "calibrationGroupId": "set_d_capture",
+      "cleanupHistory": [],
+      "entryId": "set_d_pose_014",
+      "extensions": {},
+      "issues": [],
+      "maskMatchesMechanicsAlpha": null,
+      "mechanicsArtifactId": "set_d_pose_014.prepared_rgba",
+      "normalizationArtifactId": "set_d_pose_014.prepared_rgba",
+      "ordinal": 14,
+      "originalLabel": "rear_arms_high_wide_stance",
+      "pathKey": "set_d",
+      "sourceManifestRecord": {
+        "filename": "14_rear_arms_high_wide_stance.png",
+        "ordinal": 14,
+        "orientation": "rear",
+        "originalArchiveFilename": "pose_bg_removed_clean.zip",
+        "originalArchiveSha256": "10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98",
+        "originalDimensions": [
+          816,
+          1224
+        ],
+        "originalFilename": "msi9r902ey7xwf (14).png",
+        "poseClassification": "rear_overhead_arms_wide_stance",
+        "preparedDimensions": [
+          816,
+          1224
+        ],
+        "preparedSha256": "cc90b68c7dac9f7b08bd1261fedddece7a35af65d1def379ccc20727a613fe3a",
+        "processingEvidence": {
+          "alphaSha256AfterDecontamination": "3e91c563298f5e39bb049a05fb4f9b9431426e69e0e76eb9fd14f4edbda8ae73",
+          "alphaSha256BeforeDecontamination": "3e91c563298f5e39bb049a05fb4f9b9431426e69e0e76eb9fd14f4edbda8ae73",
+          "operations": [
+            {
+              "alphaThresholdExclusive": 8,
+              "purpose": "remove visually negligible isolation fringe before canonical resampling regenerates antialiasing",
+              "removedPixelCount": 4861,
+              "type": "discard_subthreshold_alpha_contamination"
+            },
+            {
+              "alphaRangeInclusive": [
+                8,
+                254
+              ],
+              "alphaValuesChanged": false,
+              "neighborConnectivity": 8,
+              "partialAlphaPixelCount": 17349,
+              "propagationIterations": 3,
+              "purpose": "remove light neutral studio-matte color from antialiased edges while preserving the source alpha silhouette and fragile structures",
+              "recoloredPartialAlphaPixelCount": 17341,
+              "seedAlpha": 255,
+              "type": "decontaminate_partial_alpha_rgb_via_opaque_foreground_bleed"
+            },
+            {
+              "clearedNonzeroChannelCount": 2409975,
+              "type": "clear_rgb_where_alpha_zero"
+            }
+          ],
+          "originalAlphaNonzeroPixelCount": 200320,
+          "preparedAlphaNonzeroPixelCount": 195459,
+          "preparedBorderAlphaMax": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "removedFloorPixelCount": 0,
+          "removedSubthresholdAlphaPixelCount": 4861
+        },
+        "qaNotes": [
+          "rear projection",
+          "both arms raised",
+          "wide stance"
+        ],
+        "screenDirection": "unspecified",
+        "sourceNativeSha256": "946793b2c0df65e9f755ba93364a08f537a3c5965bd00c0d88900a98e7df02e6",
+        "sourceQaAudit": {
+          "compression": "no visible block, ringing, or palette artifacts at source-pixel inspection scale",
+          "fragileStructures": "rear hair tips, raised hands and separated fingers, widely separated platform heels, ankle straps, and bikini fasteners are present and connected",
+          "isolation": "light neutral studio matte contaminates partial-alpha edge pixels around the rear wide-stance silhouette",
+          "lightingColor": "warm studio-lit skin and wardrobe color is consistent with the Set D batch",
+          "silhouette": "complete rear wide-stance figure with a soft antialiased edge; no detached foreground component observed"
+        }
+      },
+      "sourceSequence": {
+        "frameNumber": null,
+        "sequenceId": null,
+        "sequenceOrdinal": null,
+        "timeSeconds": null
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "unresolvedClaims": []
     }
   ],
   "extensions": {},
   "schemaVersion": "2d-doll-pose-corpus-source-manifest-0.1",
-  "sourceConfigSha256": "625c7ab5a3317086f6feb5bfa206a73758b2973c8eb6564939f46a55941eb60b",
+  "sourceConfigSha256": "9e4aeb39e0116bab5a7ac1565eda5eb8e5abf1e55f20e672bf08cbe3356273bf",
   "sourceSets": [
     {
       "archive": {
@@ -16136,6 +18148,31 @@
         "sha256": "d41e2d278a4f14792437d976710bb2c36d7d63f16b75383a1625fd4ed3134ca9"
       },
       "sourceSetId": "set_c_edge_refined_green_cleaned_v1"
+    },
+    {
+      "archive": {
+        "committed": false,
+        "filename": "pose_bg_removed_clean_corpus_source_v1.zip",
+        "sha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e",
+        "sizeBytes": 9309510,
+        "storageClass": "external_immutable"
+      },
+      "extensions": {},
+      "pathKey": "set_d",
+      "registeredCount": 9,
+      "sourceEvidenceArtifacts": [
+        {
+          "archiveMemberPath": "manifest.json",
+          "authoritative": true,
+          "role": "source_manifest",
+          "sha256": "aa99f768b585cfb9648d7b235f804a3bb3c911ac9df80ce1b82ccead60b80f04"
+        }
+      ],
+      "sourceManifest": {
+        "archiveMemberPath": "manifest.json",
+        "sha256": "aa99f768b585cfb9648d7b235f804a3bb3c911ac9df80ce1b82ccead60b80f04"
+      },
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1"
     }
   ]
 }

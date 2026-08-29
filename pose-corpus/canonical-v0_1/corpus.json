@@ -10,10 +10,10 @@
   "counts": {
     "acceptedRenders": 0,
     "blockedSourceDefectRenders": 5,
-    "candidatesProduced": 123,
+    "candidatesProduced": 132,
     "mechanicsResolved": 0,
-    "registered": 123,
-    "reviewRequiredRenders": 118
+    "registered": 132,
+    "reviewRequiredRenders": 127
   },
   "entryIndexRef": "metadata/corpus-index.json",
   "extensions": {},

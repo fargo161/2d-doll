@@ -5,8 +5,8 @@
 This document defines the first repository-native pose-corpus boundary for 2D Doll.
 
 - **DESIGNED:** Corpus/source/profile/coordinate/orientation/landmark/export/storage/QA contracts; proposal → override → resolved-entry layering; future-package descriptor shape; and the separation between corpus observations and runtime poses.
-- **IMPLEMENTED:** Deterministic ZIP inventory, hash/provenance capture, calibration-group scale proposals, fixed-canvas similarity rendering, premultiplied-alpha-safe resizing, external artifact storage, per-entry metadata, QA sheets, and corpus registration for 123 source states.
-- **TESTED:** Source counts and hashes; two concurrent synthetic future packages through inventory, calibration, proposals, overrides, rendering, QA, and registration, including shared basenames and an omitted embedded manifest; authored-override preservation/application/stale-base rejection; schema and cross-record hash/JSON-Pointer validation; deterministic image operations; 123 independently checked output hashes/modes/canvas sizes/borders/transparent-RGB rules/safety margins/root-ground round trips; Set C replacement-scale regression; and eight visual-evidence manifests.
+- **IMPLEMENTED:** Deterministic ZIP inventory, hash/provenance capture, explicit calibration versus frozen-ingestion operations, calibration-group scale proposals, fixed-canvas similarity rendering, premultiplied-alpha-safe resizing, transactional external artifact storage, per-entry metadata, QA sheets, and corpus registration for 132 source states.
+- **TESTED:** Source counts and hashes; synthetic full-corpus calibration; generic selected-package frozen ingestion; pinned-canvas, historical-byte, append-order, render-scope, overflow, transaction-rollback, reference-resolution, and deterministic-repeat guards; authored-override preservation/application/stale-base rejection; schema and cross-record hash/JSON-Pointer validation; deterministic image operations; 132 recorded output hashes with 131 transform-QA passes; Set C replacement-scale regression; and Set D focused external-artifact QA.
 - **NOT RESOLVED / NOT ACCEPTED:** Anatomical landmarks and sides, support/free foot, canonical body proportions, reviewed local retarget controls, profile/rear-three-quarter runtime mapping, source-defect repair, runtime adapters, and intended creative-workflow usefulness.
 - **VALIDATED:** Nothing in the intended modular-character workflow.
 
@@ -27,17 +27,20 @@ No application code under `app/` was changed by this pass.
 
 ## Source sets and immutable provenance
 
-The three user-supplied ZIP archives remain external and immutable. The tracked source manifest records their filenames, archive-member paths, original dimensions, SHA-256 hashes, source labels/sequences, embedded-manifest records, cleanup history where present, and identified defects. It does not record a local Downloads path.
+The four source-package ZIP archives remain external and immutable. The tracked source manifest records their filenames, archive-member paths, original dimensions, SHA-256 hashes, source labels/sequences, embedded-manifest records, cleanup history where present, and identified defects. It does not record a local Downloads path.
 
 | Set | Actual supplied archive | SHA-256 | Registered states | Role |
 | --- | --- | --- | ---: | --- |
 | A | `pose_19_walk_05_front_threequarter_extension_EDGE_EXTREMITY_REFINED.zip` | `98aced237ca341323f8951e47c29481eb9d4f2477d835a10bf0b3d5ee12e230c` | 28 | articulation, gait, extremity and rear-three-quarter evidence |
 | B | `comic_pose_assets_55_full_isolation.zip` | `6537c8b8cde03057f49e35958cdc85b8fb4a266fe258733972b55a618e6686b0` | 55 | stance, deep-knee, profile, hair-motion and prop evidence |
 | C | `comic_pose_assets_40_edge_refined_green_cleaned.zip` | `d0ba6843d38311002e18fea6d72455722d331fd6960c92b857d0179b6c1a8397` | 40 | higher-resolution frontal/three-quarter scale and silhouette evidence |
+| D | `pose_bg_removed_clean_corpus_source_v1.zip` | `718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e` | 9 | front/profile/rear raised-arm, neutral, weight-shift, and wide-stance evidence |
 
 The supplied Set C archive name and structure differ from the archive described in the accompanying task document. The actual archive is authoritative. That document also asserts replacement provenance for Set C poses 39–40, but the supplied archive manifest does not encode supporting provenance; the corpus retains this as an unverified claim. Visual QA did prove that those two rasters form a distinct capture-scale group, which is represented as data rather than a code branch.
 
 Set B pose 45 and poses 51–54 are quarantined as source defects. Pose 46 remains a separate review case. The hash guards in `source-packages.json` prevent those findings from silently attaching to changed source bytes.
+
+Set D uses a preserved, deterministic prepared-RGBA layer derived from the supplied background-removed package. Its package manifest records the untouched source-native members, original archive SHA-256 `10bdad3f4e7260321ea55408145525a41e65dc543024910801b7bc431890af98`, removed floor/contact-matte pixels, subthreshold-alpha cleanup, and partial-alpha RGB decontamination. No generative processing or geometry change was applied.
 
 ## Three non-destructive truth layers
 
@@ -56,7 +59,7 @@ The measured raster convention is:
 - neutral anatomical stature unit: `BODY_HEIGHT = 1.0`;
 - raster scale: 1,728 pixels per body height;
 - selection: confidence-weighted median of declared high/medium-resolution Set A and Set C reference groups, rounded upward to 64 pixels;
-- Set B omitted from raster-quality selection because upscaling cannot create anatomical detail.
+- Sets B and D omitted from raster-quality selection because upscaling cannot create anatomical detail; their package calibration measures placement against the already frozen body scale.
 
 Every requested profile measurement key exists in the machine-readable evidence object, but its value remains `null` and its stage remains `unresolved`. Flattened clothed silhouettes, perspective, footwear, hair, props, and unknown anatomical sides do not support honest segment-length or width approval. Consequently the corpus may claim tested cross-set stature calibration candidates, but it may not claim canonical head/torso/limb proportion continuity.
 
@@ -109,41 +112,46 @@ This method produces scale/canvas/reference candidates. It does not standardize 
 
 ## QA and acceptance
 
-Automated evidence for the recorded run is:
+Automated evidence across the recorded calibration and frozen-ingestion artifact sets is:
 
-- 28 + 55 + 40 = 123 registered source states;
-- 123 candidate PNGs produced;
-- 123/123 passed transform, decode, canvas, alpha-border, transparent-RGB, and safety-margin checks;
-- 118 review-required candidates;
+- 28 + 55 + 40 + 9 = 132 registered source states;
+- 132 candidate PNGs produced;
+- 131/132 passed all transform checks;
+- Set D pose 009 fits the physical canvas without clipping but enters the top safety margin by two alpha-threshold-1 pixels and is explicitly review-required;
+- 127 review-required candidates;
 - 5 source-defect quarantines;
 - 0 mechanics-resolved entries;
 - 0 accepted renders;
-- 8 generated visual-evidence sheets with sidecar manifests and hashes.
+- 16 generated visual-evidence artifacts with sidecar manifests and hashes across the two artifact sets.
 
 Visual evidence includes checkerboard, black, and light contact sheets; root/ground overlays; representative before/after examples; cross-set scale references; stress poses; and a declared-source-issue sheet containing the Set B defects/review case plus the Set C provenance claims. These sheets are inspection evidence, not creative approval.
 
-## Future-package ingestion contract
+## Calibration and frozen-ingestion contract
 
-A later package is added by one data descriptor in `spec/source-packages.json`. The descriptor supplies archive identity/hash, pose filename grammar, layer roles, calibration groups, optional embedded manifest, known hash-guarded issues, and unresolved claims. The runtime validates the descriptor schema before reading archives or constructing output paths. Source-set IDs, path keys, entry prefixes, and calibration-group IDs are globally unique; archive identities are basenames within the supplied source directory; calibration reference basenames are resolved within their declaring source set; and pose ordinals are restricted to `001`–`999`. The generic inventory and normalization code has no Set A/B/C branches.
+A later package is added by one data descriptor in `spec/source-packages.json`. The descriptor supplies archive identity/hash, pose filename grammar, layer roles, calibration groups, optional embedded manifest, known hash-guarded issues, and unresolved claims. The runtime validates the descriptor schema before reading archives or constructing output paths. Source-set IDs, path keys, entry prefixes, and calibration-group IDs are globally unique; archive identities are basenames within the supplied source directory; calibration reference basenames are resolved within their declaring source set; and pose ordinals are restricted to `001`–`999`. The generic inventory and normalization code has no Set A/B/C/D branch.
 
-The automated suite proves this boundary end to end with two synthetic packages loaded together. A four-pose package contains an optional mask layer, extra manifest fields, a QA image that must not become a pose, and a descriptor-defined custom defect code/disposition. A second package omits an embedded manifest, uses a broader schema-valid entry prefix, and deliberately reuses the first package's calibration-reference basename. Both complete calibration, proposals, candidate rendering, generic QA selection, and registration without cross-package reference leakage. A second run proves reviewed landmark-override preservation/application and stale-base rejection; duplicate global calibration IDs, unsafe path-bearing descriptor fields, out-of-range ordinals, and descriptor count mismatch reject explicitly.
+Full-corpus calibration is now an explicit operation that may derive a coordinate contract. Frozen ingestion is a separate selected-package operation: it pins both the canonical-v0.1 canvas values and canvas-file hash, measures only the selected package, places it against the existing canvas, renders only new records, and append-merges aggregate records without reconstructing historical array entries. Before and after the coordinated repository/artifact transaction it guards every prior proposal, override, and resolved-entry byte plus the canvas bytes. Duplicate packages reject deterministically. Physical overflow stops before mutation; safe-margin overflow remains a structured candidate review condition rather than enlarging, cropping, or rescaling.
+
+The automated suite proves the calibration path with two synthetic packages loaded together and proves frozen ingestion with fitting, safe-margin, physical-overflow, coordinated-drift, deterministic-repeat, duplicate, and injected post-write-failure fixtures. Package-local metadata references are resolved in tests. The real Set D run additionally proves that a descriptor-only fourth package can advance 123 → 132 while preserving the A–C per-entry byte graph and old aggregate array prefixes.
 
 Run from the repository root:
 
 ```text
 python -m tools.pose_corpus inventory --source-directory <directory-containing-zips> --write
-python -m tools.pose_corpus run --source-directory <directory-containing-zips> --artifact-root <new-empty-artifact-root>
-python tests/verify_pose_corpus.py --source-directory <directory-containing-zips> --artifact-root <artifact-root>
+python -m tools.pose_corpus calibrate --source-directory <all-source-zips> --artifact-root <new-artifact-root>
+python -m tools.pose_corpus ingest --source-directory <new-package-directory> --artifact-root <new-artifact-root> --source-set-id <source-set-id>
+python tests/verify_frozen_ingestion.py
+python tests/verify_pose_corpus.py --artifact-set-root <artifact-set-id>=<artifact-root>
 ```
 
-The artifact root must be new or empty. Large PNGs and QA JPEGs remain outside Git; tracked manifests use logical paths relative to that root.
+Frozen-ingestion artifact roots must not already exist. Large PNGs and QA JPEGs remain outside Git; tracked aggregate records identify their artifact set while package-local manifests use resolvable paths relative to their own root. The external verifier accepts a baseline `--artifact-root` and repeatable `--artifact-set-root ID=PATH` mappings.
 
 ## Final acceptance question
 
-Can a fourth transparent pose package enter this system without a new code path and receive the same inventory, hash/provenance, capture-scale, root/ground proposal, canvas, alpha/export, metadata, override, QA, and registration treatment—even beside another new package that shares a basename? **TESTED yes.**
+Can a fourth transparent pose package enter this system without a new code path and receive the same inventory, hash/provenance, capture-scale, root/ground proposal, frozen canvas, alpha/export, metadata, override, QA, and registration treatment without rewriting A–C? **TESTED yes, synthetically and with the nine-pose Set D package.**
 
 Can it presently receive reviewed anatomical landmarks, an approved canonical female proportion profile, bounded local retargeting, resolved contact semantics, and accepted future garment/head/hair sockets automatically? **No.** Those gates are explicitly unresolved. The reusable ingestion and evidence foundation exists, but the canonical character-normalization foundation is not finished or workflow-validated.
 
 ## Smallest high-value next step
 
-Review and author overrides for a deliberately small calibration set: neutral Front and 3/4 references from Sets A and C plus representative profile, wide-stance, overhead, and gait states. Freeze only the landmarks and profile measurements supported by that review; then implement and evaluate one bounded local-retarget prototype before scaling review to all 123 entries.
+Review Set D pose 009's two-pixel top safe-margin condition and author overrides for a deliberately small calibration set: neutral Front and 3/4 references from Sets A and C plus representative profile, wide-stance, overhead, and gait states. Freeze only the landmarks and profile measurements supported by that review; then implement and evaluate one bounded local-retarget prototype before scaling review to all 132 entries.

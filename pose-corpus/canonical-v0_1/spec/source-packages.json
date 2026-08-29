@@ -222,6 +222,50 @@
           "detail": "The supplied prompt asserts source replacement history, but the supplied archive manifest does not encode supporting provenance."
         }
       ]
+    },
+    {
+      "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+      "pathKey": "set_d",
+      "entryPrefix": "set_d_pose_",
+      "archiveFilename": "pose_bg_removed_clean_corpus_source_v1.zip",
+      "archiveSha256": "718e12022db64f97be4ec52aebc0db7dd6348c81632da8b2d34e79da158e286e",
+      "expectedPoseCount": 9,
+      "sourceManifestPath": "manifest.json",
+      "filenamePattern": "^(?P<ordinal>\\d{2})_(?P<label>.+)\\.png$",
+      "layers": [
+        {
+          "layerId": "source_native_rgba",
+          "role": "source_native_rgba",
+          "prefix": "source_native/",
+          "suffix": ".png",
+          "depth": 2,
+          "mechanicsInput": false,
+          "normalizationInput": false
+        },
+        {
+          "layerId": "prepared_rgba",
+          "role": "prepared_source_rgba",
+          "prefix": "prepared_rgba/",
+          "suffix": ".png",
+          "depth": 2,
+          "mechanicsInput": true,
+          "normalizationInput": true
+        }
+      ],
+      "calibrationGroups": [
+        {
+          "groupId": "set_d_capture",
+          "matchPattern": ".*",
+          "referenceBasenames": [
+            "08_front_neutral_stance.png"
+          ],
+          "confidence": "medium",
+          "rasterSelectionEvidence": false
+        }
+      ],
+      "manualProjectionDirection": "right",
+      "knownIssues": [],
+      "unresolvedClaims": []
     }
   ]
 }

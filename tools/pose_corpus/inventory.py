@@ -274,14 +274,30 @@ def _calibration_group(source_set: dict[str, Any], basename: str) -> str:
 
 
 def collect_inventory(
-    repository_root: Path, source_directory: Path
+    repository_root: Path,
+    source_directory: Path,
+    source_set_ids: set[str] | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     config = load_source_config(repository_root)
+    configured_ids = {
+        source_set["sourceSetId"] for source_set in config["sourceSets"]
+    }
+    selected_ids = configured_ids if source_set_ids is None else set(source_set_ids)
+    if not selected_ids:
+        raise CorpusInputError("at least one sourceSetId must be selected")
+    unknown_ids = sorted(selected_ids - configured_ids)
+    if unknown_ids:
+        raise CorpusInputError(f"unknown sourceSetId values: {unknown_ids}")
+    selected_source_sets = [
+        source_set
+        for source_set in config["sourceSets"]
+        if source_set["sourceSetId"] in selected_ids
+    ]
     source_sets_out: list[dict[str, Any]] = []
     entries_out: list[dict[str, Any]] = []
     runtime_index: dict[str, Any] = {"archives": {}, "entries": {}}
 
-    for source_set in config["sourceSets"]:
+    for source_set in selected_source_sets:
         archive_path = source_directory / source_set["archiveFilename"]
         if not archive_path.is_file():
             raise CorpusInputError(f"source archive is missing: {archive_path}")
@@ -499,7 +515,7 @@ def collect_inventory(
 
     entries_out.sort(key=lambda entry: entry["entryId"])
     expected_total = sum(
-        int(source_set["expectedPoseCount"]) for source_set in config["sourceSets"]
+        int(source_set["expectedPoseCount"]) for source_set in selected_source_sets
     )
     if (
         len(entries_out) != expected_total

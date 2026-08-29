@@ -18,6 +18,20 @@ TARGET_PROFILE_ID = "base_female_v0_1"
 PROFILE_EVIDENCE_ID = "base_female_v0_1.corpus_v0_1"
 COORDINATE_SPACE_ID = "canonical_body_space_v0_1"
 
+CANONICAL_V0_1_FROZEN_CANVAS = {
+    "widthPx": 1536,
+    "heightPx": 2112,
+    "bodyPixels": 1728,
+    "originXPx": 768,
+    "groundYPx": 1984,
+    "safeMarginPx": 87,
+    "resampleSupportPx": 8,
+    "roundingMultiplePx": 64,
+}
+CANONICAL_V0_1_CANVAS_SHA256 = (
+    "fa59f6d898422b4b728b722328ec4d8f42d346ab0692d9419dce569628490c85"
+)
+
 SOURCE_CONFIG_RELATIVE = Path(
     "pose-corpus/canonical-v0_1/spec/source-packages.json"
 )

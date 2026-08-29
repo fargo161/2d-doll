@@ -62,3 +62,5 @@ Each report should contain, where applicable:
 | 2026-08-28 | Canonical pose corpus normalization run preparation | [2026-08-28_1448_canonical-pose-corpus-run-preparation.md](2026-08-28_1448_canonical-pose-corpus-run-preparation.md) |
 | 2026-08-28 | Canonical pose corpus implementation and evidence run | [2026-08-28_1629_canonical-pose-corpus-implementation.md](2026-08-28_1629_canonical-pose-corpus-implementation.md) |
 | 2026-08-28 | Canonical pose corpus foundation commit closure | [2026-08-28_1907_canonical-pose-corpus-foundation-commit-closure.md](2026-08-28_1907_canonical-pose-corpus-foundation-commit-closure.md) |
+| 2026-08-29 | Set D recovery and frozen-ingestion boundary | [2026-08-29_0054_set-d-frozen-ingestion-recovery.md](2026-08-29_0054_set-d-frozen-ingestion-recovery.md) |
+| 2026-08-29 | Set D frozen-ingestion commit closure | [2026-08-29_0111_set-d-frozen-ingestion-commit-closure.md](2026-08-29_0111_set-d-frozen-ingestion-commit-closure.md) |

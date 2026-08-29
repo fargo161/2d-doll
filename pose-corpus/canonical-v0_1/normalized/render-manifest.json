@@ -25,13 +25,34 @@
   "counts": {
     "accepted": 0,
     "blockedSourceDefect": 5,
-    "producedCandidates": 123,
-    "reviewRequired": 118,
-    "transformQaPassed": 123
+    "producedCandidates": 132,
+    "reviewRequired": 127,
+    "transformQaPassed": 131
   },
   "exportContractRef": "../spec/export-contract.json",
-  "extensions": {},
-  "renderManifestSha256": "92f9ffee89260b8b175471931e9993ffbee9463fa4da98bd04d069370563aaa6",
+  "extensions": {
+    "frozenIngestionArtifactSets": [
+      {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "entryIds": [
+          "set_d_pose_006",
+          "set_d_pose_007",
+          "set_d_pose_008",
+          "set_d_pose_009",
+          "set_d_pose_010",
+          "set_d_pose_011",
+          "set_d_pose_012",
+          "set_d_pose_013",
+          "set_d_pose_014"
+        ],
+        "logicalPathsRelativeToOwnArtifactRoot": true,
+        "sourceSetIds": [
+          "set_d_pose_bg_removed_clean_v1"
+        ]
+      }
+    ]
+  },
+  "renderManifestSha256": "e35f6f647f50d5a46271cbcf6dd8758fa3055f4f3b75b5a44a130a69f8a004f7",
   "renders": [
     {
       "entryId": "set_a_pose_001",
@@ -13126,6 +13147,979 @@
       "qaStatus": "passed_transform_checks",
       "renderId": "set_c_pose_040.normalized_candidate_v1",
       "renderRecordSha256": "fc2e02d268cb6732f3fbb5e5e4c067199f7b982dae4aa6f9610a5aab40a1adcb",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_006",
+      "inputHashes": {
+        "overrideSha256": "1f6b352993a3112db81960377d76afad8fb641c4d65042ec6424c234e4690e57",
+        "resolvedMetadataSha256": "b54e994e0fe7ef5ed821d2480a152a78f81d168ff7934f118c8041e99626012c",
+        "sourceArtifactSha256": "62f02426a4c83958bc192ed3a4b53950beca7d8b257ced9d1263e9600cfb305d"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_006.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 127,
+          "translateYPx": 54,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "3d055c23f7aa858c66275627733f089a0a0ac84f0403f8b6d22f0262d8263e27",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_006.png",
+        "mode": "RGBA",
+        "sha256": "676864f8109b5e7f31f23ed28b1580b084197bea0b37b69dfd86f400c3da3dfc",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            382,
+            129,
+            1243,
+            1989
+          ],
+          "128": [
+            387,
+            134,
+            1238,
+            1986
+          ],
+          "8": [
+            386,
+            132,
+            1240,
+            1989
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 503396,
+          "partial": 62660,
+          "zero": 2677976
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 18299
+        },
+        "decodedPixelSha256": "3d055c23f7aa858c66275627733f089a0a0ac84f0403f8b6d22f0262d8263e27",
+        "foregroundCoverage": 0.1744915,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_006.normalized_candidate_v1",
+      "renderRecordSha256": "606831a74ceed84e86d8b255bca58dcb87d35319463d69a1e387ae49b2277ae4",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_007",
+      "inputHashes": {
+        "overrideSha256": "494f9ed14b6d39ffd3215ff4545073c757cb8d4137b8a4adcf0e88574db5a75d",
+        "resolvedMetadataSha256": "f3100d7b73a9e3130deb07a0a9bd9b4507be1efa5d069c696563aaf99a4366a4",
+        "sourceArtifactSha256": "16200317ea62ecd16402965ba706cd59eaf8d7ae7504d9555360359be718da32"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_007.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 133,
+          "translateYPx": 55,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "39e4191f5b2e98f0a295f23952a7597e62a0174eb2498890f84c0abd1d7867d7",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_007.png",
+        "mode": "RGBA",
+        "sha256": "67dfe6283b0ce7267dc982e9bff90f06727ca50875c5d75130937a475e341a30",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            364,
+            128,
+            1228,
+            1989
+          ],
+          "128": [
+            369,
+            133,
+            1223,
+            1985
+          ],
+          "8": [
+            368,
+            131,
+            1225,
+            1987
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 495519,
+          "partial": 62208,
+          "zero": 2686305
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 18047
+        },
+        "decodedPixelSha256": "39e4191f5b2e98f0a295f23952a7597e62a0174eb2498890f84c0abd1d7867d7",
+        "foregroundCoverage": 0.17192401,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_007.normalized_candidate_v1",
+      "renderRecordSha256": "3c3678bfcb70fde4079d5fbb9c6d7033904816488bbc3595f3870f2d7e2c2a36",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_008",
+      "inputHashes": {
+        "overrideSha256": "aa8e5ebf43bd505bbb372fec08798c83507c6c0f9497425e2cc9e5fff64102ba",
+        "resolvedMetadataSha256": "bb4357542a8408f35c723345ada8ba744cc1cd2db51e151b24a43f690ad23127",
+        "sourceArtifactSha256": "4a33cf048fc72574f8497ba766317e56eaca06ff65442711bd2693055ac83bbc"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_008.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 118,
+          "translateYPx": 67,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "be83e9ff6e96ee98bfb7a4ea831f86e488526b965b1da3a18d1e7e60b93489db",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_008.png",
+        "mode": "RGBA",
+        "sha256": "600b5d12e957e67bc7019d48693de691a5a5451732eb97eeccbd078934dca5a5",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            551,
+            233,
+            985,
+            1989
+          ],
+          "128": [
+            556,
+            238,
+            979,
+            1986
+          ],
+          "8": [
+            554,
+            236,
+            981,
+            1989
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 435540,
+          "partial": 39202,
+          "zero": 2769290
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 15447
+        },
+        "decodedPixelSha256": "be83e9ff6e96ee98bfb7a4ea831f86e488526b965b1da3a18d1e7e60b93489db",
+        "foregroundCoverage": 0.14634319,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_008.normalized_candidate_v1",
+      "renderRecordSha256": "5b73653b395a40f5815e191f6afeb00231704241ec35de28898f107e9fbd75d6",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_009",
+      "inputHashes": {
+        "overrideSha256": "abe7241687f4909662866b451c9b9439114d57d8eb9403d6cd2f55608a78638e",
+        "resolvedMetadataSha256": "966d5028ecfbe0ac3af191083220954026a9ed978011dfbb81d2e505441ead48",
+        "sourceArtifactSha256": "972e72355d04626ed01b4023fcaad6e1ce01cb58408eb97b9ce7b7a3df1e2b64"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "alphaThreshold": 1,
+          "boundaryOverflowPx": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 2
+          },
+          "code": "CANONICAL_CANVAS_OVERFLOW_REVIEW_REQUIRED",
+          "detail": "Rendered foreground enters the frozen canvas safety margin.",
+          "disposition": "review_required",
+          "entryId": "set_d_pose_009",
+          "frozenCanvas": {
+            "bodyPixels": 1728,
+            "groundYPx": 1984,
+            "heightPx": 2112,
+            "originXPx": 768,
+            "resampleSupportPx": 8,
+            "safeMarginPx": 87,
+            "widthPx": 1536
+          },
+          "frozenCanvasSha256": "fa59f6d898422b4b728b722328ec4d8f42d346ab0692d9419dce569628490c85",
+          "likelyCause": "rendered_alpha_extent_including_resampling",
+          "measuredTransformedExtentPx": {
+            "xMax": 999,
+            "xMin": 506,
+            "yMax": 1989,
+            "yMin": 85
+          },
+          "offendingBoundaries": [
+            "top"
+          ],
+          "originalLabel": "profile_right_arms_high_weight_shift",
+          "severity": "warning",
+          "sourceSetId": "set_d_pose_bg_removed_clean_v1",
+          "stage": "rendered_candidate"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_009.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 105,
+          "translateYPx": 52,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "80695f3cea6414d6c4e4bd12d2bd45ea15b1d3f5b06800a0a74ab5cb3511afe6",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_009.png",
+        "mode": "RGBA",
+        "sha256": "845d605c544b4b061ca1a0ee38a040478fb13c9a1851d2dbeaf13390147a8118",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            506,
+            85,
+            999,
+            1989
+          ],
+          "128": [
+            511,
+            90,
+            994,
+            1985
+          ],
+          "8": [
+            509,
+            88,
+            995,
+            1987
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 412435,
+          "partial": 53873,
+          "zero": 2777724
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 15037
+        },
+        "decodedPixelSha256": "80695f3cea6414d6c4e4bd12d2bd45ea15b1d3f5b06800a0a74ab5cb3511afe6",
+        "foregroundCoverage": 0.14374334,
+        "foregroundInsideSafeRectangle": false,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "failed",
+      "renderId": "set_d_pose_009.normalized_candidate_v1",
+      "renderRecordSha256": "a0c7d99e4d459d1b906a250390b790d4bafdd22806c77a5648c5acbfdbeffd78",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_010",
+      "inputHashes": {
+        "overrideSha256": "a41595a23e88f0af9c453f870a011c0da5ad4881f41f25072da9a899e920ef1e",
+        "resolvedMetadataSha256": "9724551c84f00a4c23e9614d7519a9cc3a3c24481b6d84496973a060ad187fd7",
+        "sourceArtifactSha256": "ce402905045079e7c73ca3497c210568ae711704d0e911a6701a69d2529e75aa"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_010.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 162,
+          "translateYPx": 60,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "514b3c2b464a0e0c7816f0554217155255d9fd84a38d96e1fbf207b8da9f53ab",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_010.png",
+        "mode": "RGBA",
+        "sha256": "28e002ff42a01f8fd3eccab58eb0cc7aec77e044b1fd4c7f2e6bffa4ed2b1b8e",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            566,
+            104,
+            1021,
+            1989
+          ],
+          "128": [
+            571,
+            110,
+            1015,
+            1985
+          ],
+          "8": [
+            569,
+            108,
+            1017,
+            1987
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 345115,
+          "partial": 41799,
+          "zero": 2857118
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 12494
+        },
+        "decodedPixelSha256": "514b3c2b464a0e0c7816f0554217155255d9fd84a38d96e1fbf207b8da9f53ab",
+        "foregroundCoverage": 0.11926948,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_010.normalized_candidate_v1",
+      "renderRecordSha256": "264704c950d471e523fb2509fd3a7c2aafdf62743e31cd41a56d593f205cc3b8",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_011",
+      "inputHashes": {
+        "overrideSha256": "60e24229d8a28738084247d3080b4a97c15f53e138ceaedcbd3f476bafcbd2ec",
+        "resolvedMetadataSha256": "93e511d6026092510eb80ad7b459a71acbb474c2b884bb9f3dfecd65f25f086f",
+        "sourceArtifactSha256": "e1b7a68a2caa186fbc7389aa6e5caabf83c69f7ec1c20b67adfc667c28cfcf18"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_011.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 126,
+          "translateYPx": 67,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "fea4386bb0627ccc94319a7c6d21636d2b74a96efbd2450229a85b33cbfdcb77",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_011.png",
+        "mode": "RGBA",
+        "sha256": "d568d6a5b53b610035a2a264047f1180c5c95a33f57e5dae1318760cbda91198",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            555,
+            244,
+            978,
+            1989
+          ],
+          "128": [
+            561,
+            249,
+            973,
+            1986
+          ],
+          "8": [
+            559,
+            247,
+            975,
+            1989
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 431328,
+          "partial": 38380,
+          "zero": 2774324
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 15276
+        },
+        "decodedPixelSha256": "fea4386bb0627ccc94319a7c6d21636d2b74a96efbd2450229a85b33cbfdcb77",
+        "foregroundCoverage": 0.14479142,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_011.normalized_candidate_v1",
+      "renderRecordSha256": "4c78b42cad4fb5e2669c57c837b76449b863bf1b1d750b5ee668380347315570",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_012",
+      "inputHashes": {
+        "overrideSha256": "8c7ddf5c623a5b20a6cc616e2de9bc39795d848383f0f6d3e830e75246c6a12a",
+        "resolvedMetadataSha256": "2e86b2c1a753a8a3738cb0ffde36ea2358bb6e05943d3fc6f6cb675373d390c6",
+        "sourceArtifactSha256": "82eb7f3cd913e24acc0206201cb501ad0b8e5cc1cbb0d8015be891a0f133aff2"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_012.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 112,
+          "translateYPx": 63,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "5e1cfbbf76e3187f76c4b6498cf2ad0905310ac1e95dba910d0055f1eec4879b",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_012.png",
+        "mode": "RGBA",
+        "sha256": "c0283a9089d643ce25428866b3a63fb505dc9aff3820e6e655fabae0fd6f2bdf",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            342,
+            131,
+            1201,
+            1989
+          ],
+          "128": [
+            347,
+            137,
+            1195,
+            1985
+          ],
+          "8": [
+            345,
+            135,
+            1197,
+            1987
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 447477,
+          "partial": 57750,
+          "zero": 2738805
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 16295
+        },
+        "decodedPixelSha256": "5e1cfbbf76e3187f76c4b6498cf2ad0905310ac1e95dba910d0055f1eec4879b",
+        "foregroundCoverage": 0.15574045,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_012.normalized_candidate_v1",
+      "renderRecordSha256": "b4bcddb34afb9411d0424623e41d5f1f3721d3b06dfc1e75444782ed3c327d3a",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_013",
+      "inputHashes": {
+        "overrideSha256": "b071273369375f69174992417b11d49c76a129e8f915ee044140d616ac8abfd0",
+        "resolvedMetadataSha256": "5932ca471ff6b748bf35e4a937cd82995be0be17a7ee190691cf1e5d744eb958",
+        "sourceArtifactSha256": "635c392e8f627faedc16634d9547cdf263af318f0097c28fe2e7f9235b6d67d4"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_013.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 109,
+          "translateYPx": 67,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "0211878f371d8a44b09bea9a8233d9b504b5c8934789eb5cce73cc254edcf6df",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_013.png",
+        "mode": "RGBA",
+        "sha256": "0055d53dad1e564d293722a3a9370821885f68b1a90bf582470f4b0428edb5ab",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            286,
+            140,
+            1234,
+            1989
+          ],
+          "128": [
+            291,
+            145,
+            1229,
+            1986
+          ],
+          "8": [
+            289,
+            143,
+            1231,
+            1989
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 445009,
+          "partial": 56865,
+          "zero": 2742158
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 16237
+        },
+        "decodedPixelSha256": "0211878f371d8a44b09bea9a8233d9b504b5c8934789eb5cce73cc254edcf6df",
+        "foregroundCoverage": 0.15470686,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_013.normalized_candidate_v1",
+      "renderRecordSha256": "46eb7875ab43c94719352244ff04fdc42a19205823f93e596dda6b0d13332349",
+      "renderStatus": "review_required",
+      "toolVersion": "pose-corpus-normalizer-0.1"
+    },
+    {
+      "entryId": "set_d_pose_014",
+      "inputHashes": {
+        "overrideSha256": "8421dad54f4d00c7da8ef377eca660ea7f98fac5d94cb4834314736b2f4560e7",
+        "resolvedMetadataSha256": "ab1dc639e84d5f2876af09444ed86cdfd3777bcd2ea24b374bc93c8350801e18",
+        "sourceArtifactSha256": "cc90b68c7dac9f7b08bd1261fedddece7a35af65d1def379ccc20727a613fe3a"
+      },
+      "issues": [
+        {
+          "code": "MECHANICS_REVIEW_REQUIRED",
+          "detail": "Silhouette proposals do not resolve anatomical landmarks, side, support foot, or hidden anatomy.",
+          "disposition": "review_required",
+          "severity": "warning"
+        },
+        {
+          "code": "PROPORTION_RETARGET_NOT_APPLIED",
+          "detail": "No reviewed semantic control topology exists; candidate render uses similarity transform only.",
+          "disposition": "review_required",
+          "severity": "warning"
+        }
+      ],
+      "mechanicsRef": "metadata/poses/set_d/set_d_pose_014.json",
+      "operations": [
+        {
+          "isotropicScale": 1.598519888992,
+          "targetSizePx": [
+            1304,
+            1957
+          ],
+          "type": "premultiplied_linear_rgba_resize"
+        },
+        {
+          "translateXPx": 108,
+          "translateYPx": 89,
+          "type": "translate_pelvis_x_and_ground_y_to_frozen_canvas"
+        },
+        {
+          "applied": false,
+          "reason": "reviewed semantic control topology unavailable",
+          "type": "local_proportion_retarget"
+        }
+      ],
+      "output": {
+        "artifactSetId": "set_d_pose_bg_removed_clean_v1.e639f4ebb52c",
+        "decodedPixelSha256": "a6f6190b7bc024fc254f7408e43bf77a832b471aa01d64f5835395d651744015",
+        "heightPx": 2112,
+        "logicalPath": "review/previews/set_d/set_d_pose_014.png",
+        "mode": "RGBA",
+        "sha256": "788d318acfdf0aba544e03cc6adaddec9114df4cc8b6f6d5e02943dbe2518d91",
+        "storageClass": "external_generated",
+        "widthPx": 1536
+      },
+      "qaEvidence": {
+        "alphaBboxByThreshold": {
+          "1": [
+            263,
+            161,
+            1232,
+            1989
+          ],
+          "128": [
+            268,
+            166,
+            1227,
+            1984
+          ],
+          "8": [
+            266,
+            164,
+            1229,
+            1986
+          ]
+        },
+        "alphaCounts": {
+          "opaque": 451619,
+          "partial": 60249,
+          "zero": 2732164
+        },
+        "borderAlphaMax": {
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0
+        },
+        "componentsAtAlpha8Thumbnail": {
+          "count": 1,
+          "detachedAreaRatio": 0.0,
+          "largestArea": 16549
+        },
+        "decodedPixelSha256": "a6f6190b7bc024fc254f7408e43bf77a832b471aa01d64f5835395d651744015",
+        "foregroundCoverage": 0.15778759,
+        "foregroundInsideSafeRectangle": true,
+        "heightPx": 2112,
+        "mode": "RGBA",
+        "safeMarginPx": 87,
+        "transparentRgbNonzeroChannelCount": 0,
+        "widthPx": 1536
+      },
+      "qaStatus": "passed_transform_checks",
+      "renderId": "set_d_pose_014.normalized_candidate_v1",
+      "renderRecordSha256": "ad7256d2f81496647f2c563230d91b68aabb1b30e73fc558b2748a83eb407dfc",
       "renderStatus": "review_required",
       "toolVersion": "pose-corpus-normalizer-0.1"
     }

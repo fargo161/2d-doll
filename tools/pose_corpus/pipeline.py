@@ -200,6 +200,7 @@ def run_full(
         source_manifest,
         runtime_index,
         calibration,
+        canvas_policy="calibration",
     )
     profile = build_profile_evidence(calibration, canvas)
     entries, overrides = build_entries_and_overrides(
@@ -275,9 +276,28 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     inventory = subparsers.add_parser("inventory")
     inventory.add_argument("--source-directory", type=Path, required=True)
     inventory.add_argument("--write", action="store_true")
-    run = subparsers.add_parser("run")
+    calibrate = subparsers.add_parser(
+        "calibrate",
+        help="explicitly derive a coordinate contract and rebuild the full corpus",
+    )
+    calibrate.add_argument("--source-directory", type=Path, required=True)
+    calibrate.add_argument("--artifact-root", type=Path, required=True)
+    run = subparsers.add_parser(
+        "run",
+        help="legacy full-corpus command; requires an explicit calibration policy",
+    )
     run.add_argument("--source-directory", type=Path, required=True)
     run.add_argument("--artifact-root", type=Path, required=True)
+    run.add_argument("--canvas-policy", choices=("calibrate",), required=True)
+    ingest = subparsers.add_parser(
+        "ingest",
+        help="ingest selected packages against the existing frozen canvas",
+    )
+    ingest.add_argument("--source-directory", type=Path, required=True)
+    ingest.add_argument("--artifact-root", type=Path, required=True)
+    ingest.add_argument(
+        "--source-set-id", action="append", required=True, dest="source_set_ids"
+    )
     return parser.parse_args(argv)
 
 
@@ -286,11 +306,20 @@ def main(argv: list[str] | None = None) -> None:
     repository_root = args.repository_root.resolve()
     if args.command == "inventory":
         run_inventory(repository_root, args.source_directory.resolve(), args.write)
-    elif args.command == "run":
+    elif args.command in {"calibrate", "run"}:
         run_full(
             repository_root,
             args.source_directory.resolve(),
             args.artifact_root.resolve(),
+        )
+    elif args.command == "ingest":
+        from .frozen_ingestion import run_frozen_ingestion
+
+        run_frozen_ingestion(
+            repository_root,
+            args.source_directory.resolve(),
+            args.artifact_root.resolve(),
+            args.source_set_ids,
         )
     else:
         raise AssertionError(args.command)

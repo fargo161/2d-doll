@@ -43,7 +43,10 @@ from tools.pose_corpus.pipeline import run_full
 
 CORPUS_ROOT = REPOSITORY / "pose-corpus" / "canonical-v0_1"
 ARTIFACT_ROOT: Path | None = None
+ARTIFACT_SET_ROOTS: dict[str, Path] = {}
 SOURCE_DIRECTORY: Path | None = None
+EXPECTED_REGISTERED = 132
+EXPECTED_TRANSFORM_QA_PASSED = 131
 
 
 def load_json(path: Path) -> dict:
@@ -483,8 +486,8 @@ class RepositoryCorpusTests(unittest.TestCase):
         self.assertEqual(self.corpus["corpusId"], CORPUS_ID)
         self.assertFalse(self.corpus["runtimeBoundary"]["isReusablePose"])
         self.assertEqual(self.corpus["runtimeBoundary"]["compatiblePoseSchemaVersions"], [])
-        self.assertEqual(self.index["counts"]["registered"], 123)
-        self.assertEqual(self.index["counts"]["reviewRequiredRenders"], 118)
+        self.assertEqual(self.index["counts"]["registered"], EXPECTED_REGISTERED)
+        self.assertEqual(self.index["counts"]["reviewRequiredRenders"], 127)
         self.assertEqual(self.index["counts"]["blockedSourceDefectRenders"], 5)
         self.assertEqual(self.index["counts"]["acceptedRenders"], 0)
 
@@ -495,6 +498,7 @@ class RepositoryCorpusTests(unittest.TestCase):
                 "set_a_edge_extremity_refined_v1": 28,
                 "set_b_full_isolation_v1": 55,
                 "set_c_edge_refined_green_cleaned_v1": 40,
+                "set_d_pose_bg_removed_clean_v1": 9,
             },
         )
         issues = {
@@ -531,7 +535,7 @@ class RepositoryCorpusTests(unittest.TestCase):
 
     def test_all_pose_entries_have_explicit_landmark_states(self) -> None:
         pose_paths = sorted((CORPUS_ROOT / "metadata/poses").glob("*/*.json"))
-        self.assertEqual(len(pose_paths), 123)
+        self.assertEqual(len(pose_paths), EXPECTED_REGISTERED)
         for path in pose_paths:
             entry = load_json(path)
             self.assertEqual(entry["schemaVersion"], ENTRY_SCHEMA_VERSION)
@@ -559,10 +563,15 @@ class RepositoryCorpusTests(unittest.TestCase):
         self.assertGreater(reference_only, 0)
 
     def test_render_and_qa_manifests_cover_every_entry(self) -> None:
-        self.assertEqual(len(self.render["renders"]), 123)
-        self.assertEqual(self.render["counts"]["producedCandidates"], 123)
-        self.assertEqual(self.render["counts"]["transformQaPassed"], 123)
-        self.assertEqual(self.qa["counts"]["registered"], 123)
+        self.assertEqual(len(self.render["renders"]), EXPECTED_REGISTERED)
+        self.assertEqual(
+            self.render["counts"]["producedCandidates"], EXPECTED_REGISTERED
+        )
+        self.assertEqual(
+            self.render["counts"]["transformQaPassed"],
+            EXPECTED_TRANSFORM_QA_PASSED,
+        )
+        self.assertEqual(self.qa["counts"]["registered"], EXPECTED_REGISTERED)
         self.assertEqual(self.qa["verdict"]["mechanicsStatus"], "review_required")
         self.assertEqual(self.qa["verdict"]["workflowValidationStatus"], "not_validated")
         self.assertGreaterEqual(self.qa["counts"]["qaArtifactCount"], 8)
@@ -575,6 +584,16 @@ class RepositoryCorpusTests(unittest.TestCase):
                 for issue in render["issues"]
             }
         )
+        overflow = [
+            issue
+            for render in self.render["renders"]
+            for issue in render["issues"]
+            if issue["code"] == "CANONICAL_CANVAS_OVERFLOW_REVIEW_REQUIRED"
+        ]
+        self.assertEqual(len(overflow), 1)
+        self.assertEqual(overflow[0]["entryId"], "set_d_pose_009")
+        self.assertEqual(overflow[0]["offendingBoundaries"], ["top"])
+        self.assertEqual(overflow[0]["boundaryOverflowPx"]["top"], 2)
 
     def test_machine_readable_contracts_validate_generated_records(self) -> None:
         schema_root = CORPUS_ROOT / "schemas"
@@ -602,7 +621,7 @@ class RepositoryCorpusTests(unittest.TestCase):
             Draft202012Validator.check_schema(schema)
             validator = Draft202012Validator(schema)
             paths = sorted(record_root.glob("*/*.json"))
-            self.assertEqual(len(paths), 123)
+            self.assertEqual(len(paths), EXPECTED_REGISTERED)
             for path in paths:
                 validator.validate(load_json(path))
 
@@ -691,17 +710,30 @@ class RepositoryCorpusTests(unittest.TestCase):
 class ExternalArtifactTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        if ARTIFACT_ROOT is None:
-            raise unittest.SkipTest("external artifact root not supplied")
+        if ARTIFACT_ROOT is None and not ARTIFACT_SET_ROOTS:
+            raise unittest.SkipTest("external artifact roots not supplied")
         cls.artifact_root = ARTIFACT_ROOT
+        cls.artifact_set_roots = ARTIFACT_SET_ROOTS
         cls.index = load_json(CORPUS_ROOT / "metadata/corpus-index.json")
         cls.render = load_json(CORPUS_ROOT / "normalized/render-manifest.json")
         cls.qa = load_json(CORPUS_ROOT / "qa/reports/run-summary.json")
 
+    def _root_for_artifact_set(self, artifact_set_id: str | None) -> Path | None:
+        if artifact_set_id is None:
+            return self.artifact_root
+        return self.artifact_set_roots.get(artifact_set_id)
+
     def test_all_candidate_renders_match_manifest(self) -> None:
         canvas = self.render["canvas"]
+        checked = 0
         for render in self.render["renders"]:
-            path = self.artifact_root / Path(render["output"]["logicalPath"])
+            root = self._root_for_artifact_set(
+                render["output"].get("artifactSetId")
+            )
+            if root is None:
+                continue
+            checked += 1
+            path = root / Path(render["output"]["logicalPath"])
             self.assertTrue(path.is_file(), path)
             self.assertEqual(sha256_file(path), render["output"]["sha256"])
             with Image.open(path) as image:
@@ -721,10 +753,20 @@ class ExternalArtifactTests(unittest.TestCase):
             self.assertIsNotNone(bbox)
             assert bbox is not None
             margin = canvas["safeMarginPx"]
-            self.assertGreaterEqual(bbox[0], margin)
-            self.assertGreaterEqual(bbox[1], margin)
-            self.assertLessEqual(bbox[2], canvas["widthPx"] - margin)
-            self.assertLessEqual(bbox[3], canvas["heightPx"] - margin)
+            if render["qaEvidence"]["foregroundInsideSafeRectangle"]:
+                self.assertGreaterEqual(bbox[0], margin)
+                self.assertGreaterEqual(bbox[1], margin)
+                self.assertLessEqual(bbox[2], canvas["widthPx"] - margin)
+                self.assertLessEqual(bbox[3], canvas["heightPx"] - margin)
+            else:
+                overflow = [
+                    issue
+                    for issue in render["issues"]
+                    if issue["code"]
+                    == "CANONICAL_CANVAS_OVERFLOW_REVIEW_REQUIRED"
+                ]
+                self.assertEqual(len(overflow), 1)
+                self.assertEqual(overflow[0]["disposition"], "review_required")
 
             entry = load_json(CORPUS_ROOT / render["mechanicsRef"])
             transform = entry["normalizationCandidate"]["transform"]
@@ -752,23 +794,50 @@ class ExternalArtifactTests(unittest.TestCase):
                 ),
                 0.5,
             )
+        self.assertGreater(checked, 0)
 
     def test_generated_qa_artifacts_match_manifest(self) -> None:
+        checked = 0
         for artifact in self.qa["qaArtifacts"]:
-            path = self.artifact_root / Path(artifact["logicalPath"])
-            sidecar = self.artifact_root / Path(artifact["sidecarLogicalPath"])
+            root = self._root_for_artifact_set(artifact.get("artifactSetId"))
+            if root is None:
+                continue
+            checked += 1
+            path = root / Path(artifact["logicalPath"])
+            sidecar = root / Path(artifact["sidecarLogicalPath"])
             self.assertEqual(sha256_file(path), artifact["sha256"])
             self.assertEqual(sha256_file(sidecar), artifact["sidecarSha256"])
+        self.assertGreater(checked, 0)
 
-    def test_external_run_manifest_links_to_tracked_hash_graph(self) -> None:
-        run = load_json(self.artifact_root / "run-manifest.json")
-        self.assertEqual(run["corpusIndexSha256"], self.index["indexSha256"])
-        self.assertEqual(
-            run["renderManifestSha256"], self.render["renderManifestSha256"]
-        )
-        self.assertEqual(run["qaSummarySha256"], self.qa["qaSummarySha256"])
+    def test_external_run_manifests_describe_their_own_artifact_sets(self) -> None:
+        if self.artifact_root is not None:
+            run = load_json(self.artifact_root / "run-manifest.json")
+            self.assertEqual(run["corpusId"], CORPUS_ID)
+            self.assertNotIn(str(self.artifact_root), json.dumps(run))
+        for artifact_set_id, root in self.artifact_set_roots.items():
+            run = load_json(root / "run-manifest.json")
+            self.assertEqual(run["corpusId"], CORPUS_ID)
+            self.assertEqual(run["artifactSetId"], artifact_set_id)
+            self.assertEqual(run["operation"], "frozen_ingestion")
+            self.assertEqual(run["referenceScope"], "package_local")
+            self.assertNotIn(str(root), json.dumps(run))
+            local_render = load_json(root / "normalized/render-manifest.json")
+            local_index = load_json(root / "metadata/corpus-index.json")
+            local_qa = load_json(root / "qa/reports/run-summary.json")
+            self.assertEqual(
+                run["packageRenderManifestSha256"],
+                local_render["renderManifestSha256"],
+            )
+            self.assertEqual(
+                run["packageCorpusIndexSha256"], local_index["indexSha256"]
+            )
+            self.assertEqual(
+                run["packageQaSummarySha256"], local_qa["qaSummarySha256"]
+            )
 
     def test_set_c_replacement_scale_does_not_collapse(self) -> None:
+        if self.artifact_root is None:
+            raise unittest.SkipTest("baseline A-C artifact root not supplied")
         renders = {item["entryId"]: item for item in self.render["renders"]}
         minimum_height = round(self.render["canvas"]["bodyPixels"] * 0.75)
         for entry_id in ("set_c_pose_039", "set_c_pose_040"):
@@ -794,6 +863,12 @@ class ExternalSourceTests(unittest.TestCase):
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--artifact-root", type=Path)
+    parser.add_argument(
+        "--artifact-set-root",
+        action="append",
+        default=[],
+        metavar="ARTIFACT_SET_ID=PATH",
+    )
     parser.add_argument("--source-directory", type=Path)
     return parser.parse_args()
 
@@ -801,6 +876,15 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     args = parse_args()
     ARTIFACT_ROOT = args.artifact_root.resolve() if args.artifact_root else None
+    for assignment in args.artifact_set_root:
+        artifact_set_id, separator, path = assignment.partition("=")
+        if not separator or not artifact_set_id or not path:
+            raise SystemExit(
+                "--artifact-set-root requires ARTIFACT_SET_ID=PATH"
+            )
+        if artifact_set_id in ARTIFACT_SET_ROOTS:
+            raise SystemExit(f"duplicate artifact-set ID: {artifact_set_id}")
+        ARTIFACT_SET_ROOTS[artifact_set_id] = Path(path).resolve()
     SOURCE_DIRECTORY = (
         args.source_directory.resolve() if args.source_directory else None
     )

@@ -39,12 +39,15 @@ Run tracked contract, schema, inventory, metadata, and deterministic image-opera
 
 ```text
 python tests/verify_pose_corpus.py
+python tests/verify_frozen_ingestion.py
 ```
 
 That command intentionally skips checks requiring external user-supplied archives or generated rasters. Run the complete suite with:
 
 ```text
-python tests/verify_pose_corpus.py --source-directory <directory-containing-zips> --artifact-root <generated-artifact-root>
+python tests/verify_pose_corpus.py --source-directory <directory-containing-zips> --artifact-root <baseline-generated-artifact-root> --artifact-set-root <artifact-set-id>=<frozen-ingestion-artifact-root>
 ```
 
-The full suite verifies 123 archive mappings and hashes, 123 candidate files and hashes, fixed RGBA canvas, alpha borders, cleared transparent RGB, independently recomputed decoded-pixel hashes and safety margins, root/ground round trips, cross-record hashes and JSON Pointers, eight QA artifacts and sidecars, the Set C replacement-scale regression, proposal/override/entry schemas, and two concurrent synthetic future packages through the full pipeline. The synthetic run covers colliding basenames, a successful no-manifest package, a generic entry prefix, runtime descriptor-schema enforcement, unsafe path and ordinal-bound rejection, global calibration-ID rejection, reviewed override preservation/application, and stale-base rejection. Passing these checks does not resolve the real corpus's anatomical landmarks, approve the body profile, accept renders, or establish modular-character workflow validation.
+The tracked suite verifies 132 registered records, fixed RGBA canvas, cross-record hashes and JSON Pointers, proposal/override/entry schemas, 131 transform-QA passes, and Set D pose 009's structured safe-margin review. Repeat `--artifact-set-root ID=PATH` for each external frozen-ingestion artifact set; records and QA artifacts are resolved through their `artifactSetId`, while `--artifact-root` addresses the original A–C calibration artifact root.
+
+The architecture suite proves selected-package ingestion cannot derive or drift the pinned v0.1 canvas, preserves historical per-entry bytes and aggregate prefixes, renders only new entries, handles physical and safe-margin overflow explicitly, resolves package-local references, rolls back coordinated repository/artifact failure, rejects duplicates, and produces deterministic metadata from equivalent baselines. The calibration tests still cover colliding basenames, a successful no-manifest package, generic entry prefixes, runtime descriptor-schema enforcement, unsafe path and ordinal-bound rejection, global calibration-ID rejection, reviewed override preservation/application, and stale-base rejection. Passing these checks does not resolve anatomical landmarks, approve the body profile, accept renders, or establish modular-character workflow validation.
