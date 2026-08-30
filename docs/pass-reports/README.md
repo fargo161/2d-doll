@@ -64,3 +64,7 @@ Each report should contain, where applicable:
 | 2026-08-28 | Canonical pose corpus foundation commit closure | [2026-08-28_1907_canonical-pose-corpus-foundation-commit-closure.md](2026-08-28_1907_canonical-pose-corpus-foundation-commit-closure.md) |
 | 2026-08-29 | Set D recovery and frozen-ingestion boundary | [2026-08-29_0054_set-d-frozen-ingestion-recovery.md](2026-08-29_0054_set-d-frozen-ingestion-recovery.md) |
 | 2026-08-29 | Set D frozen-ingestion commit closure | [2026-08-29_0111_set-d-frozen-ingestion-commit-closure.md](2026-08-29_0111_set-d-frozen-ingestion-commit-closure.md) |
+| 2026-08-30 | Mannequin video still corpus run preparation | [2026-08-30_1052_mannequin-video-still-run-preparation.md](2026-08-30_1052_mannequin-video-still-run-preparation.md) |
+| 2026-08-30 | Mannequin pre-execution review ingestion | [2026-08-30_1106_mannequin-preexecution-review-ingestion.md](2026-08-30_1106_mannequin-preexecution-review-ingestion.md) |
+| 2026-08-30 | Mannequin still corpus reconciliation | [2026-08-30_1112_mannequin-still-corpus-reconciliation.md](2026-08-30_1112_mannequin-still-corpus-reconciliation.md) |
+| 2026-08-30 | Mannequin reconciliation commit closure | [2026-08-30_1127_mannequin-reconciliation-commit-closure.md](2026-08-30_1127_mannequin-reconciliation-commit-closure.md) |
