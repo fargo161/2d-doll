@@ -72,3 +72,6 @@ Each report should contain, where applicable:
 | 2026-08-30 | Female head, identity, Pathos, and PXZ preflight ingestion | [2026-08-30_1250_female-head-pathos-preflight-ingestion.md](2026-08-30_1250_female-head-pathos-preflight-ingestion.md) |
 | 2026-08-30 | Overall assessment ingestion | [2026-08-30_1316_overall-assessment-ingestion.md](2026-08-30_1316_overall-assessment-ingestion.md) |
 | 2026-08-30 | Female head preflight commit closure | [2026-08-30_1322_female-head-preflight-commit-closure.md](2026-08-30_1322_female-head-preflight-commit-closure.md) |
+| 2026-08-30 | Mannequin single-still extraction | [2026-08-30_1328_mannequin-single-still-extraction.md](2026-08-30_1328_mannequin-single-still-extraction.md) |
+| 2026-08-30 | Mannequin mixed-layout donor still extraction | [2026-08-30_1411_mannequin-mixed-donor-still-extraction.md](2026-08-30_1411_mannequin-mixed-donor-still-extraction.md) |
+| 2026-08-30 | Mannequin extraction commit closure | [2026-08-30_1455_mannequin-extraction-commit-closure.md](2026-08-30_1455_mannequin-extraction-commit-closure.md) |
